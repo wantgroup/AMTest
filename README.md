@@ -5,24 +5,29 @@ Selenium测试框架
     # STestJava
       使用java编写的
     # STestPython 
+    使用Python编写的
 # RFTest
 robot framework测试框架
     # RFTestJava
       使用java编写的
-    # RFestPython
+    # RFTestPython
+    使用Python编写的
 # CTest
 Cucumber测试框架
-    # CFTestNode.js
-      使用java编写的
-    # CFestPython 
+    # CTestNode.js
+      使用jNode.js编写的
+    # CTestJava 
+    使用java编写的
 # AITest
 Appium测试框架
-    # CFTestJava
+    # ATestJava
       使用java编写的
-    # CFTestPython  
+    # ATestPython  
+    使用Python编写的
 # UAMTest
 Uiautomator2测试框架
-    # UAMTestPython    
+    # UAMTestPython  
+    使用Python编写的
     
     
     
