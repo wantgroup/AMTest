@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.5 on darwin)" generated="20180602 21:03:09.763">
+<suite id="s1" name="Test02" source="/Users/cloudin/Desktop/project/weixin_growup/rbtest/test02.robot">
+<test id="s1-t1" name="测试登录">
+<kw name="打开页面">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180602 21:03:10.182" level="INFO">Opening browser 'chrome' to base url 'http://118.31.19.120:3000/'.</msg>
+<status status="PASS" starttime="20180602 21:03:10.182" endtime="20180602 21:03:21.473"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${loninbuttom_xpath}</arg>
+</arguments>
+<msg timestamp="20180602 21:03:21.474" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div/ul/li[6]/a'.</msg>
+<status status="PASS" starttime="20180602 21:03:21.474" endtime="20180602 21:03:21.807"></status>
+</kw>
+<status status="PASS" starttime="20180602 21:03:10.181" endtime="20180602 21:03:21.807"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20180602 21:03:21.807" endtime="20180602 21:03:22.037"></status>
+</kw>
+<kw name="输入登录信息">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${userName_xpath}</arg>
+<arg>${userName}</arg>
+</arguments>
+<msg timestamp="20180602 21:03:22.041" level="INFO">Typing text 'testuser3' into text field 'xpath://*[@id="name"]'.</msg>
+<status status="PASS" starttime="20180602 21:03:22.039" endtime="20180602 21:03:22.217"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${password_xpath}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20180602 21:03:22.217" level="INFO">Typing password into text field 'xpath://*[@id="pass"]'.</msg>
+<status status="PASS" starttime="20180602 21:03:22.217" endtime="20180602 21:03:22.307"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+<arg>filename=test02.png</arg>
+</arguments>
+<msg timestamp="20180602 21:03:22.585" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="test02.png"&gt;&lt;img src="test02.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180602 21:03:22.307" endtime="20180602 21:03:22.585"></status>
+</kw>
+<status status="PASS" starttime="20180602 21:03:22.038" endtime="20180602 21:03:22.585"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180602 21:03:22.586" endtime="20180602 21:03:22.729"></status>
+</kw>
+<status status="PASS" starttime="20180602 21:03:10.180" endtime="20180602 21:03:22.730" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180602 21:03:09.767" endtime="20180602 21:03:22.733"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test02">Test02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

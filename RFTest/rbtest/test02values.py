@@ -1,0 +1,9 @@
+#打开浏览器
+url='http://118.31.19.120:3000/'
+#点击登录按钮
+loninbuttom_xpath='/html/body/div[1]/div/div/ul/li[6]/a'
+#登录数据
+userName='testuser3'
+userName_xpath='//*[@id="name"]'
+password='123456'
+password_xpath='//*[@id="pass"]'
