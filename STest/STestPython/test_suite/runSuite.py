@@ -1,13 +1,14 @@
-import  unittest
+import  unittest2
 import HTMLReport
+from    test_case   import  login_case
 
 def suite():
-    suite = unittest.TestSuite()
-    # suite.addTest(testMeCase.MeCase("test_login"))#登录
+    suite = unittest2.TestSuite()
+    suite.addTest(login_case.LoginCase('test_login'))#登录
     return suite
 
 if __name__ == "__main__":
-    runner = HTMLReport.TestRunner(report_file_name="",  # 报告文件名，如果未赋值，将采用“test+时间戳”
+    runner1 = HTMLReport.TestRunner(report_file_name="",  # 报告文件名，如果未赋值，将采用“test+时间戳”
                                    output_path="",  # 保存文件夹名，默认“report”
                                    title='侨美测试报告',  # 报告标题，默认“测试报告”
                                    description='侨美测试报告',  # 报告描述，默认“测试描述”
@@ -20,4 +21,6 @@ if __name__ == "__main__":
                                    # lang='en'
                                    lang='cn'  # 支持中文与英文，默认中文
                                    )
-    runner.run(suite())
+    runner2 = unittest2.TextTestRunner()
+    runner2.run(suite())
+    
