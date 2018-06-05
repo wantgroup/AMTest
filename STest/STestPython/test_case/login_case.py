@@ -1,6 +1,7 @@
 import  unittest2
 from test_common    import  getDriver,login
 from HTMLReport import logger
+from test_utils import utilsApi
 
 class   LoginCase(unittest2.TestCase):
     '登录和注册'
@@ -15,8 +16,9 @@ class   LoginCase(unittest2.TestCase):
         getDriver.exit_browse(self.driver)
 
     def tearDown(self):
-        login().info('截屏')
-        getDriver.screen_shot(self.driver," ")
+        logger().info("截屏")
+        print(utilsApi.get_function_name())
+        getDriver.screen_shot(self.driver,utilsApi.get_function_name())
 
     def test_login(self):
         '登录'

@@ -1,7 +1,7 @@
 import os
 import platform
 import datetime
-
+import inspect
 #创建目录
 def makedirectory(filePath):
     if  os.path.exists(filePath):
@@ -9,6 +9,10 @@ def makedirectory(filePath):
     else:
         os.makedirs(filePath)
         return filePath
+
+
+def get_function_name():
+    return inspect.stack()[1][3]
 
 #处理不同系统下斜杠的问题
 def getSystem():
