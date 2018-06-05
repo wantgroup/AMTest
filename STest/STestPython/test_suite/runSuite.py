@@ -1,15 +1,17 @@
 import  unittest2
 import HTMLReport
 from    test_case   import  login_case
-
+from test_utils import utilsApi
 def suite():
     suite = unittest2.TestSuite()
     suite.addTest(login_case.LoginCase('test_login'))#登录
     return suite
 
 if __name__ == "__main__":
-    runner1 = HTMLReport.TestRunner(report_file_name="",  # 报告文件名，如果未赋值，将采用“test+时间戳”
-                                   output_path="",  # 保存文件夹名，默认“report”
+    reportPath=utilsApi.reportPath()
+
+    runner1 = HTMLReport.TestRunner(report_file_name="123",  # 报告文件名，如果未赋值，将采用“test+时间戳”
+                                   output_path=reportPath,  # 保存文件夹名，默认“report”
                                    title='侨美测试报告',  # 报告标题，默认“测试报告”
                                    description='侨美测试报告',  # 报告描述，默认“测试描述”
                                    thread_count=1,  # 并发线程数量（无序执行测试），默认数量 1
@@ -21,6 +23,6 @@ if __name__ == "__main__":
                                    # lang='en'
                                    lang='cn'  # 支持中文与英文，默认中文
                                    )
-    runner2 = unittest2.TextTestRunner()
-    runner2.run(suite())
+    # runner2 = unittest2.TextTestRunner()
+    runner1.run(suite())
     
