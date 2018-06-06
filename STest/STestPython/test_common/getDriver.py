@@ -1,7 +1,7 @@
 from selenium import webdriver
 import base64
 from HTMLReport import AddImage
-def driver(url,browse):
+def driver(browse):
     '''
     获取driver
     url：测试网址
@@ -11,7 +11,6 @@ def driver(url,browse):
         driver=webdriver.Chrome()
     elif '火狐'==browse:
         driver=webdriver.Firefox()
-    driver.get(url)
 
     return driver
 

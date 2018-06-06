@@ -1,6 +1,7 @@
 from test_pom   import  home_page,login_page
 from HTMLReport import logger
-def login_case(driver,userName,password):
+def login_case(driver,url,userName,password):
+    driver.get(url)
     logger().info('点击首页的登录按钮')
     driver.find_element_by_link_text(home_page.home_login_link_text).click()
     logger().info('输入登录用户名 %s' % userName)
