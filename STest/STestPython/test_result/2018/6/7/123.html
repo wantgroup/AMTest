@@ -363,19 +363,19 @@ function load() {
     <strong>
       <span class="lang-cn">启动时间：</span>
       <span class="lang-en">Start Time:</span>
-    </strong> 2018-06-07 10:51:50
+    </strong> 2018-06-07 14:56:29
   </p>
   <p class='attribute'>
     <strong>
       <span class="lang-cn">结束时间：</span>
       <span class="lang-en">End Time:</span>
-    </strong> 2018-06-07 10:51:53
+    </strong> 2018-06-07 14:57:13
   </p>
   <p class='attribute'>
     <strong>
       <span class="lang-cn">运行时长：</span>
       <span class="lang-en">Duration:</span>
-    </strong> 0:00:03.004608
+    </strong> 0:00:44.467869
   </p>
   <p class='attribute'>
     <strong>
@@ -383,13 +383,13 @@ function load() {
       <span class="lang-en">Status:</span>
     </strong>
     <span class="lang-cn">合计：</span>
-    <span class="lang-en">Total:</span>6&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="lang-en">Total:</span>7&nbsp;&nbsp;&nbsp;&nbsp;
     <span class="lang-cn">通过：</span>
-    <span class="lang-en">Passed:</span>0&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="lang-en">Passed:</span>7&nbsp;&nbsp;&nbsp;&nbsp;
     <span class="lang-cn">失败：</span>
     <span class="lang-en">Failed:</span>0&nbsp;&nbsp;&nbsp;&nbsp;
     <span class="lang-cn">错误：</span>
-    <span class="lang-en">Error:</span>6&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="lang-en">Error:</span>0&nbsp;&nbsp;&nbsp;&nbsp;
     <span class="lang-cn">跳过：</span>
     <span class="lang-en">Skipped:</span>0&nbsp;&nbsp;&nbsp;&nbsp;
   </p>
@@ -462,14 +462,14 @@ function load() {
     </th>
   </tr>
   
-<tr class='errorClass'>
+<tr class='passClass'>
   <td>test_case.login_case_ddt.LoginCase: 登录</td>
   <td>6</td>
-  <td class="passCase">0</td>
+  <td class="passCase">6</td>
   <td class="failCase">0</td>
-  <td class="errorCase">6</td>
+  <td class="errorCase">0</td>
   <td class="skipCase">0</td>
-  <td style="text-align:right;">0.00%</td>
+  <td style="text-align:right;">100.00%</td>
   <td>
     <a href="javascript:showClassDetail('c1',6)">
       <span class="lang-cn">细节</span>
@@ -478,564 +478,263 @@ function load() {
   </td>
 </tr>
 
-<tr id='et1.1' class='none'>
-  <td class='errorCase'  colspan='7'>
+<tr id='pt1.1' class='none'>
+  <td class='passCase'  colspan='7'>
     <div class='testcase'>test_login_1___testuser3____123456____success____testuser3__: 登录</div>
   </td>
-  <td class='errorCase' align='center'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.1')">error</a>
+  <td class='passCase' align='center'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')">pass</a>
   </td>
 </tr>
-<tr id='div_et1.1' class="hiddenRow">
+<tr id='div_pt1.1' class="hiddenRow">
   <td colspan='8'>
     <div class="popup_window">
       <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.1').className = 'hiddenRow' ">[x]</a>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').className = 'hiddenRow' ">[x]</a>
       </div>
       <pre>
-et1.1: 
-[   INFO] [2018-06-07 10:51:52,909] [123145407217664] [Result.py(48)] - 开始测试： test_login_1___testuser3____123456____success____testuser3__ (test_case.login_case_ddt.LoginCase)
-[   INFO] [2018-06-07 10:51:52,972] [123145407217664] [login_case_ddt.py(32)] - 截屏
-[  ERROR] [2018-06-07 10:51:52,975] [123145407217664] [Result.py(126)] - 测试产生错误： test_login_1___testuser3____123456____success____testuser3__ (test_case.login_case_ddt.LoginCase)
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/ddt.py", line 144, in wrapper
-    return func(self, *args, **kwargs)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_case/login_case_ddt.py", line 41, in test_login
-    login.login_case(self.driver,self.url,values1,values2)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_common/login.py", line 5, in login_case
-    driver.get(url)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 326, in get
-    self.execute(Command.GET, {'url': url})
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
-    return self._request(command_info[0], url, body=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 496, in _request
-    resp = self._conn.getresponse()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1331, in getresponse
-    response.begin()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 297, in begin
-    version, status, reason = self._read_status()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 258, in _read_status
-    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 586, in readinto
-    return self._sock.recv_into(b)
-ConnectionResetError: [Errno 54] Connection reset by peer
-
-[  ERROR] [2018-06-07 10:51:52,975] [123145407217664] [Result.py(126)] - 测试产生错误： test_login_1___testuser3____123456____success____testuser3__ (test_case.login_case_ddt.LoginCase)
-Traceback (most recent call last):
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_case/login_case_ddt.py", line 33, in tearDown
-    getDriver.screen_shot(self.driver,self.imgName)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_common/getDriver.py", line 23, in screen_shot
-    path=driver.get_screenshot_as_png()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 1042, in get_screenshot_as_png
-    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 1052, in get_screenshot_as_base64
-    return self.execute(Command.SCREENSHOT)['value']
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
-    return self._request(command_info[0], url, body=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 495, in _request
-    self._conn.request(method, parsed_url.path, body, headers)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1285, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1234, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1026, in _send_output
-    self.send(msg)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 964, in send
-    self.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 936, in connect
-    (self.host,self.port), self.timeout, self.source_address)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 724, in create_connection
-    raise err
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 713, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [Errno 61] Connection refused
-
-[   INFO] [2018-06-07 10:51:52,975] [123145407217664] [Result.py(59)] - 测试结束： test_login_1___testuser3____123456____success____testuser3__ (test_case.login_case_ddt.LoginCase)
-[   INFO] [2018-06-07 10:51:52,975] [123145407217664] [Result.py(61)] - 耗时： 0.06515499999999996
+pt1.1: 
+[   INFO] [2018-06-07 14:56:31,100] [123145329356800] [Result.py(48)] - 开始测试： test_login_1___testuser3____123456____success____testuser3__ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:39,955] [123145329356800] [login.py(6)] - 点击首页的登录按钮
+[   INFO] [2018-06-07 14:56:40,383] [123145329356800] [login.py(8)] - 输入登录用户名 testuser3
+[   INFO] [2018-06-07 14:56:40,556] [123145329356800] [login.py(10)] - 输入登录密码 123456
+[   INFO] [2018-06-07 14:56:40,702] [123145329356800] [login.py(12)] - 点击登录按钮
+[   INFO] [2018-06-07 14:56:41,531] [123145329356800] [login_case_ddt.py(31)] - 截屏
+[   INFO] [2018-06-07 14:56:41,938] [123145329356800] [Result.py(107)] - 测试执行通过： test_login_1___testuser3____123456____success____testuser3__ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:41,938] [123145329356800] [Result.py(59)] - 测试结束： test_login_1___testuser3____123456____success____testuser3__ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:41,939] [123145329356800] [Result.py(61)] - 耗时： 0.08550599999999997
 
 </pre>
-      <div></div>
+      <div>
+<img class="pic" src='images/test_login_123145329356800_2018_06_07_14_56_41_205.jpg' alt='test_login' title='test_login' />
+</div>
     </div>
   </td>
 </tr>
 
-<tr id='et1.2' class='none'>
-  <td class='errorCase'  colspan='7'>
+<tr id='pt1.2' class='none'>
+  <td class='passCase'  colspan='7'>
     <div class='testcase'>test_login_2___testuser3________error____信息不完整___: 登录</div>
   </td>
-  <td class='errorCase' align='center'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.2')">error</a>
+  <td class='passCase' align='center'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')">pass</a>
   </td>
 </tr>
-<tr id='div_et1.2' class="hiddenRow">
+<tr id='div_pt1.2' class="hiddenRow">
   <td colspan='8'>
     <div class="popup_window">
       <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.2').className = 'hiddenRow' ">[x]</a>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').className = 'hiddenRow' ">[x]</a>
       </div>
       <pre>
-et1.2: 
-[   INFO] [2018-06-07 10:51:52,976] [123145407217664] [Result.py(48)] - 开始测试： test_login_2___testuser3________error____信息不完整___ (test_case.login_case_ddt.LoginCase)
-[   INFO] [2018-06-07 10:51:52,977] [123145407217664] [login_case_ddt.py(32)] - 截屏
-[  ERROR] [2018-06-07 10:51:52,978] [123145407217664] [Result.py(126)] - 测试产生错误： test_login_2___testuser3________error____信息不完整___ (test_case.login_case_ddt.LoginCase)
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/ddt.py", line 144, in wrapper
-    return func(self, *args, **kwargs)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_case/login_case_ddt.py", line 41, in test_login
-    login.login_case(self.driver,self.url,values1,values2)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_common/login.py", line 5, in login_case
-    driver.get(url)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 326, in get
-    self.execute(Command.GET, {'url': url})
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
-    return self._request(command_info[0], url, body=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 495, in _request
-    self._conn.request(method, parsed_url.path, body, headers)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1285, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1234, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1026, in _send_output
-    self.send(msg)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 964, in send
-    self.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 936, in connect
-    (self.host,self.port), self.timeout, self.source_address)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 724, in create_connection
-    raise err
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 713, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [Errno 61] Connection refused
-
-[  ERROR] [2018-06-07 10:51:52,979] [123145407217664] [Result.py(126)] - 测试产生错误： test_login_2___testuser3________error____信息不完整___ (test_case.login_case_ddt.LoginCase)
-Traceback (most recent call last):
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_case/login_case_ddt.py", line 33, in tearDown
-    getDriver.screen_shot(self.driver,self.imgName)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_common/getDriver.py", line 23, in screen_shot
-    path=driver.get_screenshot_as_png()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 1042, in get_screenshot_as_png
-    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 1052, in get_screenshot_as_base64
-    return self.execute(Command.SCREENSHOT)['value']
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
-    return self._request(command_info[0], url, body=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 495, in _request
-    self._conn.request(method, parsed_url.path, body, headers)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1285, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1234, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1026, in _send_output
-    self.send(msg)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 964, in send
-    self.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 936, in connect
-    (self.host,self.port), self.timeout, self.source_address)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 724, in create_connection
-    raise err
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 713, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [Errno 61] Connection refused
-
-[   INFO] [2018-06-07 10:51:52,979] [123145407217664] [Result.py(59)] - 测试结束： test_login_2___testuser3________error____信息不完整___ (test_case.login_case_ddt.LoginCase)
-[   INFO] [2018-06-07 10:51:52,979] [123145407217664] [Result.py(61)] - 耗时： 0.0030739999999999656
+pt1.2: 
+[   INFO] [2018-06-07 14:56:41,939] [123145329356800] [Result.py(48)] - 开始测试： test_login_2___testuser3________error____信息不完整___ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:42,401] [123145329356800] [login.py(6)] - 点击首页的登录按钮
+[   INFO] [2018-06-07 14:56:42,718] [123145329356800] [login.py(8)] - 输入登录用户名 testuser3
+[   INFO] [2018-06-07 14:56:42,841] [123145329356800] [login.py(10)] - 输入登录密码 
+[   INFO] [2018-06-07 14:56:42,902] [123145329356800] [login.py(12)] - 点击登录按钮
+[   INFO] [2018-06-07 14:56:43,302] [123145329356800] [login_case_ddt.py(31)] - 截屏
+[   INFO] [2018-06-07 14:56:43,585] [123145329356800] [Result.py(107)] - 测试执行通过： test_login_2___testuser3________error____信息不完整___ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:43,585] [123145329356800] [Result.py(59)] - 测试结束： test_login_2___testuser3________error____信息不完整___ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:43,585] [123145329356800] [Result.py(61)] - 耗时： 0.019927000000000028
 
 </pre>
-      <div></div>
+      <div>
+<img class="pic" src='images/test_login_123145329356800_2018_06_07_14_56_43_598.jpg' alt='test_login' title='test_login' />
+</div>
     </div>
   </td>
 </tr>
 
-<tr id='et1.3' class='none'>
-  <td class='errorCase'  colspan='7'>
+<tr id='pt1.3' class='none'>
+  <td class='passCase'  colspan='7'>
     <div class='testcase'>test_login_3_______123456____error____信息不完整___: 登录</div>
   </td>
-  <td class='errorCase' align='center'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.3')">error</a>
+  <td class='passCase' align='center'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')">pass</a>
   </td>
 </tr>
-<tr id='div_et1.3' class="hiddenRow">
+<tr id='div_pt1.3' class="hiddenRow">
   <td colspan='8'>
     <div class="popup_window">
       <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.3').className = 'hiddenRow' ">[x]</a>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').className = 'hiddenRow' ">[x]</a>
       </div>
       <pre>
-et1.3: 
-[   INFO] [2018-06-07 10:51:52,979] [123145407217664] [Result.py(48)] - 开始测试： test_login_3_______123456____error____信息不完整___ (test_case.login_case_ddt.LoginCase)
-[   INFO] [2018-06-07 10:51:52,981] [123145407217664] [login_case_ddt.py(32)] - 截屏
-[  ERROR] [2018-06-07 10:51:52,982] [123145407217664] [Result.py(126)] - 测试产生错误： test_login_3_______123456____error____信息不完整___ (test_case.login_case_ddt.LoginCase)
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/ddt.py", line 144, in wrapper
-    return func(self, *args, **kwargs)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_case/login_case_ddt.py", line 41, in test_login
-    login.login_case(self.driver,self.url,values1,values2)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_common/login.py", line 5, in login_case
-    driver.get(url)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 326, in get
-    self.execute(Command.GET, {'url': url})
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
-    return self._request(command_info[0], url, body=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 495, in _request
-    self._conn.request(method, parsed_url.path, body, headers)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1285, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1234, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1026, in _send_output
-    self.send(msg)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 964, in send
-    self.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 936, in connect
-    (self.host,self.port), self.timeout, self.source_address)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 724, in create_connection
-    raise err
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 713, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [Errno 61] Connection refused
-
-[  ERROR] [2018-06-07 10:51:52,982] [123145407217664] [Result.py(126)] - 测试产生错误： test_login_3_______123456____error____信息不完整___ (test_case.login_case_ddt.LoginCase)
-Traceback (most recent call last):
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_case/login_case_ddt.py", line 33, in tearDown
-    getDriver.screen_shot(self.driver,self.imgName)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_common/getDriver.py", line 23, in screen_shot
-    path=driver.get_screenshot_as_png()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 1042, in get_screenshot_as_png
-    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 1052, in get_screenshot_as_base64
-    return self.execute(Command.SCREENSHOT)['value']
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
-    return self._request(command_info[0], url, body=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 495, in _request
-    self._conn.request(method, parsed_url.path, body, headers)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1285, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1234, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1026, in _send_output
-    self.send(msg)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 964, in send
-    self.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 936, in connect
-    (self.host,self.port), self.timeout, self.source_address)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 724, in create_connection
-    raise err
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 713, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [Errno 61] Connection refused
-
-[   INFO] [2018-06-07 10:51:52,982] [123145407217664] [Result.py(59)] - 测试结束： test_login_3_______123456____error____信息不完整___ (test_case.login_case_ddt.LoginCase)
-[   INFO] [2018-06-07 10:51:52,982] [123145407217664] [Result.py(61)] - 耗时： 0.002823999999999993
+pt1.3: 
+[   INFO] [2018-06-07 14:56:43,585] [123145329356800] [Result.py(48)] - 开始测试： test_login_3_______123456____error____信息不完整___ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:44,000] [123145329356800] [login.py(6)] - 点击首页的登录按钮
+[   INFO] [2018-06-07 14:56:44,431] [123145329356800] [login.py(8)] - 输入登录用户名 
+[   INFO] [2018-06-07 14:56:44,489] [123145329356800] [login.py(10)] - 输入登录密码 123456
+[   INFO] [2018-06-07 14:56:44,575] [123145329356800] [login.py(12)] - 点击登录按钮
+[   INFO] [2018-06-07 14:56:44,936] [123145329356800] [login_case_ddt.py(31)] - 截屏
+[   INFO] [2018-06-07 14:56:45,229] [123145329356800] [Result.py(107)] - 测试执行通过： test_login_3_______123456____error____信息不完整___ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:45,229] [123145329356800] [Result.py(59)] - 测试结束： test_login_3_______123456____error____信息不完整___ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:45,229] [123145329356800] [Result.py(61)] - 耗时： 0.01759299999999997
 
 </pre>
-      <div></div>
+      <div>
+<img class="pic" src='images/test_login_123145329356800_2018_06_07_14_56_45_169.jpg' alt='test_login' title='test_login' />
+</div>
     </div>
   </td>
 </tr>
 
-<tr id='et1.4' class='none'>
-  <td class='errorCase'  colspan='7'>
+<tr id='pt1.4' class='none'>
+  <td class='passCase'  colspan='7'>
     <div class='testcase'>test_login_4___testuser3____12345____error____用户名或密码错误__: 登录</div>
   </td>
-  <td class='errorCase' align='center'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.4')">error</a>
+  <td class='passCase' align='center'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')">pass</a>
   </td>
 </tr>
-<tr id='div_et1.4' class="hiddenRow">
+<tr id='div_pt1.4' class="hiddenRow">
   <td colspan='8'>
     <div class="popup_window">
       <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.4').className = 'hiddenRow' ">[x]</a>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').className = 'hiddenRow' ">[x]</a>
       </div>
       <pre>
-et1.4: 
-[   INFO] [2018-06-07 10:51:52,982] [123145407217664] [Result.py(48)] - 开始测试： test_login_4___testuser3____12345____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
-[   INFO] [2018-06-07 10:51:52,984] [123145407217664] [login_case_ddt.py(32)] - 截屏
-[  ERROR] [2018-06-07 10:51:52,985] [123145407217664] [Result.py(126)] - 测试产生错误： test_login_4___testuser3____12345____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/ddt.py", line 144, in wrapper
-    return func(self, *args, **kwargs)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_case/login_case_ddt.py", line 41, in test_login
-    login.login_case(self.driver,self.url,values1,values2)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_common/login.py", line 5, in login_case
-    driver.get(url)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 326, in get
-    self.execute(Command.GET, {'url': url})
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
-    return self._request(command_info[0], url, body=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 495, in _request
-    self._conn.request(method, parsed_url.path, body, headers)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1285, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1234, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1026, in _send_output
-    self.send(msg)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 964, in send
-    self.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 936, in connect
-    (self.host,self.port), self.timeout, self.source_address)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 724, in create_connection
-    raise err
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 713, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [Errno 61] Connection refused
-
-[  ERROR] [2018-06-07 10:51:52,986] [123145407217664] [Result.py(126)] - 测试产生错误： test_login_4___testuser3____12345____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
-Traceback (most recent call last):
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_case/login_case_ddt.py", line 33, in tearDown
-    getDriver.screen_shot(self.driver,self.imgName)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_common/getDriver.py", line 23, in screen_shot
-    path=driver.get_screenshot_as_png()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 1042, in get_screenshot_as_png
-    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 1052, in get_screenshot_as_base64
-    return self.execute(Command.SCREENSHOT)['value']
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
-    return self._request(command_info[0], url, body=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 495, in _request
-    self._conn.request(method, parsed_url.path, body, headers)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1285, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1234, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1026, in _send_output
-    self.send(msg)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 964, in send
-    self.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 936, in connect
-    (self.host,self.port), self.timeout, self.source_address)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 724, in create_connection
-    raise err
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 713, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [Errno 61] Connection refused
-
-[   INFO] [2018-06-07 10:51:52,986] [123145407217664] [Result.py(59)] - 测试结束： test_login_4___testuser3____12345____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
-[   INFO] [2018-06-07 10:51:52,986] [123145407217664] [Result.py(61)] - 耗时： 0.003033000000000008
+pt1.4: 
+[   INFO] [2018-06-07 14:56:45,230] [123145329356800] [Result.py(48)] - 开始测试： test_login_4___testuser3____12345____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:45,751] [123145329356800] [login.py(6)] - 点击首页的登录按钮
+[   INFO] [2018-06-07 14:56:46,158] [123145329356800] [login.py(8)] - 输入登录用户名 testuser3
+[   INFO] [2018-06-07 14:56:46,301] [123145329356800] [login.py(10)] - 输入登录密码 12345
+[   INFO] [2018-06-07 14:56:46,422] [123145329356800] [login.py(12)] - 点击登录按钮
+[   INFO] [2018-06-07 14:56:47,119] [123145329356800] [login_case_ddt.py(31)] - 截屏
+[   INFO] [2018-06-07 14:56:47,415] [123145329356800] [Result.py(107)] - 测试执行通过： test_login_4___testuser3____12345____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:47,415] [123145329356800] [Result.py(59)] - 测试结束： test_login_4___testuser3____12345____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:47,415] [123145329356800] [Result.py(61)] - 耗时： 0.01963399999999993
 
 </pre>
-      <div></div>
+      <div>
+<img class="pic" src='images/test_login_123145329356800_2018_06_07_14_56_47_808.jpg' alt='test_login' title='test_login' />
+</div>
     </div>
   </td>
 </tr>
 
-<tr id='et1.5' class='none'>
-  <td class='errorCase'  colspan='7'>
+<tr id='pt1.5' class='none'>
+  <td class='passCase'  colspan='7'>
     <div class='testcase'>test_login_5___testuser33____123456____error____用户名或密码错误__: 登录</div>
   </td>
-  <td class='errorCase' align='center'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.5')">error</a>
+  <td class='passCase' align='center'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')">pass</a>
   </td>
 </tr>
-<tr id='div_et1.5' class="hiddenRow">
+<tr id='div_pt1.5' class="hiddenRow">
   <td colspan='8'>
     <div class="popup_window">
       <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.5').className = 'hiddenRow' ">[x]</a>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5').className = 'hiddenRow' ">[x]</a>
       </div>
       <pre>
-et1.5: 
-[   INFO] [2018-06-07 10:51:52,986] [123145407217664] [Result.py(48)] - 开始测试： test_login_5___testuser33____123456____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
-[   INFO] [2018-06-07 10:51:52,989] [123145407217664] [login_case_ddt.py(32)] - 截屏
-[  ERROR] [2018-06-07 10:51:52,990] [123145407217664] [Result.py(126)] - 测试产生错误： test_login_5___testuser33____123456____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/ddt.py", line 144, in wrapper
-    return func(self, *args, **kwargs)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_case/login_case_ddt.py", line 41, in test_login
-    login.login_case(self.driver,self.url,values1,values2)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_common/login.py", line 5, in login_case
-    driver.get(url)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 326, in get
-    self.execute(Command.GET, {'url': url})
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
-    return self._request(command_info[0], url, body=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 495, in _request
-    self._conn.request(method, parsed_url.path, body, headers)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1285, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1234, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1026, in _send_output
-    self.send(msg)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 964, in send
-    self.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 936, in connect
-    (self.host,self.port), self.timeout, self.source_address)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 724, in create_connection
-    raise err
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 713, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [Errno 61] Connection refused
-
-[  ERROR] [2018-06-07 10:51:52,991] [123145407217664] [Result.py(126)] - 测试产生错误： test_login_5___testuser33____123456____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
-Traceback (most recent call last):
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_case/login_case_ddt.py", line 33, in tearDown
-    getDriver.screen_shot(self.driver,self.imgName)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_common/getDriver.py", line 23, in screen_shot
-    path=driver.get_screenshot_as_png()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 1042, in get_screenshot_as_png
-    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 1052, in get_screenshot_as_base64
-    return self.execute(Command.SCREENSHOT)['value']
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
-    return self._request(command_info[0], url, body=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 495, in _request
-    self._conn.request(method, parsed_url.path, body, headers)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1285, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1234, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1026, in _send_output
-    self.send(msg)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 964, in send
-    self.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 936, in connect
-    (self.host,self.port), self.timeout, self.source_address)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 724, in create_connection
-    raise err
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 713, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [Errno 61] Connection refused
-
-[   INFO] [2018-06-07 10:51:52,991] [123145407217664] [Result.py(59)] - 测试结束： test_login_5___testuser33____123456____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
-[   INFO] [2018-06-07 10:51:52,991] [123145407217664] [Result.py(61)] - 耗时： 0.0040739999999999665
+pt1.5: 
+[   INFO] [2018-06-07 14:56:47,415] [123145329356800] [Result.py(48)] - 开始测试： test_login_5___testuser33____123456____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:47,902] [123145329356800] [login.py(6)] - 点击首页的登录按钮
+[   INFO] [2018-06-07 14:56:48,215] [123145329356800] [login.py(8)] - 输入登录用户名 testuser33
+[   INFO] [2018-06-07 14:56:48,373] [123145329356800] [login.py(10)] - 输入登录密码 123456
+[   INFO] [2018-06-07 14:56:48,582] [123145329356800] [login.py(12)] - 点击登录按钮
+[   INFO] [2018-06-07 14:56:49,320] [123145329356800] [login_case_ddt.py(31)] - 截屏
+[   INFO] [2018-06-07 14:56:49,600] [123145329356800] [Result.py(107)] - 测试执行通过： test_login_5___testuser33____123456____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:49,601] [123145329356800] [Result.py(59)] - 测试结束： test_login_5___testuser33____123456____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:49,601] [123145329356800] [Result.py(61)] - 耗时： 0.020100999999999924
 
 </pre>
-      <div></div>
+      <div>
+<img class="pic" src='images/test_login_123145329356800_2018_06_07_14_56_49_195.jpg' alt='test_login' title='test_login' />
+</div>
     </div>
   </td>
 </tr>
 
-<tr id='et1.6' class='none'>
-  <td class='errorCase'  colspan='7'>
+<tr id='pt1.6' class='none'>
+  <td class='passCase'  colspan='7'>
     <div class='testcase'>test_login_6___testuser33____12345____error____用户名或密码错误__: 登录</div>
   </td>
-  <td class='errorCase' align='center'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.6')">error</a>
+  <td class='passCase' align='center'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')">pass</a>
   </td>
 </tr>
-<tr id='div_et1.6' class="hiddenRow">
+<tr id='div_pt1.6' class="hiddenRow">
   <td colspan='8'>
     <div class="popup_window">
       <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.6').className = 'hiddenRow' ">[x]</a>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.6').className = 'hiddenRow' ">[x]</a>
       </div>
       <pre>
-et1.6: 
-[   INFO] [2018-06-07 10:51:52,991] [123145407217664] [Result.py(48)] - 开始测试： test_login_6___testuser33____12345____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
-[   INFO] [2018-06-07 10:51:52,993] [123145407217664] [login_case_ddt.py(32)] - 截屏
-[  ERROR] [2018-06-07 10:51:52,994] [123145407217664] [Result.py(126)] - 测试产生错误： test_login_6___testuser33____12345____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
-Traceback (most recent call last):
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/ddt.py", line 144, in wrapper
-    return func(self, *args, **kwargs)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_case/login_case_ddt.py", line 41, in test_login
-    login.login_case(self.driver,self.url,values1,values2)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_common/login.py", line 5, in login_case
-    driver.get(url)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 326, in get
-    self.execute(Command.GET, {'url': url})
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
-    return self._request(command_info[0], url, body=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 495, in _request
-    self._conn.request(method, parsed_url.path, body, headers)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1285, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1234, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1026, in _send_output
-    self.send(msg)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 964, in send
-    self.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 936, in connect
-    (self.host,self.port), self.timeout, self.source_address)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 724, in create_connection
-    raise err
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 713, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [Errno 61] Connection refused
-
-[  ERROR] [2018-06-07 10:51:52,994] [123145407217664] [Result.py(126)] - 测试产生错误： test_login_6___testuser33____12345____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
-Traceback (most recent call last):
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_case/login_case_ddt.py", line 33, in tearDown
-    getDriver.screen_shot(self.driver,self.imgName)
-  File "/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_common/getDriver.py", line 23, in screen_shot
-    path=driver.get_screenshot_as_png()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 1042, in get_screenshot_as_png
-    return base64.b64decode(self.get_screenshot_as_base64().encode('ascii'))
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 1052, in get_screenshot_as_base64
-    return self.execute(Command.SCREENSHOT)['value']
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 312, in execute
-    response = self.command_executor.execute(driver_command, params)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 472, in execute
-    return self._request(command_info[0], url, body=data)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/remote/remote_connection.py", line 495, in _request
-    self._conn.request(method, parsed_url.path, body, headers)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
-    self._send_request(method, url, body, headers, encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1285, in _send_request
-    self.endheaders(body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1234, in endheaders
-    self._send_output(message_body, encode_chunked=encode_chunked)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1026, in _send_output
-    self.send(msg)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 964, in send
-    self.connect()
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 936, in connect
-    (self.host,self.port), self.timeout, self.source_address)
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 724, in create_connection
-    raise err
-  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 713, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [Errno 61] Connection refused
-
-[   INFO] [2018-06-07 10:51:52,994] [123145407217664] [Result.py(59)] - 测试结束： test_login_6___testuser33____12345____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
-[   INFO] [2018-06-07 10:51:52,994] [123145407217664] [Result.py(61)] - 耗时： 0.0029120000000000257
+pt1.6: 
+[   INFO] [2018-06-07 14:56:49,601] [123145329356800] [Result.py(48)] - 开始测试： test_login_6___testuser33____12345____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:51,604] [123145329356800] [login.py(6)] - 点击首页的登录按钮
+[   INFO] [2018-06-07 14:56:53,455] [123145329356800] [login.py(8)] - 输入登录用户名 testuser33
+[   INFO] [2018-06-07 14:56:53,568] [123145329356800] [login.py(10)] - 输入登录密码 12345
+[   INFO] [2018-06-07 14:56:53,643] [123145329356800] [login.py(12)] - 点击登录按钮
+[   INFO] [2018-06-07 14:56:54,155] [123145329356800] [login_case_ddt.py(31)] - 截屏
+[   INFO] [2018-06-07 14:56:54,446] [123145329356800] [Result.py(107)] - 测试执行通过： test_login_6___testuser33____12345____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:54,446] [123145329356800] [Result.py(59)] - 测试结束： test_login_6___testuser33____12345____error____用户名或密码错误__ (test_case.login_case_ddt.LoginCase)
+[   INFO] [2018-06-07 14:56:54,446] [123145329356800] [Result.py(61)] - 耗时： 0.016730000000000023
 
 </pre>
-      <div></div>
+      <div>
+<img class="pic" src='images/test_login_123145329356800_2018_06_07_14_56_54_297.jpg' alt='test_login' title='test_login' />
+</div>
+    </div>
+  </td>
+</tr>
+
+<tr class='passClass'>
+  <td>test_case.release_topic_case.ReleasdTopic: 登录</td>
+  <td>1</td>
+  <td class="passCase">1</td>
+  <td class="failCase">0</td>
+  <td class="errorCase">0</td>
+  <td class="skipCase">0</td>
+  <td style="text-align:right;">100.00%</td>
+  <td>
+    <a href="javascript:showClassDetail('c2',1)">
+      <span class="lang-cn">细节</span>
+      <span class="lang-en">Detail</span>
+    </a>
+  </td>
+</tr>
+
+<tr id='pt2.1' class='none'>
+  <td class='passCase'  colspan='7'>
+    <div class='testcase'>test_topic: 登录</div>
+  </td>
+  <td class='passCase' align='center'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')">pass</a>
+  </td>
+</tr>
+<tr id='div_pt2.1' class="hiddenRow">
+  <td colspan='8'>
+    <div class="popup_window">
+      <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').className = 'hiddenRow' ">[x]</a>
+      </div>
+      <pre>
+pt2.1: 
+[   INFO] [2018-06-07 14:56:54,446] [123145329356800] [login_case_ddt.py(23)] - 退出浏览器
+[   INFO] [2018-06-07 14:56:54,535] [123145329356800] [login_case_ddt.py(23)] - 退出浏览器
+[   INFO] [2018-06-07 14:56:54,536] [123145329356800] [Result.py(48)] - 开始测试： test_topic (test_case.release_topic_case.ReleasdTopic)
+[   INFO] [2018-06-07 14:57:04,129] [123145329356800] [login.py(6)] - 点击首页的登录按钮
+[   INFO] [2018-06-07 14:57:04,695] [123145329356800] [login.py(8)] - 输入登录用户名 testuser3
+[   INFO] [2018-06-07 14:57:05,040] [123145329356800] [login.py(10)] - 输入登录密码 123456
+[   INFO] [2018-06-07 14:57:05,161] [123145329356800] [login.py(12)] - 点击登录按钮
+[   INFO] [2018-06-07 14:57:07,956] [123145329356800] [release_topic.py(7)] - 点击首页的发布话题
+[   INFO] [2018-06-07 14:57:11,693] [123145329356800] [release_topic.py(13)] - 选择板块分享
+[   INFO] [2018-06-07 14:57:12,069] [123145329356800] [release_topic.py(21)] - 填写标题 asdfasdfas
+[   INFO] [2018-06-07 14:57:12,204] [123145329356800] [release_topic.py(23)] - 输入内容 sfasfasfas
+[   INFO] [2018-06-07 14:57:12,388] [123145329356800] [release_topic.py(26)] - 点击发布按钮
+[   INFO] [2018-06-07 14:57:13,106] [123145329356800] [release_topic_case.py(23)] - 截屏
+[   INFO] [2018-06-07 14:57:13,510] [123145329356800] [Result.py(107)] - 测试执行通过： test_topic (test_case.release_topic_case.ReleasdTopic)
+[   INFO] [2018-06-07 14:57:13,510] [123145329356800] [Result.py(59)] - 测试结束： test_topic (test_case.release_topic_case.ReleasdTopic)
+[   INFO] [2018-06-07 14:57:13,510] [123145329356800] [Result.py(61)] - 耗时： 0.05907600000000002
+
+</pre>
+      <div>
+<img class="pic" src='images/test_topic_123145329356800_2018_06_07_14_57_13_745.jpg' alt='test_topic' title='test_topic' />
+</div>
     </div>
   </td>
 </tr>
@@ -1045,12 +744,12 @@ ConnectionRefusedError: [Errno 61] Connection refused
     <span class="lang-cn">合计</span>
     <span class="lang-en">Total</span>
     </td>
-    <td>6</td>
-    <td class="passCase">0</td>
+    <td>7</td>
+    <td class="passCase">7</td>
     <td class="failCase">0</td>
-    <td class="errorCase">6</td>
+    <td class="errorCase">0</td>
     <td class="skipCase">0</td>
-    <td style="text-align:right;">0.00%</td>
+    <td style="text-align:right;">100.00%</td>
     <td>&nbsp;</td>
   </tr>
 </table>

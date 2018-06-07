@@ -1,14 +1,14 @@
 from  unittest2 import TestCase,TestLoader,TestSuite
 import HTMLReport
-from  test_case   import  release_topic_case,login_case_ddt
+from  test_case   import  release_topic_case_ddt,login_case_ddt
 from test_utils import utilsApi
 
 def allTest():
     ''''' 创建测试集'''
     suite1=TestLoader().loadTestsFromTestCase(login_case_ddt.LoginCase)
-    # suite2=TestLoader().loadTestsFromTestCase(login_case)
+    suite2=TestLoader().loadTestsFromTestCase(release_topic_case_ddt.ReleasdTopic)
 
-    alltests=TestSuite([suite1])
+    alltests=TestSuite([suite1,suite2])
     return alltests
 
 if __name__ == "__main__":
