@@ -1,5 +1,6 @@
 from test_pom   import  home_page,login_page
 from HTMLReport import logger
+
 def login_case(driver,url,userName,password):
     driver.get(url)
     logger().info('点击首页的登录按钮')
@@ -10,3 +11,5 @@ def login_case(driver,url,userName,password):
     driver.find_element_by_id(login_page.login_password_id).send_keys(password)
     logger().info('点击登录按钮')
     driver.find_element_by_css_selector(login_page.login_submit_css_selector).click()
+    return driver
+

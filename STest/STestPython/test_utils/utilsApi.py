@@ -2,6 +2,7 @@ import os
 import platform
 import datetime
 import inspect
+import csv
 #创建目录
 def makedirectory(filePath):
     if  os.path.exists(filePath):
@@ -38,3 +39,16 @@ def superiorPath():
 #测试报告存放路径
 def reportPath():
     return makedirectory(superiorPath() + getSystem() + 'test_result' + getSystem() + getYear() + getSystem() + getMouth() + getSystem() + getDay())
+#获取csv数据
+def get_data_csv(filename):
+    users = []
+    with open(filename, 'r') as f:
+        rows = csv.reader(f)
+        for row in rows:
+            users.append(row)
+    return users
+if  __name__=="__main__":
+    i=get_data_csv('/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_data/loginData.csv')
+    print(i)
+    # str=['dsaf','afsdfa'],['asdfas','fasfa']
+    # print(str)

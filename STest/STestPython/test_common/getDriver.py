@@ -23,3 +23,7 @@ def screen_shot(driver,imgName):
     path=driver.get_screenshot_as_png()
     image = base64.b64encode(path)
     AddImage(image,imgName,imgName)
+
+def assert_case(driver,xpath,assertText):
+    str=driver.find_element_by_xpath(xpath).text
+    assert assertText == str

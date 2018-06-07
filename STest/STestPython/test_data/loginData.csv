@@ -1,1 +1,6 @@
 testuser3,123456,success,testuser3
+testuser3,,error,信息不完整。
+,123456,error,信息不完整。
+testuser3,12345,error,用户名或密码错误
+testuser33,123456,error,用户名或密码错误
+testuser33,12345,error,用户名或密码错误
