@@ -32,7 +32,7 @@ class   LoginCase(unittest2.TestCase):
         getDriver.screen_shot(self.driver,self.imgName)
         self.driver.delete_all_cookies()
 
-    @data(*utilsApi.get_data_csv('/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_data/loginData.csv'))
+    @data(*utilsApi.get_data_csv(utilsApi.superiorPath()+'/test_data/loginData.csv'))
     @unpack
     def test_login(self,values1,values2,values3,values4):
         '登录'

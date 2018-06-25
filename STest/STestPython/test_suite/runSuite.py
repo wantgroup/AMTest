@@ -13,7 +13,7 @@ def allTest():
 
 if __name__ == "__main__":
     reportPath=utilsApi.reportPath()
-    runner1 = HTMLReport.TestRunner(report_file_name="123",  # 报告文件名，如果未赋值，将采用“test+时间戳”
+    runner1 = HTMLReport.TestRunner(report_file_name="论坛测试报告",  # 报告文件名，如果未赋值，将采用“test+时间戳”
                                    output_path=reportPath,  # 保存文件夹名，默认“report”
                                    title='测试报告',  # 报告标题，默认“测试报告”
                                    description='测试报告',  # 报告描述，默认“测试描述”

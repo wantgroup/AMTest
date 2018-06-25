@@ -48,7 +48,6 @@ def get_data_csv(filename):
             users.append(row)
     return users
 if  __name__=="__main__":
-    i=get_data_csv('/Users/cloudin/Desktop/project/AMTest/STest/STestPython/test_data/loginData.csv')
+    i=get_data_csv(superiorPath()+'/test_data/topicData.csv')
+
     print(i)
-    # str=['dsaf','afsdfa'],['asdfas','fasfa']
-    # print(str)
