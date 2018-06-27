@@ -26,15 +26,16 @@ class   ReleasdTopic(unittest2.TestCase):
         logger().info("截屏")
         getDriver.screen_shot(self.driver,self.imgName)
 
-    # plate='分享'
-    # title='124423534fagvfadgds'
-    # content='asdgafgagdfhgsdfh'
-
     @data(*utilsApi.get_data_csv(utilsApi.superiorPath()+'/test_data/topicData.csv'))
     @unpack
     def test_topic(self,values1,values2,values3):
-        '发帖'
-        print(values1+":"+":"+values2+":"+values3)
+        '''
+        发帖
+        :param values1: 板块 plate
+        :param values2: 标题 title
+        :param values3: 内容 content
+        :return: null
+        '''
         self.imgName=utilsApi.get_function_name()
         login.login_case(self.driver,self.url,'testuser3','123456')
         logger().info('点击首页的发布话题')
@@ -59,7 +60,7 @@ class   ReleasdTopic(unittest2.TestCase):
         logger().info('点击发布按钮')
         self.driver.find_element_by_xpath(release_topic_page.topic_submit_xpath).click()
         getDriver.assert_case(self.driver, release_topic_page.topic_me_release_details_content_xpath, values3)
-        getDriver.assert_case(self.driver, release_topic_page.topic_me_release_details_title_xpath, values3)
+        getDriver.assert_case(self.driver, release_topic_page.topic_me_release_details_title_xpath, values2)
 
 if __name__=='__main__':
     unittest2.main()
