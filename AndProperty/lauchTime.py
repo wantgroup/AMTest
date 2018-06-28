@@ -21,19 +21,12 @@ class App(object):
         out.stdout.read()
 
     def GetLaunchedTime(self):
-
         o = bytes.decode(self.content)
-        # print("type of o",type(0))
         s = o.split('\n')
-
         for item in s:
-            # print("item find",item.find('ThisTime'))
             if item.find('ThisTime') > -1 :
-                # print('type of item',type(item))
                 item = item.replace('\r',' ')
                 self.startTime = item.split(":")[1]
-                # print("self startTime:",type(self.startTime))
-                # print("this time:",int(self.startTime.strip()))
                 self.startTime = int(self.startTime.strip())
 
         return self.startTime
