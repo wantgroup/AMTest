@@ -5,7 +5,7 @@ import os
 import re
 import threading
 
-switch=''
+switch=1
 def LaunchAppCPU():
     "cpu使用情况命令"
     cmd = 'adb shell dumpsys cpuinfo | grep com.youdao.dict'
@@ -15,18 +15,19 @@ def LaunchAppCPU():
 
 def monkeyApp():
     "monkey"
-    print(5)
-    time.sleep(10   )
-    print(4)
     cmd = 'adb shell monkey -p com.youdao.dict --throttle 120 200'
     subprocess.call(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-    print(3)
+    global switch
+    switch = 3
+    print("monkey结束  %d" % switch)
 
-def setAppCPUSC(switch):
+
+def setAppCPUSCV():
     "读取曝使用情况信息"
-    switch = switch
+    global switch
     while True:
-        if switch==1:
+        print("进入循环 %d" % switch)
+        if switch == 1:
             content=LaunchAppCPU()
             o = bytes.decode(content)
             s = o.split('\n')
@@ -43,14 +44,14 @@ def setAppCPUSC(switch):
                 str(startTime)
                 if ''!=startTime:
                     alldata.append((currentTime,startTime+"%"))
-                print(alldata)
             fileName='cpu.csv'
             saveDataToCsv(fileName, alldata)
-            switch=2
-        else:
-            print(2)
             time.sleep(1)
             switch=1
+            print("结束循环 %d" % switch)
+        elif switch == 3:
+            print("结束循环 %d" % switch)
+            return
 
 def saveDataToCsv(fileName,alldata):
     '写入csv'
@@ -67,9 +68,9 @@ def saveDataToCsv(fileName,alldata):
 if __name__=="__main__":
     threads = []
     T1=threading.Thread(target=monkeyApp)
-    T2=threading.Thread(target=setAppCPUSC,args=(1,))
+    T2=threading.Thread(target=setAppCPUSCV)
     threads.append(T1)
     threads.append(T2)
     for t in threads:
         print(t)
-        t.run()
+        t.start()

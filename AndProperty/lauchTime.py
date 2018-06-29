@@ -62,6 +62,8 @@ class Controller(object):
             writer.writerows(self.alldata)
 
 if __name__ == '__main__':
-    controller = Controller(10)
-    controller.run()
-    controller.saveDataToCsv()
+    # controller = Controller(10)
+    # controller.run()
+    # controller.saveDataToCsv()
+    s=1
+    print("df %d"  % s)
