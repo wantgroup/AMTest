@@ -75,4 +75,4 @@ def saveDataToCsv(fileName,alldata):
     writer.writerows(alldata)
 
 if __name__=="__main__":
-    monkeyApp()
+    pass
