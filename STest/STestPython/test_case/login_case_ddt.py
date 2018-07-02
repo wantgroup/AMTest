@@ -1,3 +1,5 @@
+#!/usr/bin/python
+#coding=utf-8
 import  unittest2
 from test_common    import  getDriver,login
 from HTMLReport import logger
