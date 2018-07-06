@@ -1,0 +1,332 @@
+2018-07-04 15:07:49:503 - info: [Appium] Welcome to Appium v1.8.1
+2018-07-04 15:07:49:552 - info: [Appium] Non-default server args:
+2018-07-04 15:07:49:625 - info: [Appium]   port: 4701
+2018-07-04 15:07:49:669 - info: [Appium]   bootstrapPort: 4905
+2018-07-04 15:07:49:709 - info: [Appium]   sessionOverride: true
+2018-07-04 15:07:49:729 - info: [Appium]   log: D:\python学习\AppiumPython/log/test01.log
+2018-07-04 15:07:49:764 - info: [Appium]   udid: Y15QKCPH278J4
+2018-07-04 15:07:49:769 - info: [Appium]   noReset: true
+2018-07-04 15:07:49:771 - warn: [Appium] Deprecated server args:
+2018-07-04 15:07:49:773 - warn: [Appium]   -U,--udid => --default-capabilities '{"udid":"Y15QKCPH278J4"}'
+2018-07-04 15:07:49:775 - warn: [Appium]   --no-reset => --default-capabilities '{"noReset":true}'
+2018-07-04 15:07:49:817 - info: [Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+2018-07-04 15:07:49:859 - info: [Appium]   udid: Y15QKCPH278J4
+2018-07-04 15:07:49:880 - info: [Appium]   noReset: true
+2018-07-04 15:07:50:140 - info: [Appium] Appium REST http interface listener started on 0.0.0.0:4701
+2018-07-04 15:08:04:555 - info: [HTTP] --> POST /wd/hub/session
+2018-07-04 15:08:04:559 - info: [HTTP] {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"platformName":"Android"}},"desiredCapabilities":{"platformName":"Android","deviceName":"Y15QKCPH278J4","app":"D:\\python学习\\AppiumPython\\apks\\cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","noReset":"true","platforVersion":"5.1","appPackage":"org.cnodejs.android.md"}}
+2018-07-04 15:08:04:576 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"platformName":"Android","deviceName":"Y15QKCPH278J4","app":"D:\\python学习\\AppiumPython\\apks\\cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","noReset":"true","platforVersion":"5.1","appPackage":"org.cnodejs.android.md"},null,{"firstMatch":[{}],"alwaysMatch":{"platformName":"Android"}}]
+2018-07-04 15:08:04:592 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1530716884582 (23:08:04 GMT+0800 (中国标准时间))
+2018-07-04 15:08:04:607 - warn: [BaseDriver] The capabilities ["udid","noReset"] are not standard capabilities and should have an extension prefix
+2018-07-04 15:08:04:649 - warn: [Appium] Could not parse W3C capabilities: 'deviceName' can't be blank. Falling back to JSONWP protocol.
+2018-07-04 15:08:04:654 - warn: [Appium] The following capabilities were provided in the JSONWP desired capabilities that are missing in W3C capabilities: ["udid","noReset","platformName","deviceName","app","appWaitActivity","platforVersion","appPackage"]. Falling back to JSONWP protocol.
+2018-07-04 15:08:04:685 - info: [Appium] Creating new AndroidDriver (v2.7.0) session
+2018-07-04 15:08:04:687 - info: [Appium] Capabilities:
+2018-07-04 15:08:04:692 - info: [Appium]   udid: Y15QKCPH278J4
+2018-07-04 15:08:04:699 - info: [Appium]   noReset: true
+2018-07-04 15:08:04:711 - info: [Appium]   platformName: Android
+2018-07-04 15:08:04:720 - info: [Appium]   deviceName: Y15QKCPH278J4
+2018-07-04 15:08:04:725 - info: [Appium]   app: D:\python学习\AppiumPython\apks\cnode.apk
+2018-07-04 15:08:04:733 - info: [Appium]   appWaitActivity: org.cnodejs.android.md.ui.activity.LaunchActivity
+2018-07-04 15:08:04:738 - info: [Appium]   platforVersion: 5.1
+2018-07-04 15:08:04:744 - info: [Appium]   appPackage: org.cnodejs.android.md
+2018-07-04 15:08:04:819 - info: [debug] [BaseDriver] Creating session with MJSONWP desired capabilities: {"udid":"Y15QKCPH278J4","no...
+2018-07-04 15:08:04:852 - warn: [BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+2018-07-04 15:08:04:884 - warn: [BaseDriver] The following capabilities were provided, but are not recognized by appium: platforVersion.
+2018-07-04 15:08:04:892 - info: [BaseDriver] Session created with session id: e5f7c174-0a39-466a-bb43-ee2295237782
+2018-07-04 15:08:04:897 - info: [debug] [AndroidDriver] Getting Java version
+2018-07-04 15:08:05:199 - info: [AndroidDriver] Java version is: 1.8.0_161
+2018-07-04 15:08:05:204 - info: [ADB] Checking whether adb is present
+2018-07-04 15:08:05:237 - info: [ADB] Found 16 'build-tools' folders under 'C:\Users\zengyang\AppData\Local\Android\sdk' (newest first):
+2018-07-04 15:08:05:245 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/27.0.3
+2018-07-04 15:08:05:250 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/27.0.2
+2018-07-04 15:08:05:259 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/27.0.1
+2018-07-04 15:08:05:266 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/27.0.0
+2018-07-04 15:08:05:284 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/26.0.3
+2018-07-04 15:08:05:285 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/26.0.2
+2018-07-04 15:08:05:289 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/26.0.1
+2018-07-04 15:08:05:311 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/26.0.0
+2018-07-04 15:08:05:320 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/25.0.3
+2018-07-04 15:08:05:330 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/25.0.2
+2018-07-04 15:08:05:334 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/25.0.1
+2018-07-04 15:08:05:349 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/25.0.0
+2018-07-04 15:08:05:371 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/24.0.3
+2018-07-04 15:08:05:375 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/23.0.3
+2018-07-04 15:08:05:377 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/23.0.1
+2018-07-04 15:08:05:384 - info: [ADB]     C:/Users/zengyang/AppData/Local/Android/sdk/build-tools/20.0.0
+2018-07-04 15:08:05:398 - info: [ADB] Using adb.exe from C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe
+2018-07-04 15:08:05:411 - info: [AndroidDriver] Retrieving device list
+2018-07-04 15:08:05:413 - info: [debug] [ADB] Trying to find a connected android device
+2018-07-04 15:08:05:428 - info: [debug] [ADB] Getting connected devices...
+2018-07-04 15:08:05:527 - info: [debug] [ADB] 2 device(s) connected
+2018-07-04 15:08:05:529 - info: [AndroidDriver] Using device: Y15QKCPH278J4
+2018-07-04 15:08:05:544 - info: [debug] [ADB] Setting device id to Y15QKCPH278J4
+2018-07-04 15:08:05:558 - info: [BaseDriver] Using local app 'D:\python学习\AppiumPython\apks\cnode.apk'
+2018-07-04 15:08:05:563 - info: [debug] [AndroidDriver] Checking whether app is actually present
+2018-07-04 15:08:05:594 - info: [AndroidDriver] Starting Android session
+2018-07-04 15:08:05:618 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 wait-for-device'
+2018-07-04 15:08:05:722 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell echo ping'
+2018-07-04 15:08:05:842 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2018-07-04 15:08:05:868 - info: [debug] [ADB] Getting install status for io.appium.settings
+2018-07-04 15:08:05:876 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell pm list packages io.appium.settings'
+2018-07-04 15:08:06:715 - info: [debug] [ADB] App is installed
+2018-07-04 15:08:06:717 - info: [debug] [ADB] Getting package info for 'io.appium.settings'
+2018-07-04 15:08:06:718 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell dumpsys package io.appium.settings'
+2018-07-04 15:08:06:824 - info: [ADB] Checking whether aapt is present
+2018-07-04 15:08:06:831 - info: [ADB] Using aapt.exe from C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\27.0.3\aapt.exe
+2018-07-04 15:08:06:886 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+2018-07-04 15:08:06:891 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell ps'
+2018-07-04 15:08:07:092 - info: [debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2018-07-04 15:08:07:097 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell getprop ro.build.version.sdk'
+2018-07-04 15:08:07:200 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 22
+2018-07-04 15:08:07:204 - info: [debug] [ADB] Device API level: 22
+2018-07-04 15:08:07:235 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell settings put secure mock_location 1'
+2018-07-04 15:08:08:143 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
+2018-07-04 15:08:08:145 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
+2018-07-04 15:08:08:170 - info: [debug] [Logcat] Starting logcat capture
+2018-07-04 15:08:08:278 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2018-07-04 15:08:08:281 - info: [debug] [ADB] Getting install status for io.appium.unlock
+2018-07-04 15:08:08:283 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell pm list packages io.appium.unlock'
+2018-07-04 15:08:09:043 - info: [debug] [ADB] App is installed
+2018-07-04 15:08:09:046 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
+2018-07-04 15:08:09:056 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell dumpsys package io.appium.unlock'
+2018-07-04 15:08:09:214 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+2018-07-04 15:08:09:217 - info: [ADB] Getting device platform version
+2018-07-04 15:08:09:218 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell getprop ro.build.version.release'
+2018-07-04 15:08:09:305 - info: [debug] [ADB] Current device property 'ro.build.version.release': 5.1
+2018-07-04 15:08:09:324 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell wm size'
+2018-07-04 15:08:10:232 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell getprop ro.product.model'
+2018-07-04 15:08:10:327 - info: [debug] [ADB] Current device property 'ro.product.model': M3s
+2018-07-04 15:08:10:335 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell getprop ro.product.manufacturer'
+2018-07-04 15:08:10:454 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': Meizu
+2018-07-04 15:08:10:462 - info: [debug] [AndroidDriver] Parsing package and activity from app manifest
+2018-07-04 15:08:10:536 - info: [ADB] Using the alternative activity name detection method because of: Could not find apkanalyzer.bat in C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\emulator\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\tools\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\tools\bin\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\27.0.3\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\27.0.2\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\27.0.1\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\27.0.0\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\26.0.3\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\26.0.2\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\26.0.1\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\26.0.0\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\25.0.3\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\25.0.2\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\25.0.1\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\25.0.0\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\24.0.3\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\23.0.3\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\23.0.1\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\20.0.0\apkanalyzer.bat. Do you have the Android SDK installed at 'C:\Users\zengyang\AppData\Local\Android\sdk'?
+2018-07-04 15:08:10:549 - info: [ADB] Extracting package and launch activity from manifest
+2018-07-04 15:08:10:636 - info: [ADB] Package name: 'org.cnodejs.android.md'
+2018-07-04 15:08:10:640 - info: [ADB] Main activity name: 'org.cnodejs.android.md.ui.activity.LaunchActivity'
+2018-07-04 15:08:10:643 - info: [debug] [AndroidDriver] Parsed package and activity are: org.cnodejs.android.md/org.cnodejs.android.md.ui.activity.LaunchActivity
+2018-07-04 15:08:10:668 - info: [debug] [ADB] Getting install status for org.cnodejs.android.md
+2018-07-04 15:08:10:685 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell pm list packages org.cnodejs.android.md'
+2018-07-04 15:08:11:549 - info: [debug] [ADB] App is installed
+2018-07-04 15:08:11:553 - info: [debug] [ADB] Getting package info for 'org.cnodejs.android.md'
+2018-07-04 15:08:11:570 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell dumpsys package org.cnodejs.android.md'
+2018-07-04 15:08:11:779 - info: [debug] [ADB] The installed 'org.cnodejs.android.md' package does not require upgrade ('1.4.0' >= '1.4.0')
+2018-07-04 15:08:11:827 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell rm -rf /data/local/tmp/strings.json'
+2018-07-04 15:08:11:970 - info: [debug] [AndroidDriver] Extracting strings from apk
+2018-07-04 15:08:11:977 - info: [debug] [AndroidDriver] D:\python学习\AppiumPython\apks\cnode.apk
+2018-07-04 15:08:11:978 - info: [debug] [AndroidDriver] null
+2018-07-04 15:08:11:981 - info: [debug] [AndroidDriver] C:\Users\zengyang\AppData\Local\Temp\org.cnodejs.android.md
+2018-07-04 15:08:11:985 - info: [debug] [ADB] Extracting strings for language: default
+2018-07-04 15:08:12:608 - info: [ADB] Successfully extracted 179 strings from 'D:\python学习\AppiumPython\apks\cnode.apk' resources for '(default)' configuration
+2018-07-04 15:08:12:943 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 push C\:\\Users\\zengyang\\AppData\\Local\\Temp\\org.cnodejs.android.md\\strings.json /data/local/tmp'
+2018-07-04 15:08:13:143 - info: [debug] [AndroidBootstrap] Watching for bootstrap disconnect
+2018-07-04 15:08:13:165 - info: [debug] [ADB] Forwarding system: 4905 to device: 4724
+2018-07-04 15:08:13:177 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 forward tcp\:4905 tcp\:4724'
+2018-07-04 15:08:13:276 - info: [debug] [UiAutomator] Starting UiAutomator
+2018-07-04 15:08:13:286 - info: [debug] [UiAutomator] Moving to state 'starting'
+2018-07-04 15:08:13:299 - info: [debug] [UiAutomator] Parsing uiautomator jar
+2018-07-04 15:08:13:311 - info: [debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+2018-07-04 15:08:13:313 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 push C\:\\Users\\zengyang\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar /data/local/tmp/'
+2018-07-04 15:08:13:490 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2018-07-04 15:08:13:494 - info: [debug] [ADB] Getting all processes with uiautomator
+2018-07-04 15:08:13:509 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell ps'
+2018-07-04 15:08:13:757 - info: [ADB] No uiautomator process found to kill, continuing...
+2018-07-04 15:08:13:764 - info: [debug] [UiAutomator] Starting UIAutomator
+2018-07-04 15:08:13:771 - info: [debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","Y15QKCPH278J4","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","org.cnodejs.android.md","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+2018-07-04 15:08:14:784 - info: [debug] [UiAutomator] Moving to state 'online'
+2018-07-04 15:08:14:817 - info: [AndroidBootstrap] Android bootstrap socket is now connected
+2018-07-04 15:08:14:826 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell dumpsys window'
+2018-07-04 15:08:14:853 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+2018-07-04 15:08:15:011 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2018-07-04 15:08:15:018 - info: [debug] [ADB] Device API level: 22
+2018-07-04 15:08:15:025 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell am start -W -n org.cnodejs.android.md/org.cnodejs.android.md.ui.activity.LaunchActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2018-07-04 15:08:16:880 - info: [debug] [ADB] Waiting up to 20000ms for activity matching pkg: 'org.cnodejs.android.md' and activity: 'org.cnodejs.android.md.ui.activity.LaunchActivity' to be focused
+2018-07-04 15:08:16:882 - info: [debug] [ADB] Possible activities, to be checked: 'org.cnodejs.android.md.ui.activity.LaunchActivity', 'org.cnodejs.android.md.org.cnodejs.android.md.ui.activity.LaunchActivity'
+2018-07-04 15:08:16:892 - info: [debug] [ADB] Getting focused package and activity
+2018-07-04 15:08:16:898 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell dumpsys window windows'
+2018-07-04 15:08:17:043 - info: [debug] [ADB] Found package: 'org.cnodejs.android.md' and fully qualified activity name : 'org.cnodejs.android.md.ui.activity.LaunchActivity'
+2018-07-04 15:08:17:056 - info: [Appium] New AndroidDriver session created successfully, session e5f7c174-0a39-466a-bb43-ee2295237782 added to master session list
+2018-07-04 15:08:17:092 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1530716897074 (23:08:17 GMT+0800 (中国标准时间))
+2018-07-04 15:08:17:117 - info: [debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"Y15QKCPH278J4","noReset":true,"platformName":"Android","deviceName":"Y15QKCPH278J4","app":"D:\\python学习\\AppiumPython\\apks\\cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","platforVersion":"5.1","appPackage":"org.cnodejs.android.md"},"udid":"Y15QKCPH278J4","noReset":true,"platformName":"Android","deviceName":"Y15QKCPH278J4","app":"D:\\python学习\\AppiumPython\\apks\\cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","platforVersion":"5.1","appPackage":"org.cnodejs.android.md","deviceUDID":"Y15QKCPH278J4","platformVersion":"5.1","deviceScreenSize":"720x1280","deviceModel":"M3s","deviceManufacturer":"Meizu","appWaitPackage":"org.cnodejs.android.md","appActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity"}
+2018-07-04 15:08:17:124 - info: [HTTP] <-- POST /wd/hub/session 200 12567 ms - 1077
+2018-07-04 15:08:17:126 - info: [HTTP] 
+2018-07-04 15:08:27:177 - info: [HTTP] --> POST /wd/hub/session
+2018-07-04 15:08:27:180 - info: [HTTP] {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"platformName":"Android"}},"desiredCapabilities":{"platformName":"Android","deviceName":"Y15QKCPH278J4","app":"D:\\python学习\\AppiumPython\\apks\\cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","noReset":"true","platforVersion":"5.1","appPackage":"org.cnodejs.android.md"}}
+2018-07-04 15:08:27:182 - info: [debug] [W3C] Calling AppiumDriver.createSession() with args: [{"platformName":"Android","deviceName":"Y15QKCPH278J4","app":"D:\\python学习\\AppiumPython\\apks\\cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","noReset":"true","platforVersion":"5.1","appPackage":"org.cnodejs.android.md"},null,{"firstMatch":[{}],"alwaysMatch":{"platformName":"Android"}}]
+2018-07-04 15:08:27:203 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1530716907183 (23:08:27 GMT+0800 (中国标准时间))
+2018-07-04 15:08:27:205 - warn: [BaseDriver] The capabilities ["udid","noReset"] are not standard capabilities and should have an extension prefix
+2018-07-04 15:08:27:208 - warn: [Appium] Could not parse W3C capabilities: 'deviceName' can't be blank. Falling back to JSONWP protocol.
+2018-07-04 15:08:27:208 - warn: [Appium] The following capabilities were provided in the JSONWP desired capabilities that are missing in W3C capabilities: ["udid","noReset","platformName","deviceName","app","appWaitActivity","platforVersion","appPackage"]. Falling back to JSONWP protocol.
+2018-07-04 15:08:27:209 - info: [Appium] Creating new AndroidDriver (v2.7.0) session
+2018-07-04 15:08:27:209 - info: [Appium] Capabilities:
+2018-07-04 15:08:27:209 - info: [Appium]   udid: Y15QKCPH278J4
+2018-07-04 15:08:27:210 - info: [Appium]   noReset: true
+2018-07-04 15:08:27:210 - info: [Appium]   platformName: Android
+2018-07-04 15:08:27:210 - info: [Appium]   deviceName: Y15QKCPH278J4
+2018-07-04 15:08:27:210 - info: [Appium]   app: D:\python学习\AppiumPython\apks\cnode.apk
+2018-07-04 15:08:27:214 - info: [Appium]   appWaitActivity: org.cnodejs.android.md.ui.activity.LaunchActivity
+2018-07-04 15:08:27:216 - info: [Appium]   platforVersion: 5.1
+2018-07-04 15:08:27:216 - info: [Appium]   appPackage: org.cnodejs.android.md
+2018-07-04 15:08:27:217 - info: [Appium] Session override is on. Deleting other 1 active session.
+2018-07-04 15:08:27:220 - info: [Appium] Removing session e5f7c174-0a39-466a-bb43-ee2295237782 from our master session list
+2018-07-04 15:08:27:234 - info: [debug] [AndroidDriver] Shutting down Android driver
+2018-07-04 15:08:27:248 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell am force-stop org.cnodejs.android.md'
+2018-07-04 15:08:28:438 - info: [debug] [ADB] Pressing the HOME button
+2018-07-04 15:08:28:444 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell input keyevent 3'
+2018-07-04 15:08:29:304 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+2018-07-04 15:08:29:324 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-07-04 15:08:29:337 - info: [debug] [UiAutomator] Shutting down UiAutomator
+2018-07-04 15:08:29:340 - info: [debug] [UiAutomator] Moving to state 'stopping'
+2018-07-04 15:08:29:347 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+2018-07-04 15:08:29:349 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+2018-07-04 15:08:29:352 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+2018-07-04 15:08:29:353 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] [CDS]close[4724]
+2018-07-04 15:08:29:354 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+2018-07-04 15:08:29:365 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2018-07-04 15:08:29:377 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+2018-07-04 15:08:29:380 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2018-07-04 15:08:29:384 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2018-07-04 15:08:29:393 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2018-07-04 15:08:29:398 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+2018-07-04 15:08:29:402 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+2018-07-04 15:08:29:419 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+2018-07-04 15:08:29:422 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+2018-07-04 15:08:29:449 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 14.639
+2018-07-04 15:08:29:461 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
+2018-07-04 15:08:29:462 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+2018-07-04 15:08:29:475 - info: [debug] [UiAutomator] UiAutomator shut down normally
+2018-07-04 15:08:29:478 - info: [debug] [UiAutomator] Moving to state 'stopped'
+2018-07-04 15:08:29:499 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2018-07-04 15:08:29:502 - info: [debug] [ADB] Getting all processes with uiautomator
+2018-07-04 15:08:29:503 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell ps'
+2018-07-04 15:08:29:816 - info: [ADB] No uiautomator process found to kill, continuing...
+2018-07-04 15:08:29:838 - info: [debug] [UiAutomator] Moving to state 'stopped'
+2018-07-04 15:08:29:891 - info: [debug] [Logcat] Stopping logcat capture
+2018-07-04 15:08:29:930 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell am force-stop io.appium.unlock'
+2018-07-04 15:08:30:782 - info: [debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+2018-07-04 15:08:30:799 - info: [debug] [BaseDriver] Creating session with MJSONWP desired capabilities: {"udid":"Y15QKCPH278J4","no...
+2018-07-04 15:08:30:808 - warn: [BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+2018-07-04 15:08:30:832 - warn: [BaseDriver] The following capabilities were provided, but are not recognized by appium: platforVersion.
+2018-07-04 15:08:30:862 - info: [BaseDriver] Session created with session id: af6cc829-8680-4a24-8ba8-2bb5f85970e7
+2018-07-04 15:08:30:872 - info: [debug] [AndroidDriver] Getting Java version
+2018-07-04 15:08:31:156 - info: [AndroidDriver] Java version is: 1.8.0_161
+2018-07-04 15:08:31:170 - info: [AndroidDriver] Retrieving device list
+2018-07-04 15:08:31:172 - info: [debug] [ADB] Trying to find a connected android device
+2018-07-04 15:08:31:174 - info: [debug] [ADB] Getting connected devices...
+2018-07-04 15:08:31:280 - info: [debug] [ADB] 2 device(s) connected
+2018-07-04 15:08:31:284 - info: [AndroidDriver] Using device: Y15QKCPH278J4
+2018-07-04 15:08:31:307 - info: [debug] [ADB] Setting device id to Y15QKCPH278J4
+2018-07-04 15:08:31:312 - info: [BaseDriver] Using local app 'D:\python学习\AppiumPython\apks\cnode.apk'
+2018-07-04 15:08:31:327 - info: [debug] [AndroidDriver] Checking whether app is actually present
+2018-07-04 15:08:31:328 - info: [AndroidDriver] Starting Android session
+2018-07-04 15:08:31:345 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 wait-for-device'
+2018-07-04 15:08:31:481 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell echo ping'
+2018-07-04 15:08:31:595 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2018-07-04 15:08:31:597 - info: [debug] [ADB] Getting install status for io.appium.settings
+2018-07-04 15:08:31:602 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell pm list packages io.appium.settings'
+2018-07-04 15:08:32:381 - info: [debug] [ADB] App is installed
+2018-07-04 15:08:32:382 - info: [debug] [ADB] Getting package info for 'io.appium.settings'
+2018-07-04 15:08:32:387 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell dumpsys package io.appium.settings'
+2018-07-04 15:08:32:603 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+2018-07-04 15:08:32:609 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell ps'
+2018-07-04 15:08:32:928 - info: [debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2018-07-04 15:08:32:965 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell getprop ro.build.version.sdk'
+2018-07-04 15:08:33:115 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 22
+2018-07-04 15:08:33:119 - info: [debug] [ADB] Device API level: 22
+2018-07-04 15:08:33:121 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell settings put secure mock_location 1'
+2018-07-04 15:08:33:936 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
+2018-07-04 15:08:33:937 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
+2018-07-04 15:08:33:938 - info: [debug] [Logcat] Starting logcat capture
+2018-07-04 15:08:34:025 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2018-07-04 15:08:34:027 - info: [debug] [ADB] Getting install status for io.appium.unlock
+2018-07-04 15:08:34:029 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell pm list packages io.appium.unlock'
+2018-07-04 15:08:34:770 - info: [debug] [ADB] App is installed
+2018-07-04 15:08:34:782 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
+2018-07-04 15:08:34:834 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell dumpsys package io.appium.unlock'
+2018-07-04 15:08:35:087 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+2018-07-04 15:08:35:089 - info: [ADB] Getting device platform version
+2018-07-04 15:08:35:096 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell getprop ro.build.version.release'
+2018-07-04 15:08:35:231 - info: [debug] [ADB] Current device property 'ro.build.version.release': 5.1
+2018-07-04 15:08:35:236 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell wm size'
+2018-07-04 15:08:36:190 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell getprop ro.product.model'
+2018-07-04 15:08:36:276 - info: [debug] [ADB] Current device property 'ro.product.model': M3s
+2018-07-04 15:08:36:285 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell getprop ro.product.manufacturer'
+2018-07-04 15:08:36:543 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': Meizu
+2018-07-04 15:08:36:548 - info: [debug] [AndroidDriver] Parsing package and activity from app manifest
+2018-07-04 15:08:36:576 - info: [ADB] Using the alternative activity name detection method because of: Could not find apkanalyzer.bat in C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\emulator\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\tools\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\tools\bin\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\27.0.3\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\27.0.2\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\27.0.1\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\27.0.0\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\26.0.3\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\26.0.2\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\26.0.1\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\26.0.0\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\25.0.3\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\25.0.2\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\25.0.1\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\25.0.0\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\24.0.3\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\23.0.3\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\23.0.1\apkanalyzer.bat,C:\Users\zengyang\AppData\Local\Android\sdk\build-tools\20.0.0\apkanalyzer.bat. Do you have the Android SDK installed at 'C:\Users\zengyang\AppData\Local\Android\sdk'?
+2018-07-04 15:08:36:582 - info: [ADB] Extracting package and launch activity from manifest
+2018-07-04 15:08:36:670 - info: [ADB] Package name: 'org.cnodejs.android.md'
+2018-07-04 15:08:36:672 - info: [ADB] Main activity name: 'org.cnodejs.android.md.ui.activity.LaunchActivity'
+2018-07-04 15:08:36:674 - info: [debug] [AndroidDriver] Parsed package and activity are: org.cnodejs.android.md/org.cnodejs.android.md.ui.activity.LaunchActivity
+2018-07-04 15:08:36:688 - info: [debug] [ADB] Getting install status for org.cnodejs.android.md
+2018-07-04 15:08:36:694 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell pm list packages org.cnodejs.android.md'
+2018-07-04 15:08:37:492 - info: [debug] [ADB] App is installed
+2018-07-04 15:08:37:494 - info: [debug] [ADB] Getting package info for 'org.cnodejs.android.md'
+2018-07-04 15:08:37:497 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell dumpsys package org.cnodejs.android.md'
+2018-07-04 15:08:37:677 - info: [debug] [ADB] The installed 'org.cnodejs.android.md' package does not require upgrade ('1.4.0' >= '1.4.0')
+2018-07-04 15:08:37:681 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell rm -rf /data/local/tmp/strings.json'
+2018-07-04 15:08:37:819 - info: [debug] [AndroidDriver] Extracting strings from apk
+2018-07-04 15:08:37:823 - info: [debug] [AndroidDriver] D:\python学习\AppiumPython\apks\cnode.apk
+2018-07-04 15:08:37:825 - info: [debug] [AndroidDriver] null
+2018-07-04 15:08:37:826 - info: [debug] [AndroidDriver] C:\Users\zengyang\AppData\Local\Temp\org.cnodejs.android.md
+2018-07-04 15:08:37:827 - info: [debug] [ADB] Extracting strings for language: default
+2018-07-04 15:08:38:359 - info: [ADB] Successfully extracted 179 strings from 'D:\python学习\AppiumPython\apks\cnode.apk' resources for '(default)' configuration
+2018-07-04 15:08:38:570 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 push C\:\\Users\\zengyang\\AppData\\Local\\Temp\\org.cnodejs.android.md\\strings.json /data/local/tmp'
+2018-07-04 15:08:38:758 - info: [debug] [AndroidBootstrap] Watching for bootstrap disconnect
+2018-07-04 15:08:38:763 - info: [debug] [ADB] Forwarding system: 4905 to device: 4724
+2018-07-04 15:08:38:766 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 forward tcp\:4905 tcp\:4724'
+2018-07-04 15:08:38:891 - info: [debug] [UiAutomator] Starting UiAutomator
+2018-07-04 15:08:38:902 - info: [debug] [UiAutomator] Moving to state 'starting'
+2018-07-04 15:08:38:909 - info: [debug] [UiAutomator] Parsing uiautomator jar
+2018-07-04 15:08:38:921 - info: [debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+2018-07-04 15:08:38:923 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 push C\:\\Users\\zengyang\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar /data/local/tmp/'
+2018-07-04 15:08:39:077 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2018-07-04 15:08:39:080 - info: [debug] [ADB] Getting all processes with uiautomator
+2018-07-04 15:08:39:087 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell ps'
+2018-07-04 15:08:39:286 - info: [ADB] No uiautomator process found to kill, continuing...
+2018-07-04 15:08:39:290 - info: [debug] [UiAutomator] Starting UIAutomator
+2018-07-04 15:08:39:292 - info: [debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","Y15QKCPH278J4","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","org.cnodejs.android.md","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+2018-07-04 15:08:40:202 - info: [debug] [UiAutomator] Moving to state 'online'
+2018-07-04 15:08:40:204 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+2018-07-04 15:08:40:208 - info: [AndroidBootstrap] Android bootstrap socket is now connected
+2018-07-04 15:08:40:220 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell dumpsys window'
+2018-07-04 15:08:40:237 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+2018-07-04 15:08:40:346 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2018-07-04 15:08:40:357 - info: [debug] [ADB] Device API level: 22
+2018-07-04 15:08:40:358 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell am start -W -n org.cnodejs.android.md/org.cnodejs.android.md.ui.activity.LaunchActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2018-07-04 15:08:41:944 - info: [debug] [ADB] Waiting up to 20000ms for activity matching pkg: 'org.cnodejs.android.md' and activity: 'org.cnodejs.android.md.ui.activity.LaunchActivity' to be focused
+2018-07-04 15:08:41:949 - info: [debug] [ADB] Possible activities, to be checked: 'org.cnodejs.android.md.ui.activity.LaunchActivity', 'org.cnodejs.android.md.org.cnodejs.android.md.ui.activity.LaunchActivity'
+2018-07-04 15:08:41:950 - info: [debug] [ADB] Getting focused package and activity
+2018-07-04 15:08:41:966 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell dumpsys window windows'
+2018-07-04 15:08:42:115 - info: [debug] [ADB] Found package: 'org.cnodejs.android.md' and fully qualified activity name : 'org.cnodejs.android.md.ui.activity.LaunchActivity'
+2018-07-04 15:08:42:119 - info: [Appium] New AndroidDriver session created successfully, session af6cc829-8680-4a24-8ba8-2bb5f85970e7 added to master session list
+2018-07-04 15:08:42:121 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1530716922120 (23:08:42 GMT+0800 (中国标准时间))
+2018-07-04 15:08:42:126 - info: [debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"Y15QKCPH278J4","noReset":true,"platformName":"Android","deviceName":"Y15QKCPH278J4","app":"D:\\python学习\\AppiumPython\\apks\\cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","platforVersion":"5.1","appPackage":"org.cnodejs.android.md"},"udid":"Y15QKCPH278J4","noReset":true,"platformName":"Android","deviceName":"Y15QKCPH278J4","app":"D:\\python学习\\AppiumPython\\apks\\cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","platforVersion":"5.1","appPackage":"org.cnodejs.android.md","deviceUDID":"Y15QKCPH278J4","platformVersion":"5.1","deviceScreenSize":"720x1280","deviceModel":"M3s","deviceManufacturer":"Meizu","appWaitPackage":"org.cnodejs.android.md","appActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity"}
+2018-07-04 15:08:42:131 - info: [HTTP] <-- POST /wd/hub/session 200 14959 ms - 1077
+2018-07-04 15:08:42:132 - info: [HTTP] 
+2018-07-04 15:08:52:154 - info: [HTTP] --> POST /wd/hub/session/af6cc829-8680-4a24-8ba8-2bb5f85970e7/element
+2018-07-04 15:08:52:175 - info: [HTTP] {"using":"-android uiautomator","value":"new UiSelector().className(\\\"android.widget.ImageButton\\\").index(0)","sessionId":"af6cc829-8680-4a24-8ba8-2bb5f85970e7"}
+2018-07-04 15:08:52:180 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().className(\\\"android.widget.ImageButton\\\").index(0)","af6cc829-8680-4a24-8ba8-2bb5f85970e7"]
+2018-07-04 15:08:52:208 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-07-04 15:08:52:226 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-07-04 15:08:52:261 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\\\"android.widget.ImageButton\\\").index(0)","context":"","multiple":false}}
+2018-07-04 15:08:52:278 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\\\"android.widget.ImageButton\\\").index(0)","context":"","multiple":false}}
+2018-07-04 15:08:52:328 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-07-04 15:08:52:335 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-07-04 15:08:52:352 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-07-04 15:08:52:368 - info: [debug] [MJSONWP] Matched JSONWP error code 9 to UnknownCommandError
+2018-07-04 15:08:52:547 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className(\"android.widget.ImageButton\").index(0)' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+2018-07-04 15:08:52:562 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className(\"android.widget.ImageButton\").index(0)
+2018-07-04 15:08:52:567 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: \"android.widget.ImageButton\"
+2018-07-04 15:08:52:568 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: \"android.widget.ImageButton\"
+2018-07-04 15:08:52:575 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":9,"value":"Could not parse UiSelector argument: \\\"android.widget.ImageButton\\\" is not a string"}
+2018-07-04 15:08:52:583 - info: [HTTP] <-- POST /wd/hub/session/af6cc829-8680-4a24-8ba8-2bb5f85970e7/element 500 428 ms - 173
+2018-07-04 15:08:52:590 - info: [HTTP] 
+2018-07-04 15:09:25:704 - info: [Appium] Received SIGINT - shutting down
+2018-07-04 15:09:25:725 - error: [UiAutomator] UiAutomator exited unexpectedly with code 3221225786, signal null
+2018-07-04 15:09:25:735 - info: [debug] [UiAutomator] Moving to state 'stopped'
+2018-07-04 15:09:25:835 - error: [Logcat] Logcat terminated with code 3221225786, signal null
+2018-07-04 15:09:25:898 - info: [debug] [AndroidDriver] Shutting down Android driver
+2018-07-04 15:09:26:033 - info: [debug] [ADB] Running 'C:\Users\zengyang\AppData\Local\Android\sdk\platform-tools\adb.exe -P 5037 -s Y15QKCPH278J4 shell am force-stop org.cnodejs.android.md'
+2018-07-04 15:09:26:074 - warn: [Appium] Closing session, cause was 'UiAUtomator shut down unexpectedly'
+2018-07-04 15:09:26:135 - info: [Appium] Removing session af6cc829-8680-4a24-8ba8-2bb5f85970e7 from our master session list
