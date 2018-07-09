@@ -3,11 +3,9 @@ import sys
 sys.path.append("D:\python学习\AppiumPython")
 
 import unittest
-import threading
 import multiprocessing
 from util.server import Server
 import time
-from appium import webdriver
 from business.login_business import LoginBusiness
 from util.write_user_command import WriteUserCommand
 from util.tools import Tools
@@ -15,12 +13,14 @@ tool = Tools()
 rootpath = tool.getRootPath()
 
 class ParameTestCase(unittest.TestCase):
+
 	def __init__(self,methodName='runTest',parame=None):
 		super(ParameTestCase,self).__init__(methodName)
 		global parames
 		parames = parame
 
 class CaseTest(ParameTestCase):
+
 	@classmethod
 	def setUpClass(cls):
 		print( "setUpclass---->",parames)
@@ -65,15 +65,14 @@ def get_suite(i):
 
 if __name__ == '__main__':
 	appium_init()
-	
-	# get_suite(0)
-	threads = []
-	for i in range(get_count()):
-		print( i)
-		t = multiprocessing.Process(target=get_suite,args=(i,))
-		threads.append(t)
-	for j in threads:
-		j.start()
 
-		time.sleep(1)
-	time.sleep(80)
+	# threads = []
+	# for i in range(get_count()):
+	# 	print( i)
+	# 	t = multiprocessing.Process(target=get_suite,args=(i,))
+	# 	threads.append(t)
+	# for j in threads:
+	# 	j.start()
+    #
+	# 	time.sleep(1)
+	# time.sleep(80)

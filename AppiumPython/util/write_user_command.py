@@ -8,14 +8,13 @@ from util.tools import Tools
 
 tool = Tools()
 rootpath = tool.getRootPath()
-yaml_path = os.path.join(rootpath, 'config', 'userconfig.yaml')
+yaml_path = os.path.join(rootpath, 'config', 'userconfig1.yaml')
 
 class WriteUserCommand:
     def read_data(self):
         '''
         加载yaml数据
         '''
-        
         print(yaml_path)
         with open(yaml_path) as fr:
             data = yaml.load(fr)
@@ -59,4 +58,4 @@ class WriteUserCommand:
 
 if __name__ == '__main__':
     write_file = WriteUserCommand()
-    # print(write_file.get_file_lines())
+    print(write_file.get_value('user_info_0','port'))

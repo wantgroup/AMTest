@@ -33,3 +33,6 @@ class BaseDriver:
             "http://127.0.0.1:" + port + "/wd/hub", capabilities)
         time.sleep(10)
         return driver
+
+if __name__=="__main__":
+    d=BaseDriver().android_driver()

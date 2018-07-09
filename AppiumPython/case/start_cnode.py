@@ -4,7 +4,7 @@ from appium import webdriver
 capabilities = {
     "platformName": "Android",
     # "automationName":"UiAutomator2",
-    "deviceName": "Y15QKCPH278J4",
+    "deviceName": "36165441",
     "appPackage":"org.cnodejs.android.md",
     "appActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity",
     "noReset": "true"
