@@ -20,14 +20,12 @@ class BaseDriver:
         port = write_file.get_value('user_info_' + str(i), 'port')
         capabilities = {
             "platformName": "Android",
-            # "automationName": "UiAutomator2",
             "deviceName": devices,
             "app": apkpath,
             "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity",
             "noReset": "true",
-            "platforVersion": "5.1",
+            # "platforVersion": "5.1",
             "appPackage": "org.cnodejs.android.md"
-            #"newCommandTimeout":'180'
         }
         driver = webdriver.Remote(
             "http://127.0.0.1:" + port + "/wd/hub", capabilities)

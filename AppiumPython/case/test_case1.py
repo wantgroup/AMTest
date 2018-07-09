@@ -1,10 +1,10 @@
 #coding=utf-8
 import sys
-sys.path.append("D:\python学习\AppiumPython")
+sys.path.append("/Users/cloudin/Desktop/project/AMTest/AppiumPython")
 
 import unittest
-import multiprocessing
 from util.server import Server
+import multiprocessing
 import time
 from business.login_business import LoginBusiness
 from util.write_user_command import WriteUserCommand
@@ -66,13 +66,13 @@ def get_suite(i):
 if __name__ == '__main__':
 	appium_init()
 
-	# threads = []
-	# for i in range(get_count()):
-	# 	print( i)
-	# 	t = multiprocessing.Process(target=get_suite,args=(i,))
-	# 	threads.append(t)
-	# for j in threads:
-	# 	j.start()
-    #
-	# 	time.sleep(1)
-	# time.sleep(80)
+	threads = []
+	for i in range(get_count()):
+		print( i)
+		t = multiprocessing.Process(target=get_suite,args=(i,))
+		threads.append(t)
+	for j in threads:
+		j.start()
+
+		time.sleep(1)
+	time.sleep(80)
