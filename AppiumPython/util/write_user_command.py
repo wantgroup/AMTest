@@ -2,7 +2,7 @@
 import yaml
 import os
 import sys
-sys.path.append('D:\python学习\AppiumPython')
+sys.path.append('/Users/cloudin/Desktop/project/AMTest/AppiumPython')
 
 from util.tools import Tools
 
@@ -58,4 +58,5 @@ class WriteUserCommand:
 
 if __name__ == '__main__':
     write_file = WriteUserCommand()
-    print(write_file.get_value('user_info_0','port'))
+   # print(write_file.get_value('user_info_0','port'))
+    write_file.clear_data()
