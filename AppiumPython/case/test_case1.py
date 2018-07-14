@@ -29,7 +29,7 @@ class CaseTest(unittest.TestCase):
 		print ("this is setup\n")
 
 
-	def test_01(self,i):
+	def test_01(self):
 		self.login_business.login_token()
 	
 	def tearDown(self):

@@ -1,0 +1,75 @@
+[   INFO] [2018-07-14 14:04:55,364] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 14:04:55,389] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:05:05,518] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 14:05:05,524] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:05:18,060] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 14:05:18,063] [123145483235328] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  ERROR] [2018-07-14 14:05:19,068] [123145483235328] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+TypeError: test_01() missing 1 required positional argument: 'i'
+
+[   INFO] [2018-07-14 14:05:19,070] [123145483235328] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 14:05:19,072] [123145483235328] [Result.py(61)] - 耗时： 0.002938999999999997
+[  ERROR] [2018-07-14 14:05:22,067] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 14:05:22,070] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:26.703084
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 14:22:04,667] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 14:22:04,689] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:22:14,265] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 14:22:14,271] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:22:26,834] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 14:22:26,836] [123145436590080] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  ERROR] [2018-07-14 14:22:27,840] [123145436590080] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+TypeError: test_01() missing 1 required positional argument: 'i'
+
+[   INFO] [2018-07-14 14:22:27,842] [123145436590080] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 14:22:27,843] [123145436590080] [Result.py(61)] - 耗时： 0.002360000000000001
+[  ERROR] [2018-07-14 14:22:30,840] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 14:22:30,842] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:26.173501
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 14:24:12,888] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 14:24:12,912] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:24:22,343] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 14:24:22,350] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:24:34,812] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 14:24:34,814] [123145567158272] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 14:24:34,816] [123145567158272] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/e83fa2cb-4717-4b69-8127-2f572898c242/element {"using": "-android uiautomator", "value": "new UiSelector().className(\\\"android.widget.ImageButton\\\").index(0)", "sessionId": "e83fa2cb-4717-4b69-8127-2f572898c242"}
+[  DEBUG] [2018-07-14 14:24:34,882] [123145567158272] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 14:24:35,886] [123145567158272] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 10, in login_token
+    self.login_handle.click_traggle_button()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 13, in click_traggle_button
+    self.index_page.get_traggle_button().click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+[   INFO] [2018-07-14 14:24:35,889] [123145567158272] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 14:24:35,890] [123145567158272] [Result.py(61)] - 耗时： 0.00970900000000001
+[  ERROR] [2018-07-14 14:24:38,817] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 14:24:38,820] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:25.929560
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1

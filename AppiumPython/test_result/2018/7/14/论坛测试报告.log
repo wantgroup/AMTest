@@ -1,0 +1,88 @@
+[   INFO] [2018-07-14 13:53:02,493] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2018-07-14 13:53:02,493] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 13:53:02,543] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4701/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 13:53:02,544] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 13:53:12,184] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 13:53:12,190] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4701/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 13:53:13,002] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 13:53:13,008] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 13:53:22,074] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 13:53:22,077] [123145380855808] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  ERROR] [2018-07-14 13:53:23,081] [123145380855808] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+TypeError: test_01() missing 1 required positional argument: 'i'
+
+[   INFO] [2018-07-14 13:53:23,083] [123145380855808] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 13:53:23,084] [123145380855808] [Result.py(61)] - 耗时： 0.0023350000000000037
+[  DEBUG] [2018-07-14 13:53:24,811] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 13:53:24,814] [123145513177088] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  ERROR] [2018-07-14 13:53:25,818] [123145513177088] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+TypeError: test_01() missing 1 required positional argument: 'i'
+
+[   INFO] [2018-07-14 13:53:25,819] [123145513177088] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 13:53:25,821] [123145513177088] [Result.py(61)] - 耗时： 0.0023880000000000012
+[  ERROR] [2018-07-14 13:53:26,080] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 13:53:26,082] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:23.587235
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[  ERROR] [2018-07-14 13:53:28,818] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 13:53:28,821] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:26.326047
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 14:02:52,904] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2018-07-14 14:02:52,904] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 14:02:52,927] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:02:52,929] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4701/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:03:00,431] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 14:03:00,436] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4701/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:03:02,455] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 14:03:02,460] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:03:10,175] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 14:03:10,177] [123145461108736] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  ERROR] [2018-07-14 14:03:11,185] [123145461108736] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+TypeError: test_01() missing 1 required positional argument: 'i'
+
+[   INFO] [2018-07-14 14:03:11,186] [123145461108736] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 14:03:11,187] [123145461108736] [Result.py(61)] - 耗时： 0.0023920000000000052
+[  ERROR] [2018-07-14 14:03:14,182] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 14:03:14,185] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:21.278230
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[  DEBUG] [2018-07-14 14:03:15,000] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 14:03:15,002] [123145464803328] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  ERROR] [2018-07-14 14:03:16,007] [123145464803328] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+TypeError: test_01() missing 1 required positional argument: 'i'
+
+[   INFO] [2018-07-14 14:03:16,009] [123145464803328] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 14:03:16,010] [123145464803328] [Result.py(61)] - 耗时： 0.0022030000000000105
+[  ERROR] [2018-07-14 14:03:19,006] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 14:03:19,009] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:26.102615
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
