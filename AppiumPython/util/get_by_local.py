@@ -15,7 +15,7 @@ class GetByLocal(object):
 			try:
 				if by == 'id':
 					if local_by=="org.cnodejs.android.md:id/edt_access_token":
-						return self.driver.find_element_by_id("org.cnodejs.android.md:id/edt_access_token").click()
+						return self.driver.find_element_by_id("org.cnodejs.android.md:id/edt_access_token").send_keys("rgerwhgewrhew")
 					else:
 						return self.driver.find_element_by_id(local_by)
 
