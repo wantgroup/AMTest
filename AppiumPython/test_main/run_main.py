@@ -1,5 +1,4 @@
 from case.test_case1 import CaseTest
-from  unittest2 import TestCase,TestLoader,TestSuite
 import unittest
 from util.server import Server
 from util.write_user_command import WriteUserCommand

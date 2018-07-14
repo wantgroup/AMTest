@@ -14,7 +14,11 @@ class GetByLocal(object):
 			local_by = local.split('>')[1]
 			try:
 				if by == 'id':
-					return self.driver.find_element_by_id(local_by)
+					if local_by=="org.cnodejs.android.md:id/edt_access_token":
+						return self.driver.find_element_by_id("org.cnodejs.android.md:id/edt_access_token").click()
+					else:
+						return self.driver.find_element_by_id(local_by)
+
 				elif by == 'className':
 					return self.driver.find_element_by_class_name(local_by)
 				elif by == 'android_uiautormator':
@@ -22,7 +26,6 @@ class GetByLocal(object):
 				else:
 					return self.driver.find_element_by_xpath(local_by)
 			except:
-				#self.driver.save_screenshot("../jpg/test02.png")
 				return None
 		else:
 			return None

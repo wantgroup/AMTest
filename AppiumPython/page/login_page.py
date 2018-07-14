@@ -17,7 +17,7 @@ class LoginPage:
 	def get_token_element(self):
 		'''
 		获取token元素信息
-		'''	
+		'''
 		return self.get_by_local.get_element('token')
 
 

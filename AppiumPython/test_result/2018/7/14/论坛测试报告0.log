@@ -73,3 +73,816 @@ Error	test_01 (case.test_case1.CaseTest)
 执行失败用例数量：0
 跳过执行用例数量：0
 产生异常用例数量：1
+[   INFO] [2018-07-14 14:38:15,693] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 14:38:15,741] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:38:25,278] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 14:38:25,284] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:38:37,762] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 14:38:37,765] [123145410568192] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 14:38:37,767] [123145410568192] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/65810e9c-9775-45e2-ab62-9083e36a2f95/element {"using": "-android uiautomator", "value": "new UiSelector().className(\\\"android.widget.ImageButton\\\").index(0)", "sessionId": "65810e9c-9775-45e2-ab62-9083e36a2f95"}
+[  DEBUG] [2018-07-14 14:38:37,807] [123145410568192] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 14:38:38,809] [123145410568192] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 10, in login_token
+    self.login_handle.click_traggle_button()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 13, in click_traggle_button
+    self.index_page.get_traggle_button().click
+AttributeError: 'NoneType' object has no attribute 'click'
+
+[   INFO] [2018-07-14 14:38:38,811] [123145410568192] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 14:38:38,813] [123145410568192] [Result.py(61)] - 耗时： 0.007953000000000002
+[  ERROR] [2018-07-14 14:38:41,769] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 14:38:41,774] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:26.076510
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 14:41:26,682] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 14:41:26,706] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:41:36,166] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 14:41:36,174] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:41:48,603] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 14:41:48,605] [123145417695232] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 14:41:48,608] [123145417695232] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/14391179-a6a8-49a9-987e-2a586ab728b5/element {"using": "-android uiautomator", "value": "new UiSelector().className(\\\"android.widget.ImageButton\\\").index(0)", "sessionId": "14391179-a6a8-49a9-987e-2a586ab728b5"}
+[  DEBUG] [2018-07-14 14:41:48,646] [123145417695232] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 14:41:49,652] [123145417695232] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 10, in login_token
+    self.login_handle.click_traggle_button()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 15, in click_traggle_button
+    s.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+[   INFO] [2018-07-14 14:41:49,654] [123145417695232] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 14:41:49,655] [123145417695232] [Result.py(61)] - 耗时： 0.007884000000000002
+[  ERROR] [2018-07-14 14:41:52,609] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 14:41:52,612] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:25.927713
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 14:51:34,630] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 14:51:34,659] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 14:51:44,077] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 15:03:32,062] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 15:03:32,120] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:03:43,268] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:03:43,274] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "f33d8c6", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:03:55,947] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 15:03:55,949] [123145521086464] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 15:03:55,952] [123145521086464] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/5fc7f78b-6543-47df-b120-b7a9f51cb0c4/element {"using": "-android uiautomator", "value": "new UiSelector().className(\\\"android.widget.ImageButton\\\").index(0)", "sessionId": "5fc7f78b-6543-47df-b120-b7a9f51cb0c4"}
+[  DEBUG] [2018-07-14 15:03:55,990] [123145521086464] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 15:03:56,999] [123145521086464] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 10, in login_token
+    self.login_handle.click_traggle_button()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 15, in click_traggle_button
+    s.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+[   INFO] [2018-07-14 15:03:57,001] [123145521086464] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 15:03:57,002] [123145521086464] [Result.py(61)] - 耗时： 0.009087000000000012
+[  ERROR] [2018-07-14 15:03:59,953] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 15:03:59,954] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:27.891370
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 15:09:33,580] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 15:09:33,726] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[   INFO] [2018-07-14 15:10:22,178] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 15:10:22,200] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:10:31,414] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:10:31,420] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:10:41,169] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 15:10:41,171] [123145479503872] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 15:10:41,174] [123145479503872] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/ddc87ebc-c812-41f6-9694-37dc94474702/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\").index(0)", "sessionId": "ddc87ebc-c812-41f6-9694-37dc94474702"}
+[  DEBUG] [2018-07-14 15:10:41,784] [123145479503872] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 15:10:42,791] [123145479503872] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 10, in login_token
+    self.login_handle.click_traggle_button()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 15, in click_traggle_button
+    s.click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+[   INFO] [2018-07-14 15:10:42,793] [123145479503872] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 15:10:42,794] [123145479503872] [Result.py(61)] - 耗时： 0.010149000000000005
+[  ERROR] [2018-07-14 15:10:45,175] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 15:10:45,178] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:22.996792
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 15:14:55,903] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 15:14:55,927] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:15:03,366] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:15:03,373] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:15:12,944] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 15:15:12,946] [123145375825920] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 15:15:13,951] [123145375825920] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/4caac5f3-415a-4e81-b1f7-d38527aa994c/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\").index(0)", "sessionId": "4caac5f3-415a-4e81-b1f7-d38527aa994c"}
+[  DEBUG] [2018-07-14 15:15:14,040] [123145375825920] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:15:14,041] [123145375825920] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/4caac5f3-415a-4e81-b1f7-d38527aa994c/element/1/click {"id": "1", "sessionId": "4caac5f3-415a-4e81-b1f7-d38527aa994c"}
+[  DEBUG] [2018-07-14 15:15:15,254] [123145375825920] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:15:16,258] [123145375825920] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/4caac5f3-415a-4e81-b1f7-d38527aa994c/element {"using": "id", "value": "org.cnodejs.android.md:id/img_avatar", "sessionId": "4caac5f3-415a-4e81-b1f7-d38527aa994c"}
+[  DEBUG] [2018-07-14 15:15:17,635] [123145375825920] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:15:17,637] [123145375825920] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/4caac5f3-415a-4e81-b1f7-d38527aa994c/element/2/click {"id": "2", "sessionId": "4caac5f3-415a-4e81-b1f7-d38527aa994c"}
+[  DEBUG] [2018-07-14 15:15:18,342] [123145375825920] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:15:19,350] [123145375825920] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/0ef34a20-6c9e-4e3c-972c-4c6429dc396f/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "0ef34a20-6c9e-4e3c-972c-4c6429dc396f"}
+[  DEBUG] [2018-07-14 15:15:19,372] [123145375825920] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 15:15:20,376] [123145375825920] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 16, in login_token
+    self.login_handle.send_token_val("xxxxxxxxxxx")
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 32, in send_token_val
+    self.login_page.get_token_element().send_keys(token)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+[   INFO] [2018-07-14 15:15:20,378] [123145375825920] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 15:15:20,379] [123145375825920] [Result.py(61)] - 耗时： 0.041206000000000007
+[  ERROR] [2018-07-14 15:15:21,382] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 15:15:21,385] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:25.479197
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 15:20:29,578] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 15:20:29,596] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:20:36,920] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:20:36,925] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:20:46,585] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 15:20:46,588] [123145389940736] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 15:20:47,595] [123145389940736] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/ab9ad731-49b6-4984-a04a-c4a19eb14ad6/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\").index(0)", "sessionId": "ab9ad731-49b6-4984-a04a-c4a19eb14ad6"}
+[  DEBUG] [2018-07-14 15:20:47,678] [123145389940736] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:20:47,680] [123145389940736] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/ab9ad731-49b6-4984-a04a-c4a19eb14ad6/element/1/click {"id": "1", "sessionId": "ab9ad731-49b6-4984-a04a-c4a19eb14ad6"}
+[  DEBUG] [2018-07-14 15:20:48,434] [123145389940736] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:20:49,437] [123145389940736] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/ab9ad731-49b6-4984-a04a-c4a19eb14ad6/element {"using": "id", "value": "org.cnodejs.android.md:id/img_avatar", "sessionId": "ab9ad731-49b6-4984-a04a-c4a19eb14ad6"}
+[  DEBUG] [2018-07-14 15:20:49,699] [123145389940736] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:20:49,701] [123145389940736] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/ab9ad731-49b6-4984-a04a-c4a19eb14ad6/element/2/click {"id": "2", "sessionId": "ab9ad731-49b6-4984-a04a-c4a19eb14ad6"}
+[  DEBUG] [2018-07-14 15:20:50,711] [123145389940736] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:20:51,714] [123145389940736] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/55e61a4b-d53f-41d5-a7f2-e2bd11362696/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "55e61a4b-d53f-41d5-a7f2-e2bd11362696"}
+[  DEBUG] [2018-07-14 15:20:51,736] [123145389940736] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 15:20:52,740] [123145389940736] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 16, in login_token
+    self.login_handle.send_token_val("xxxxxxxxxxx")
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 32, in send_token_val
+    self.login_page.get_token_element().send_keys(token)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+[   INFO] [2018-07-14 15:20:52,742] [123145389940736] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 15:20:52,744] [123145389940736] [Result.py(61)] - 耗时： 0.037141
+[  ERROR] [2018-07-14 15:20:53,747] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 15:20:53,750] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:24.169390
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 15:25:12,431] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 15:25:12,450] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:25:21,605] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:25:21,609] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:25:31,348] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 15:25:31,350] [123145529847808] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 15:25:32,358] [123145529847808] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/4fd70181-9e15-4c9a-8d08-910cfa033078/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\").index(0)", "sessionId": "4fd70181-9e15-4c9a-8d08-910cfa033078"}
+[  DEBUG] [2018-07-14 15:25:32,517] [123145529847808] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:25:32,519] [123145529847808] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/4fd70181-9e15-4c9a-8d08-910cfa033078/element/1/click {"id": "1", "sessionId": "4fd70181-9e15-4c9a-8d08-910cfa033078"}
+[  DEBUG] [2018-07-14 15:25:33,728] [123145529847808] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:25:34,731] [123145529847808] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/4fd70181-9e15-4c9a-8d08-910cfa033078/element {"using": "id", "value": "org.cnodejs.android.md:id/img_avatar", "sessionId": "4fd70181-9e15-4c9a-8d08-910cfa033078"}
+[  DEBUG] [2018-07-14 15:25:35,303] [123145529847808] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:25:35,304] [123145529847808] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/4fd70181-9e15-4c9a-8d08-910cfa033078/element/2/click {"id": "2", "sessionId": "4fd70181-9e15-4c9a-8d08-910cfa033078"}
+[  DEBUG] [2018-07-14 15:25:36,157] [123145529847808] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:25:37,160] [123145529847808] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/b93b8b6c-cdae-4790-9b33-a2a0d59bac29/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "b93b8b6c-cdae-4790-9b33-a2a0d59bac29"}
+[  DEBUG] [2018-07-14 15:25:37,177] [123145529847808] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:25:37,179] [123145529847808] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/b93b8b6c-cdae-4790-9b33-a2a0d59bac29/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "b93b8b6c-cdae-4790-9b33-a2a0d59bac29"}
+[  DEBUG] [2018-07-14 15:25:37,187] [123145529847808] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 15:25:38,193] [123145529847808] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 16, in login_token
+    self.login_handle.send_token_val("xxxxxxxxxxx")
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 33, in send_token_val
+    self.login_page.get_token_element().send_keys(token)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+[   INFO] [2018-07-14 15:25:38,195] [123145529847808] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 15:25:38,196] [123145529847808] [Result.py(61)] - 耗时： 0.042485999999999996
+[  ERROR] [2018-07-14 15:25:39,200] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 15:25:39,202] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:26.768275
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 15:26:40,393] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 15:26:40,416] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:26:47,733] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:26:47,737] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:26:58,932] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 15:26:58,935] [123145547026432] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 15:26:59,942] [123145547026432] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/2ea5e254-abbd-4a48-a0ae-5b589bcb7e5e/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\").index(0)", "sessionId": "2ea5e254-abbd-4a48-a0ae-5b589bcb7e5e"}
+[  DEBUG] [2018-07-14 15:27:00,450] [123145547026432] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:27:00,452] [123145547026432] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/2ea5e254-abbd-4a48-a0ae-5b589bcb7e5e/element/1/click {"id": "1", "sessionId": "2ea5e254-abbd-4a48-a0ae-5b589bcb7e5e"}
+[  DEBUG] [2018-07-14 15:27:01,331] [123145547026432] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:27:02,335] [123145547026432] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/2ea5e254-abbd-4a48-a0ae-5b589bcb7e5e/element {"using": "id", "value": "org.cnodejs.android.md:id/img_avatar", "sessionId": "2ea5e254-abbd-4a48-a0ae-5b589bcb7e5e"}
+[  DEBUG] [2018-07-14 15:27:02,411] [123145547026432] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:27:02,412] [123145547026432] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/2ea5e254-abbd-4a48-a0ae-5b589bcb7e5e/element/2/click {"id": "2", "sessionId": "2ea5e254-abbd-4a48-a0ae-5b589bcb7e5e"}
+[  DEBUG] [2018-07-14 15:27:03,245] [123145547026432] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:27:04,251] [123145547026432] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/ebfe9e24-b2ce-434e-9410-03d1b6316ef4/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "ebfe9e24-b2ce-434e-9410-03d1b6316ef4"}
+[  DEBUG] [2018-07-14 15:27:04,283] [123145547026432] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:27:04,285] [123145547026432] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/ebfe9e24-b2ce-434e-9410-03d1b6316ef4/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "ebfe9e24-b2ce-434e-9410-03d1b6316ef4"}
+[  DEBUG] [2018-07-14 15:27:04,294] [123145547026432] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 15:27:05,300] [123145547026432] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 16, in login_token
+    self.login_handle.send_token_val("xxxxxxxxxxx")
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 33, in send_token_val
+    self.login_page.get_token_element().send_keys(token)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+[   INFO] [2018-07-14 15:27:05,302] [123145547026432] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 15:27:05,303] [123145547026432] [Result.py(61)] - 耗时： 0.040772
+[  ERROR] [2018-07-14 15:27:06,306] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 15:27:06,309] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:25.913683
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 15:29:17,937] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 15:29:17,956] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:29:26,582] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:29:26,586] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:29:36,054] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 15:29:36,055] [123145436200960] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 15:29:37,061] [123145436200960] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/14ce2671-434a-40b6-a045-8877a1117f22/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\").index(0)", "sessionId": "14ce2671-434a-40b6-a045-8877a1117f22"}
+[  DEBUG] [2018-07-14 15:29:37,894] [123145436200960] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:29:37,896] [123145436200960] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/14ce2671-434a-40b6-a045-8877a1117f22/element/1/click {"id": "1", "sessionId": "14ce2671-434a-40b6-a045-8877a1117f22"}
+[  DEBUG] [2018-07-14 15:29:38,227] [123145436200960] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:29:39,234] [123145436200960] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/14ce2671-434a-40b6-a045-8877a1117f22/element {"using": "id", "value": "org.cnodejs.android.md:id/img_avatar", "sessionId": "14ce2671-434a-40b6-a045-8877a1117f22"}
+[  DEBUG] [2018-07-14 15:29:40,179] [123145436200960] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:29:40,181] [123145436200960] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/14ce2671-434a-40b6-a045-8877a1117f22/element/2/click {"id": "2", "sessionId": "14ce2671-434a-40b6-a045-8877a1117f22"}
+[  DEBUG] [2018-07-14 15:29:40,408] [123145436200960] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:29:41,416] [123145436200960] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/c168fc4f-0a13-49eb-a7f8-eede530e9e88/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "c168fc4f-0a13-49eb-a7f8-eede530e9e88"}
+[  DEBUG] [2018-07-14 15:29:41,438] [123145436200960] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 15:29:42,442] [123145436200960] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 16, in login_token
+    self.login_handle.send_token_val("xxxxxxxxxxx")
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 35, in send_token_val
+    s.send_keys(token)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+[   INFO] [2018-07-14 15:29:42,443] [123145436200960] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 15:29:42,444] [123145436200960] [Result.py(61)] - 耗时： 0.03943499999999999
+[  ERROR] [2018-07-14 15:29:43,447] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 15:29:43,449] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:25.510022
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 15:39:37,572] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 15:39:37,592] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:39:46,748] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:39:46,757] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:39:56,544] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 15:39:56,547] [123145389928448] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 15:40:01,554] [123145389928448] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/62bf6e26-fe29-4f59-a24d-48cfcdaa4914/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\").index(0)", "sessionId": "62bf6e26-fe29-4f59-a24d-48cfcdaa4914"}
+[  DEBUG] [2018-07-14 15:40:02,108] [123145389928448] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:40:02,110] [123145389928448] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/62bf6e26-fe29-4f59-a24d-48cfcdaa4914/element/1/click {"id": "1", "sessionId": "62bf6e26-fe29-4f59-a24d-48cfcdaa4914"}
+[  DEBUG] [2018-07-14 15:40:02,337] [123145389928448] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:40:03,343] [123145389928448] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/62bf6e26-fe29-4f59-a24d-48cfcdaa4914/element {"using": "id", "value": "org.cnodejs.android.md:id/img_avatar", "sessionId": "62bf6e26-fe29-4f59-a24d-48cfcdaa4914"}
+[  DEBUG] [2018-07-14 15:40:03,989] [123145389928448] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:40:03,990] [123145389928448] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/62bf6e26-fe29-4f59-a24d-48cfcdaa4914/element/2/click {"id": "2", "sessionId": "62bf6e26-fe29-4f59-a24d-48cfcdaa4914"}
+[  DEBUG] [2018-07-14 15:40:04,237] [123145389928448] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:40:09,243] [123145389928448] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/9d1238af-fadb-4056-b09d-e28469100e57/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "9d1238af-fadb-4056-b09d-e28469100e57"}
+[  DEBUG] [2018-07-14 15:40:09,265] [123145389928448] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 15:40:10,269] [123145389928448] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 20, in login_token
+    self.login_handle.send_token_val("xxxxxxxxxxx")
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 32, in send_token_val
+    self.login_page.get_token_element().send_keys(token)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+[   INFO] [2018-07-14 15:40:10,270] [123145389928448] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 15:40:10,272] [123145389928448] [Result.py(61)] - 耗时： 0.041448
+[  ERROR] [2018-07-14 15:40:11,275] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 15:40:11,278] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:33.703796
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 15:41:00,463] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 15:41:00,486] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:41:07,775] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:41:07,780] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:41:17,420] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 15:41:17,421] [123145486135296] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 15:41:22,429] [123145486135296] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/a159fc11-c4cd-41bf-93b6-8786f1691a0d/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\").index(0)", "sessionId": "a159fc11-c4cd-41bf-93b6-8786f1691a0d"}
+[  DEBUG] [2018-07-14 15:41:22,734] [123145486135296] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:41:22,736] [123145486135296] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/a159fc11-c4cd-41bf-93b6-8786f1691a0d/element/1/click {"id": "1", "sessionId": "a159fc11-c4cd-41bf-93b6-8786f1691a0d"}
+[  DEBUG] [2018-07-14 15:41:22,998] [123145486135296] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:41:24,004] [123145486135296] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/a159fc11-c4cd-41bf-93b6-8786f1691a0d/element {"using": "id", "value": "org.cnodejs.android.md:id/img_avatar", "sessionId": "a159fc11-c4cd-41bf-93b6-8786f1691a0d"}
+[  DEBUG] [2018-07-14 15:41:24,190] [123145486135296] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:41:24,191] [123145486135296] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/a159fc11-c4cd-41bf-93b6-8786f1691a0d/element/2/click {"id": "2", "sessionId": "a159fc11-c4cd-41bf-93b6-8786f1691a0d"}
+[  DEBUG] [2018-07-14 15:41:24,863] [123145486135296] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:41:29,870] [123145486135296] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/50b39dd9-f586-46e1-b9a2-a7e57c7b93a3/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "50b39dd9-f586-46e1-b9a2-a7e57c7b93a3"}
+[  DEBUG] [2018-07-14 15:41:29,889] [123145486135296] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 15:41:30,893] [123145486135296] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 20, in login_token
+    self.login_handle.send_token_val("xxxxxxxxxxx")
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 32, in send_token_val
+    self.login_page.get_token_element().send_keys(token)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+[   INFO] [2018-07-14 15:41:30,895] [123145486135296] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 15:41:30,896] [123145486135296] [Result.py(61)] - 耗时： 0.038814
+[  ERROR] [2018-07-14 15:41:31,899] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 15:41:31,902] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:31.436978
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 15:43:41,400] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 15:43:41,419] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:43:48,737] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:43:48,741] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:43:58,474] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 15:43:58,477] [123145319362560] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 15:43:58,481] [123145319362560] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/2596afe0-d262-4d2e-94f3-2d4cc21f0cd4/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\").index(0)", "sessionId": "2596afe0-d262-4d2e-94f3-2d4cc21f0cd4"}
+[  DEBUG] [2018-07-14 15:43:59,069] [123145319362560] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 15:44:00,076] [123145319362560] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 15, in login_token
+    self.login_handle.click_traggle_button()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 13, in click_traggle_button
+    s=self.index_page.get_traggle_button().click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+[   INFO] [2018-07-14 15:44:00,078] [123145319362560] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 15:44:00,079] [123145319362560] [Result.py(61)] - 耗时： 0.010819999999999996
+[  ERROR] [2018-07-14 15:44:02,481] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 15:44:02,484] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:21.081649
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 15:45:08,555] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 15:45:08,578] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:45:15,897] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:45:15,901] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:45:25,545] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 15:45:25,548] [123145375322112] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 15:45:25,552] [123145375322112] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/ec88a1e0-1c3c-48be-bcd9-8b93aa72b6e2/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\").index(0)", "sessionId": "ec88a1e0-1c3c-48be-bcd9-8b93aa72b6e2"}
+[  DEBUG] [2018-07-14 15:45:26,085] [123145375322112] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 15:45:27,092] [123145375322112] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 15, in login_token
+    self.login_handle.click_traggle_button()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 13, in click_traggle_button
+    s=self.index_page.get_traggle_button().click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+[   INFO] [2018-07-14 15:45:27,094] [123145375322112] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 15:45:27,095] [123145375322112] [Result.py(61)] - 耗时： 0.010887000000000008
+[  ERROR] [2018-07-14 15:45:29,553] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 15:45:29,555] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:20.998198
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 15:50:27,862] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 15:50:27,881] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:50:37,025] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:50:37,030] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 15:50:46,734] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 15:50:46,736] [123145310855168] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 15:50:46,739] [123145310855168] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/16fb856a-c1d2-4c61-97d6-c4344a5246d8/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\").index(0)", "sessionId": "16fb856a-c1d2-4c61-97d6-c4344a5246d8"}
+[  DEBUG] [2018-07-14 15:50:48,562] [123145310855168] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:50:48,564] [123145310855168] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/16fb856a-c1d2-4c61-97d6-c4344a5246d8/element/1/click {"id": "1", "sessionId": "16fb856a-c1d2-4c61-97d6-c4344a5246d8"}
+[  DEBUG] [2018-07-14 15:50:48,811] [123145310855168] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:50:48,813] [123145310855168] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/16fb856a-c1d2-4c61-97d6-c4344a5246d8/element {"using": "id", "value": "org.cnodejs.android.md:id/img_avatar", "sessionId": "16fb856a-c1d2-4c61-97d6-c4344a5246d8"}
+[  DEBUG] [2018-07-14 15:50:49,864] [123145310855168] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:50:49,865] [123145310855168] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/16fb856a-c1d2-4c61-97d6-c4344a5246d8/element/2/click {"id": "2", "sessionId": "16fb856a-c1d2-4c61-97d6-c4344a5246d8"}
+[  DEBUG] [2018-07-14 15:50:50,473] [123145310855168] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 15:50:50,475] [123145310855168] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/d486e352-957d-40a8-af34-bfd12907d4b9/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "d486e352-957d-40a8-af34-bfd12907d4b9"}
+[  DEBUG] [2018-07-14 15:50:50,495] [123145310855168] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 15:50:51,502] [123145310855168] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 17, in login_token
+    self.login_handle.send_token_val("xxxxxxxxxxx")
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 33, in send_token_val
+    self.login_page.get_token_element().send_keys(token)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+[   INFO] [2018-07-14 15:50:51,503] [123145310855168] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 15:50:51,505] [123145310855168] [Result.py(61)] - 耗时： 0.031956
+[  ERROR] [2018-07-14 15:50:52,508] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 15:50:52,510] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:24.645761
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 18:10:36,158] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 18:10:36,183] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 18:10:45,254] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 18:10:45,258] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 18:10:54,908] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 18:10:54,910] [123145525542912] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 18:10:54,914] [123145525542912] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/3065abb6-207c-4562-b771-45dda7b8fc05/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\").index(0)", "sessionId": "3065abb6-207c-4562-b771-45dda7b8fc05"}
+[  DEBUG] [2018-07-14 18:10:55,562] [123145525542912] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 18:10:56,569] [123145525542912] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 15, in login_token
+    self.login_handle.click_traggle_button()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 14, in click_traggle_button
+    s=self.index_page.get_traggle_button().click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+[   INFO] [2018-07-14 18:10:56,571] [123145525542912] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 18:10:56,572] [123145525542912] [Result.py(61)] - 耗时： 0.00937099999999999
+[  ERROR] [2018-07-14 18:10:58,914] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 18:10:58,917] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:22.756473
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 19:26:31,243] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 19:26:31,294] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 19:26:38,818] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:26:38,822] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 19:26:48,354] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 19:26:48,356] [123145316057088] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 19:26:53,365] [123145316057088] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/c6b0eaa1-a228-4db1-8d57-2b637d6e78ad/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\")", "sessionId": "c6b0eaa1-a228-4db1-8d57-2b637d6e78ad"}
+[  DEBUG] [2018-07-14 19:26:53,433] [123145316057088] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:26:53,435] [123145316057088] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/c6b0eaa1-a228-4db1-8d57-2b637d6e78ad/element/1/click {"id": "1", "sessionId": "c6b0eaa1-a228-4db1-8d57-2b637d6e78ad"}
+[  DEBUG] [2018-07-14 19:26:53,678] [123145316057088] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:26:53,680] [123145316057088] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/c6b0eaa1-a228-4db1-8d57-2b637d6e78ad/element {"using": "id", "value": "org.cnodejs.android.md:id/tv_login_name", "sessionId": "c6b0eaa1-a228-4db1-8d57-2b637d6e78ad"}
+[  DEBUG] [2018-07-14 19:26:54,815] [123145316057088] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:26:54,816] [123145316057088] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/c6b0eaa1-a228-4db1-8d57-2b637d6e78ad/element/2/click {"id": "2", "sessionId": "c6b0eaa1-a228-4db1-8d57-2b637d6e78ad"}
+[  DEBUG] [2018-07-14 19:26:55,674] [123145316057088] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:26:55,677] [123145316057088] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/a889def5-e8c7-46e4-8c63-4d4443bd89f3/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "a889def5-e8c7-46e4-8c63-4d4443bd89f3"}
+[  DEBUG] [2018-07-14 19:26:55,693] [123145316057088] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 19:26:56,701] [123145316057088] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 18, in login_token
+    self.login_handle.send_token_val("xxxxxxxxxxx")
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 33, in send_token_val
+    self.login_page.get_token_element().send_keys(token)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+[   INFO] [2018-07-14 19:26:56,701] [123145316057088] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 19:26:56,702] [123145316057088] [Result.py(61)] - 耗时： 0.036500000000000005
+[  ERROR] [2018-07-14 19:26:57,704] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 19:26:57,708] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:26.461613
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 19:28:46,127] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 19:28:46,145] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 19:28:53,393] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:28:53,398] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 19:29:03,008] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 19:29:03,011] [123145333284864] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 19:29:08,020] [123145333284864] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/d158bf00-909d-4e58-9b11-14d7b43bc274/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\")", "sessionId": "d158bf00-909d-4e58-9b11-14d7b43bc274"}
+[  DEBUG] [2018-07-14 19:29:08,080] [123145333284864] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:29:08,081] [123145333284864] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/d158bf00-909d-4e58-9b11-14d7b43bc274/element/1/click {"id": "1", "sessionId": "d158bf00-909d-4e58-9b11-14d7b43bc274"}
+[  DEBUG] [2018-07-14 19:29:08,331] [123145333284864] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:29:08,334] [123145333284864] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/d158bf00-909d-4e58-9b11-14d7b43bc274/element {"using": "id", "value": "org.cnodejs.android.md:id/tv_login_name", "sessionId": "d158bf00-909d-4e58-9b11-14d7b43bc274"}
+[  DEBUG] [2018-07-14 19:29:09,424] [123145333284864] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:29:09,425] [123145333284864] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/d158bf00-909d-4e58-9b11-14d7b43bc274/element/2/click {"id": "2", "sessionId": "d158bf00-909d-4e58-9b11-14d7b43bc274"}
+[  DEBUG] [2018-07-14 19:29:10,305] [123145333284864] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:29:15,309] [123145333284864] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/73495d6b-f405-49a0-abe4-390d0425a2ec/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "73495d6b-f405-49a0-abe4-390d0425a2ec"}
+[  DEBUG] [2018-07-14 19:29:15,324] [123145333284864] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 19:29:16,331] [123145333284864] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 19, in login_token
+    self.login_handle.send_token_val("xxxxxxxxxxx")
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 33, in send_token_val
+    self.login_page.get_token_element().send_keys(token)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+[   INFO] [2018-07-14 19:29:16,333] [123145333284864] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 19:29:16,335] [123145333284864] [Result.py(61)] - 耗时： 0.03750099999999999
+[  ERROR] [2018-07-14 19:29:17,337] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 19:29:17,338] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:31.210558
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 19:36:15,671] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 19:36:15,693] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 19:36:23,073] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:36:23,078] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 19:36:32,929] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 19:36:32,932] [123145487826944] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 19:36:37,940] [123145487826944] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/d7f22827-0479-4140-9408-aba602e8ede7/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\")", "sessionId": "d7f22827-0479-4140-9408-aba602e8ede7"}
+[  DEBUG] [2018-07-14 19:36:38,011] [123145487826944] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:36:38,013] [123145487826944] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/d7f22827-0479-4140-9408-aba602e8ede7/element/1/click {"id": "1", "sessionId": "d7f22827-0479-4140-9408-aba602e8ede7"}
+[  DEBUG] [2018-07-14 19:36:38,217] [123145487826944] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:36:38,219] [123145487826944] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/d7f22827-0479-4140-9408-aba602e8ede7/element {"using": "id", "value": "org.cnodejs.android.md:id/tv_login_name", "sessionId": "d7f22827-0479-4140-9408-aba602e8ede7"}
+[  DEBUG] [2018-07-14 19:36:39,332] [123145487826944] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:36:39,334] [123145487826944] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/d7f22827-0479-4140-9408-aba602e8ede7/element/2/click {"id": "2", "sessionId": "d7f22827-0479-4140-9408-aba602e8ede7"}
+[  DEBUG] [2018-07-14 19:36:40,267] [123145487826944] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:36:45,275] [123145487826944] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/d4645b55-b422-4a45-bdc9-da08f440a602/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "d4645b55-b422-4a45-bdc9-da08f440a602"}
+[  DEBUG] [2018-07-14 19:36:45,298] [123145487826944] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 19:36:46,304] [123145487826944] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 19, in login_token
+    self.login_handle.send_token_val("xxxxxxxxxxx")
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 33, in send_token_val
+    self.login_page.get_token_element().send_keys(token)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+[   INFO] [2018-07-14 19:36:46,306] [123145487826944] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 19:36:46,307] [123145487826944] [Result.py(61)] - 耗时： 0.038174
+[  ERROR] [2018-07-14 19:36:47,310] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 19:36:47,312] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:31.639720
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 19:46:15,484] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 19:46:15,505] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 19:46:22,829] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:46:22,833] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 19:46:32,571] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 19:46:32,574] [123145440108544] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 19:46:37,582] [123145440108544] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/5829cc4a-1b3e-4519-ad87-abc554957443/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\")", "sessionId": "5829cc4a-1b3e-4519-ad87-abc554957443"}
+[  DEBUG] [2018-07-14 19:46:37,655] [123145440108544] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:46:37,657] [123145440108544] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/5829cc4a-1b3e-4519-ad87-abc554957443/element/1/click {"id": "1", "sessionId": "5829cc4a-1b3e-4519-ad87-abc554957443"}
+[  DEBUG] [2018-07-14 19:46:37,884] [123145440108544] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:46:37,886] [123145440108544] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/5829cc4a-1b3e-4519-ad87-abc554957443/element {"using": "id", "value": "org.cnodejs.android.md:id/tv_login_name", "sessionId": "5829cc4a-1b3e-4519-ad87-abc554957443"}
+[  DEBUG] [2018-07-14 19:46:39,042] [123145440108544] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:46:39,044] [123145440108544] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/5829cc4a-1b3e-4519-ad87-abc554957443/element/2/click {"id": "2", "sessionId": "5829cc4a-1b3e-4519-ad87-abc554957443"}
+[  DEBUG] [2018-07-14 19:46:39,960] [123145440108544] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:46:44,964] [123145440108544] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/8fd081e2-2ad0-47b3-a280-e53733cca914/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "8fd081e2-2ad0-47b3-a280-e53733cca914"}
+[  DEBUG] [2018-07-14 19:46:44,981] [123145440108544] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 19:46:45,987] [123145440108544] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 19, in login_token
+    self.login_handle.send_token_val("xxxxxxxxxxx")
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 33, in send_token_val
+    self.login_page.get_token_element().send_keys(token)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+[   INFO] [2018-07-14 19:46:45,989] [123145440108544] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 19:46:45,990] [123145440108544] [Result.py(61)] - 耗时： 0.03465199999999999
+[  ERROR] [2018-07-14 19:46:46,993] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 19:46:46,997] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:31.509849
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 19:50:50,113] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 19:50:50,136] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 19:50:59,298] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:50:59,303] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 19:51:08,894] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 19:51:08,897] [123145388044288] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 19:51:13,906] [123145388044288] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/a670af0a-5898-4b67-9bc1-78edd596dd03/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\")", "sessionId": "a670af0a-5898-4b67-9bc1-78edd596dd03"}
+[  DEBUG] [2018-07-14 19:51:14,001] [123145388044288] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:51:14,003] [123145388044288] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/a670af0a-5898-4b67-9bc1-78edd596dd03/element/1/click {"id": "1", "sessionId": "a670af0a-5898-4b67-9bc1-78edd596dd03"}
+[  DEBUG] [2018-07-14 19:51:14,256] [123145388044288] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:51:14,258] [123145388044288] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/a670af0a-5898-4b67-9bc1-78edd596dd03/element {"using": "id", "value": "org.cnodejs.android.md:id/tv_login_name", "sessionId": "a670af0a-5898-4b67-9bc1-78edd596dd03"}
+[  DEBUG] [2018-07-14 19:51:15,405] [123145388044288] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:51:15,407] [123145388044288] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/a670af0a-5898-4b67-9bc1-78edd596dd03/element/2/click {"id": "2", "sessionId": "a670af0a-5898-4b67-9bc1-78edd596dd03"}
+[  DEBUG] [2018-07-14 19:51:16,372] [123145388044288] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:51:21,377] [123145388044288] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/b115a4ec-8347-431d-b876-4383d1506297/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "b115a4ec-8347-431d-b876-4383d1506297"}
+[  DEBUG] [2018-07-14 19:51:21,402] [123145388044288] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 19:51:22,409] [123145388044288] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 19, in login_token
+    self.login_handle.send_token_val("xxxxxxxxxxx")
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 33, in send_token_val
+    self.login_page.get_token_element().send_keys(token)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+[   INFO] [2018-07-14 19:51:22,411] [123145388044288] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 19:51:22,412] [123145388044288] [Result.py(61)] - 耗时： 0.038219
+[  ERROR] [2018-07-14 19:51:23,414] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 19:51:23,417] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:33.301792
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 19:57:28,918] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 19:57:28,949] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 19:57:37,855] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:57:37,860] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 19:57:47,421] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 19:57:47,424] [123145571659776] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 19:57:52,432] [123145571659776] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/20b122f4-55cc-486d-bb99-b2ff8095fc59/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\")", "sessionId": "20b122f4-55cc-486d-bb99-b2ff8095fc59"}
+[  DEBUG] [2018-07-14 19:57:52,495] [123145571659776] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:57:52,497] [123145571659776] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/20b122f4-55cc-486d-bb99-b2ff8095fc59/element/1/click {"id": "1", "sessionId": "20b122f4-55cc-486d-bb99-b2ff8095fc59"}
+[  DEBUG] [2018-07-14 19:57:52,747] [123145571659776] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:57:52,750] [123145571659776] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/20b122f4-55cc-486d-bb99-b2ff8095fc59/element {"using": "id", "value": "org.cnodejs.android.md:id/tv_login_name", "sessionId": "20b122f4-55cc-486d-bb99-b2ff8095fc59"}
+[  DEBUG] [2018-07-14 19:57:53,879] [123145571659776] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:57:53,881] [123145571659776] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/20b122f4-55cc-486d-bb99-b2ff8095fc59/element/2/click {"id": "2", "sessionId": "20b122f4-55cc-486d-bb99-b2ff8095fc59"}
+[  DEBUG] [2018-07-14 19:57:54,828] [123145571659776] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 19:57:59,832] [123145571659776] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/87bb8159-6880-4e72-b67d-5a82035eb445/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "87bb8159-6880-4e72-b67d-5a82035eb445"}
+[  DEBUG] [2018-07-14 19:57:59,855] [123145571659776] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 19:58:00,864] [123145571659776] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 19, in login_token
+    self.login_handle.send_token_val("xxxxxxxxxxx")
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 33, in send_token_val
+    self.login_page.get_token_element().send_keys(token)
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+
+[   INFO] [2018-07-14 19:58:00,866] [123145571659776] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 19:58:00,867] [123145571659776] [Result.py(61)] - 耗时： 0.040237999999999996
+[  ERROR] [2018-07-14 19:58:01,870] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 19:58:01,873] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:32.952111
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2018-07-14 20:05:03,137] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 20:05:03,156] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 20:05:10,589] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 20:05:10,595] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 20:05:20,211] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 20:05:20,214] [123145460838400] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 20:05:25,218] [123145460838400] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/471b033a-472b-448b-9731-127030798e79/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\")", "sessionId": "471b033a-472b-448b-9731-127030798e79"}
+[  DEBUG] [2018-07-14 20:05:25,299] [123145460838400] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 20:05:25,300] [123145460838400] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/471b033a-472b-448b-9731-127030798e79/element/1/click {"id": "1", "sessionId": "471b033a-472b-448b-9731-127030798e79"}
+[  DEBUG] [2018-07-14 20:05:25,558] [123145460838400] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 20:05:25,560] [123145460838400] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/471b033a-472b-448b-9731-127030798e79/element {"using": "id", "value": "org.cnodejs.android.md:id/tv_login_name", "sessionId": "471b033a-472b-448b-9731-127030798e79"}
+[  DEBUG] [2018-07-14 20:05:26,653] [123145460838400] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 20:05:26,655] [123145460838400] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/471b033a-472b-448b-9731-127030798e79/element/2/click {"id": "2", "sessionId": "471b033a-472b-448b-9731-127030798e79"}
+[  DEBUG] [2018-07-14 20:05:27,646] [123145460838400] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 20:05:32,652] [123145460838400] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/f3981cb2-17f2-4840-9e21-2f6fe15aca70/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "f3981cb2-17f2-4840-9e21-2f6fe15aca70"}
+[  DEBUG] [2018-07-14 20:05:32,672] [123145460838400] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 20:05:32,673] [123145460838400] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/f3981cb2-17f2-4840-9e21-2f6fe15aca70/element {"using": "id", "value": "org.cnodejs.android.md:id/btn_login", "sessionId": "f3981cb2-17f2-4840-9e21-2f6fe15aca70"}
+[  DEBUG] [2018-07-14 20:05:32,677] [123145460838400] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 20:05:33,680] [123145460838400] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 21, in login_token
+    self.login_handle.click_login()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 27, in click_login
+    self.login_page.get_login_button_element().click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+[   INFO] [2018-07-14 20:05:33,686] [123145460838400] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 20:05:33,687] [123145460838400] [Result.py(61)] - 耗时： 0.03660000000000001
+[  ERROR] [2018-07-14 20:05:34,690] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 20:05:34,693] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:31.553136
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1

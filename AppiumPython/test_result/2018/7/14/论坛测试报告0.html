@@ -363,19 +363,19 @@ function load() {
     <strong>
       <span class="lang-cn">启动时间：</span>
       <span class="lang-en">Start Time:</span>
-    </strong> 2018-07-14 14:24:12
+    </strong> 2018-07-14 20:05:03
   </p>
   <p class='attribute'>
     <strong>
       <span class="lang-cn">结束时间：</span>
       <span class="lang-en">End Time:</span>
-    </strong> 2018-07-14 14:24:38
+    </strong> 2018-07-14 20:05:34
   </p>
   <p class='attribute'>
     <strong>
       <span class="lang-cn">运行时长：</span>
       <span class="lang-en">Duration:</span>
-    </strong> 0:00:25.929560
+    </strong> 0:00:31.553136
   </p>
   <p class='attribute'>
     <strong>
@@ -494,19 +494,19 @@ function load() {
       </div>
       <pre>
 et1.1: 
-[   INFO] [2018-07-14 14:24:34,814] [123145567158272] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
-[  ERROR] [2018-07-14 14:24:35,886] [123145567158272] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 20:05:20,214] [123145460838400] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  ERROR] [2018-07-14 20:05:33,680] [123145460838400] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
 Traceback (most recent call last):
   File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 33, in test_01
     self.login_business.login_token()
-  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 10, in login_token
-    self.login_handle.click_traggle_button()
-  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 13, in click_traggle_button
-    self.index_page.get_traggle_button().click()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 21, in login_token
+    self.login_handle.click_login()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 27, in click_login
+    self.login_page.get_login_button_element().click()
 AttributeError: 'NoneType' object has no attribute 'click'
 
-[   INFO] [2018-07-14 14:24:35,889] [123145567158272] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
-[   INFO] [2018-07-14 14:24:35,890] [123145567158272] [Result.py(61)] - 耗时： 0.00970900000000001
+[   INFO] [2018-07-14 20:05:33,686] [123145460838400] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 20:05:33,687] [123145460838400] [Result.py(61)] - 耗时： 0.03660000000000001
 
 </pre>
       <div></div>

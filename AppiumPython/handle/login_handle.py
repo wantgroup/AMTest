@@ -8,9 +8,10 @@ class LoginHandle:
 		self.login_page = LoginPage(i)
 		self.index_page = IndexPage(i)
 	
-	#操作登录页面的元素
+
 	def click_traggle_button(self):
-		self.index_page.get_traggle_button().click()
+		# 首页侧边栏
+		s=self.index_page.get_traggle_button().click()
 	
 	def click_avatar_button(self):
 		"""
@@ -25,8 +26,9 @@ class LoginHandle:
 		"""
 		self.login_page.get_login_button_element().click()
 	
-	def send_token_val(self,token):
+	def send_token_val(self):
 		"""
 		输入token
 		"""
-		self.login_page.get_token_element().send_keys(token)
+		# self.login_page.get_token_element().send_keys(token)
+		self.login_page.get_token_element()
