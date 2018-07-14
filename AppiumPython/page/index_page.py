@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
 from util.get_by_local import GetByLocal
 import time
 from base.base_driver import BaseDriver

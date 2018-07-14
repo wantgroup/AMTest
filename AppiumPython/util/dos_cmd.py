@@ -1,4 +1,5 @@
-#coding=utf-8
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
 import os
 class DosCmd:
 	"封装在控制台执行命令的方法"

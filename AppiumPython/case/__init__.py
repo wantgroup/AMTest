@@ -1,1 +1,2 @@
-print("abc")
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-

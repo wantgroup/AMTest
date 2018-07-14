@@ -1,4 +1,5 @@
-#coding=utf-8
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
 from util.dos_cmd import DosCmd
 class Port:
 	def port_is_used(self,port_num):

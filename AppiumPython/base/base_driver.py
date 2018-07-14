@@ -1,4 +1,5 @@
-# coding=utf-8
+#! /usr/bin/python
+# -*- coding: utf-8 -*-
 import os
 from util.get_by_local import  GetByLocal
 from appium import webdriver

@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
 from case.test_case1 import CaseTest
 import unittest
 from util.server import Server

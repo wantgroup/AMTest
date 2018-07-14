@@ -1,4 +1,5 @@
-#coding=utf-8
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
 import sys
 sys.path.append("/Users/cloudin/Desktop/project/AMTest/AppiumPython")
 
