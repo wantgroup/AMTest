@@ -4,7 +4,7 @@ sys.path.append('/Users/cloudin/Desktop/project/AMTest/AppiumPython')
 
 from util.dos_cmd import DosCmd
 from util.port import Port
-import threading
+import multiprocessing
 import time
 from util.write_user_command import WriteUserCommand
 from util.tools import Tools
@@ -89,7 +89,7 @@ class Server:
 		self.write_file.clear_data()
 		for i in range(len(self.device_list)):
 			#有几个drivaer创建几个线程
-			appium_start = threading.Thread(target=self.start_server,args=(i,))
+			appium_start = multiprocessing.Process(target=self.start_server,args=(i,))
 			#加入到线程组里面
 			thread_list.append(appium_start)
 		for j in thread_list:
