@@ -31,7 +31,6 @@ class Server:
 		devices_list = []
 		#执行adb devices命令来获取 devices list
 		result_list = self.dos.excute_cmd_result('adb devices')
-		print(result_list)
 		#取出devicees存入devices_list中
 		if len(result_list)>=2:
 			for i in result_list:
@@ -62,7 +61,9 @@ class Server:
 		appium_port_list = self.create_port_list(4700)
 		bootstrap_port_list = self.create_port_list(4900)
 		device_list = self.device_list
-		command = "appium -p "+str(appium_port_list[i])+" -bp "+str(bootstrap_port_list[i])+" -U "+device_list[i]+" --no-reset --session-override --log "+rootPath+"/log/test0"+str(i)+".log"
+		# command = "appium -p "+str(appium_port_list[i])+" -bp "+str(bootstrap_port_list[i])+" -U"+device_list[i]+" --no-reset --session-override --log "+rootPath+"/log/test0"+str(i)+".log"
+		command = "appium -p "+str(appium_port_list[i])+" -bp "+str(bootstrap_port_list[i])+" -U"+device_list[i]+" --no-reset --session-override --log "+rootPath+"/log/test0"+str(i)+".log"
+		# command = "appium -p "+str(appium_port_list[i])+" -bp "+str(bootstrap_port_list[i])+" -U"+device_list[i]+" --session-override --log "+rootPath+"/log/test0"+str(i)+".log"
 		#appium -p 4723 -bp 4726 -U 127.0.0.1:62001 --no-reset --session-override --log /log/test01.log
 		command_list.append(command)
 		self.write_file.write_data(i,device_list[i],str(bootstrap_port_list[i]),str(appium_port_list[i]))
@@ -74,22 +75,18 @@ class Server:
 		启动服务
 		'''
 		self.start_list = self.create_command_list(i)
-		print(self.start_list)
 		self.dos.excute_cmd(self.start_list[0])
-
 	def kill_server(self):
 		# 这里是windows 命令行 linux 使用命令 ps ef | grep node
 		server_list = self.dos.excute_cmd_result('tasklist | find "node.exe"')
 		if len(server_list)>0:
 			self.dos.excute_cmd('taskkill -F -PID node.exe')
-	def write_data(self):
-		self.write_file.write_data('0','device','dp','port')
+
 	def main(self):
 		thread_list = []
 		self.kill_server()
 		#清除上一次userconfig1.yaml里面的数据
 		self.write_file.clear_data()
-		#写入dervices到userconfig1.yaml里
 		for i in range(len(self.device_list)):
 			#有几个drivaer创建几个线程
 			appium_start = threading.Thread(target=self.start_server,args=(i,))
@@ -104,4 +101,4 @@ class Server:
 
 if __name__ == '__main__':
 	server = Server()
-	print(server.get_devices());
+	print(server.main());

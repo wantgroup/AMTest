@@ -12,17 +12,16 @@ from util.tools import Tools
 tool = Tools()
 rootpath = tool.getRootPath()
 
-class ParameTestCase(unittest.TestCase):
-
-	def __init__(self,methodName='runTest',parame=None):
-		super(ParameTestCase,self).__init__(methodName)
+class CaseTest(unittest.TestCase):
+	def __init__(self, methodName='runTest', param=None):
+		super(CaseTest, self).__init__(methodName)
 		global parames
-		parames = parame
-
-class CaseTest(ParameTestCase):
+		parames = param
+		print(parames)
 
 	@classmethod
 	def setUpClass(cls):
+
 		print( "setUpclass---->",parames)
 		cls.login_business = LoginBusiness(parames)
 
@@ -30,10 +29,11 @@ class CaseTest(ParameTestCase):
 		print ("this is setup\n")
 
 
-	def test_01(self):
+	def test_01(self,i):
 		self.login_business.login_token()
 	
 	def tearDown(self):
+		#截屏操作
 		time.sleep(1)
 		print( "this is teardown\n")
 		if sys.exc_info()[0]:
@@ -46,33 +46,5 @@ class CaseTest(ParameTestCase):
 		print ("this is class teardown\n")
 		# cls.driver.quit()
 
-def appium_init():
-	server = Server()
-	server.main()
 
 
-def get_count():
-	write_user_file = WriteUserCommand()
-	count = write_user_file.get_file_lines()
-	return count
-
-def get_suite(i):
-    suite = unittest.TestSuite()
-    suite.addTest(CaseTest('test_01',parame=i))
-    runner = unittest.TextTestRunner()
-    runner.run(suite)
-
-
-if __name__ == '__main__':
-	appium_init()
-
-	threads = []
-	for i in range(get_count()):
-		print( i)
-		t = multiprocessing.Process(target=get_suite,args=(i,))
-		threads.append(t)
-	for j in threads:
-		j.start()
-
-		time.sleep(1)
-	time.sleep(80)

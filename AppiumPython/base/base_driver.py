@@ -27,10 +27,39 @@ class BaseDriver:
             # "platforVersion": "5.1",
             "appPackage": "org.cnodejs.android.md"
         }
+        print("http://127.0.0.1:" + port + "/wd/hub"+'第几个driver'+str(i)+"："+devices)
         driver = webdriver.Remote(
             "http://127.0.0.1:" + port + "/wd/hub", capabilities)
-        time.sleep(10)
+
         return driver
 
+    def create_driver(self,i):
+        tool = Tools()
+        rootpath = tool.getRootPath()
+        apkpath = os.path.join(rootpath, 'apks', 'cnode.apk')
+        print("this is android_driver:", i)
+        # devices_name adb devices
+        # port
+        write_file = WriteUserCommand()
+        devices = write_file.get_value('user_info_' + str(i), 'deviceName')
+        port = write_file.get_value('user_info_' + str(i), 'port')
+        capabilities = {
+            "platformName": "Android",
+            "deviceName": devices,
+            "app": apkpath,
+            "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity",
+            "noReset": "true",
+            # "platforVersion": "5.1",
+            "appPackage": "org.cnodejs.android.md"
+        }
+        driver = webdriver.Remote(
+            "http://127.0.0.1:" + port + "/wd/hub", capabilities)
+        time.sleep(5)
+        return driver
+
+def d():
+    for driver in range(0, 2):
+        print(driver)
+
 if __name__=="__main__":
-    d=BaseDriver().android_driver("0")
+    d()

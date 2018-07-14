@@ -53,10 +53,11 @@ class WriteUserCommand:
 
     def get_file_lines(self):
         data = self.read_data()
+        print(data)
         return len(data)
 
 
 if __name__ == '__main__':
     write_file = WriteUserCommand()
-   # print(write_file.get_value('user_info_0','port'))
-    write_file.clear_data()
+    s=write_file.get_file_lines()
+    print(s)
