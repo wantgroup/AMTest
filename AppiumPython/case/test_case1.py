@@ -1,11 +1,9 @@
-#! /usr/bin/env python
+#!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
 import sys
 sys.path.append("/Users/cloudin/Desktop/project/AMTest/AppiumPython")
 
 import unittest
-from util.server import Server
-import multiprocessing
 import time
 from business.login_business import LoginBusiness
 from util.write_user_command import WriteUserCommand

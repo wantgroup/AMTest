@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
 import sys
 sys.path.append('/Users/cloudin/Desktop/project/AMTest/AppiumPython')
@@ -102,4 +102,4 @@ class Server:
 
 if __name__ == '__main__':
 	server = Server()
-	print(server.main());
+	print(server.main())

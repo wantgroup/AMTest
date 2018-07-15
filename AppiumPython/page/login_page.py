@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
 from util.get_by_local import GetByLocal
 import time

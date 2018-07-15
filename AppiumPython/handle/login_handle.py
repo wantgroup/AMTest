@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
 from page.login_page import LoginPage
 from page.index_page import IndexPage
@@ -11,7 +11,7 @@ class LoginHandle:
 
 	def click_traggle_button(self):
 		# 首页侧边栏
-		s=self.index_page.get_traggle_button().click()
+		self.index_page.get_traggle_button().click()
 	
 	def click_avatar_button(self):
 		"""
@@ -30,5 +30,5 @@ class LoginHandle:
 		"""
 		输入token
 		"""
-		# self.login_page.get_token_element().send_keys(token)
+
 		self.login_page.get_token_element()

@@ -927,3 +927,44 @@ Error	test_01 (case.test_case1.CaseTest)
 执行失败用例数量：0
 跳过执行用例数量：0
 产生异常用例数量：1
+[   INFO] [2018-07-14 22:55:00,354] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-14 22:55:00,386] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 22:55:09,980] [4321387392] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 22:55:09,984] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-14 22:55:19,615] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-14 22:55:19,617] [123145360863232] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-14 22:55:24,623] [123145360863232] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/eb58aa38-0eed-46ea-a74c-7d6904a67a4e/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\")", "sessionId": "eb58aa38-0eed-46ea-a74c-7d6904a67a4e"}
+[  DEBUG] [2018-07-14 22:55:24,694] [123145360863232] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 22:55:24,696] [123145360863232] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/eb58aa38-0eed-46ea-a74c-7d6904a67a4e/element/1/click {"id": "1", "sessionId": "eb58aa38-0eed-46ea-a74c-7d6904a67a4e"}
+[  DEBUG] [2018-07-14 22:55:24,917] [123145360863232] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 22:55:24,921] [123145360863232] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/eb58aa38-0eed-46ea-a74c-7d6904a67a4e/element {"using": "id", "value": "org.cnodejs.android.md:id/tv_login_name", "sessionId": "eb58aa38-0eed-46ea-a74c-7d6904a67a4e"}
+[  DEBUG] [2018-07-14 22:55:26,068] [123145360863232] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 22:55:26,070] [123145360863232] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/eb58aa38-0eed-46ea-a74c-7d6904a67a4e/element/2/click {"id": "2", "sessionId": "eb58aa38-0eed-46ea-a74c-7d6904a67a4e"}
+[  DEBUG] [2018-07-14 22:55:27,006] [123145360863232] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 22:55:32,011] [123145360863232] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/aa8922d0-9391-49a9-a4d5-2b825788998e/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "aa8922d0-9391-49a9-a4d5-2b825788998e"}
+[  DEBUG] [2018-07-14 22:55:32,035] [123145360863232] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-14 22:55:32,036] [123145360863232] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/aa8922d0-9391-49a9-a4d5-2b825788998e/element {"using": "id", "value": "org.cnodejs.android.md:id/btn_login", "sessionId": "aa8922d0-9391-49a9-a4d5-2b825788998e"}
+[  DEBUG] [2018-07-14 22:55:32,044] [123145360863232] [remote_connection.py(573)] - Finished Request
+[  ERROR] [2018-07-14 22:55:33,049] [123145360863232] [Result.py(126)] - 测试产生错误： test_01 (case.test_case1.CaseTest)
+Traceback (most recent call last):
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/case/test_case1.py", line 34, in test_01
+    self.login_business.login_token()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/business/login_business.py", line 22, in login_token
+    self.login_handle.click_login()
+  File "/Users/cloudin/Desktop/project/AMTest/AppiumPython/handle/login_handle.py", line 27, in click_login
+    self.login_page.get_login_button_element().click()
+AttributeError: 'NoneType' object has no attribute 'click'
+
+[   INFO] [2018-07-14 22:55:33,051] [123145360863232] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-14 22:55:33,052] [123145360863232] [Result.py(61)] - 耗时： 0.044239
+[  ERROR] [2018-07-14 22:55:34,055] [4321387392] [HTMLReport.py(132)] - 
+Error	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-14 22:55:34,056] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:33.700665
+共计执行用例数量：1
+执行成功用例数量：0
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1

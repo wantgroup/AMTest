@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
 from case.test_case1 import CaseTest
 import unittest

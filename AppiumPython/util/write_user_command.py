@@ -1,9 +1,11 @@
-#! /usr/bin/env python
+#!/usr/local/bin/python3
 # -*- coding: utf-8 -*-
-import yaml
-import os
+
 import sys
+
 sys.path.append('/Users/cloudin/Desktop/project/AMTest/AppiumPython')
+import os
+import yaml
 
 from util.tools import Tools
 
@@ -56,9 +58,3 @@ class WriteUserCommand:
         data = self.read_data()
         print(data)
         return len(data)
-
-
-if __name__ == '__main__':
-    write_file = WriteUserCommand()
-    s=write_file.get_file_lines()
-    print(s)
