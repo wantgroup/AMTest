@@ -6,7 +6,6 @@ sys.path.append("/Users/cloudin/Desktop/project/AMTest/AppiumPython")
 import unittest
 import time
 from business.login_business import LoginBusiness
-from util.write_user_command import WriteUserCommand
 from util.tools import Tools
 tool = Tools()
 rootpath = tool.getRootPath()
