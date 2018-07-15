@@ -5,8 +5,8 @@ from handle.login_handle import LoginHandle
 
 #操作
 class LoginBusiness(object):
-    def __init__(self, i):
-        self.login_handle = LoginHandle(i)
+    def __init__(self, driver):
+        self.login_handle = LoginHandle(driver)
 
     def login_token(self):
         '''

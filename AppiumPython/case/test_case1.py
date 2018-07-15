@@ -7,6 +7,7 @@ import unittest
 import time
 from business.login_business import LoginBusiness
 from util.tools import Tools
+from base.base_driver import BaseDriver
 tool = Tools()
 rootpath = tool.getRootPath()
 
@@ -19,9 +20,9 @@ class CaseTest(unittest.TestCase):
 
 	@classmethod
 	def setUpClass(cls):
-
 		print( "setUpclass---->",parames)
-		cls.login_business = LoginBusiness(parames)
+		driver=BaseDriver().android_driver(parames)
+		cls.login_business = LoginBusiness(driver)
 
 	def setUp(self):
 		print ("this is setup\n")

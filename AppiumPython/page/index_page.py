@@ -9,10 +9,8 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class IndexPage:
 
-    def __init__(self,i):
-        base_driver = BaseDriver()
-        self.driver = base_driver.android_driver(i)
-        self.get_by_local = GetByLocal(self.driver)
+    def __init__(self,driver):
+        self.get_by_local = GetByLocal(driver)
 	
     # 首页侧边栏按钮
     def get_traggle_button(self):

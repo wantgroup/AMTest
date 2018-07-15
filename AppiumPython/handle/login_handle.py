@@ -4,9 +4,9 @@ from page.login_page import LoginPage
 from page.index_page import IndexPage
 
 class LoginHandle:
-	def __init__(self,i):
-		self.login_page = LoginPage(i)
-		self.index_page = IndexPage(i)
+	def __init__(self,driver):
+		self.login_page = LoginPage(driver)
+		self.index_page = IndexPage(driver)
 	
 
 	def click_traggle_button(self):

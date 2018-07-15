@@ -1,372 +1,272 @@
-2018-07-14 14:54:38:214 - info: [Appium] Welcome to Appium v1.8.0
-2018-07-14 14:54:38:216 - info: [Appium] Non-default server args:
-2018-07-14 14:54:38:216 - info: [Appium]   port: 4700
-2018-07-14 14:54:38:217 - info: [Appium]   bootstrapPort: 4900
-2018-07-14 14:54:38:217 - info: [Appium]   sessionOverride: true
-2018-07-14 14:54:38:217 - info: [Appium]   log: /Users/cloudin/Desktop/project/AMTest/AppiumPython/log/test00.log
-2018-07-14 14:54:38:217 - info: [Appium]   udid: 36165441
-2018-07-14 14:54:38:217 - info: [Appium]   noReset: true
-2018-07-14 14:54:38:218 - warn: [Appium] Deprecated server args:
-2018-07-14 14:54:38:218 - warn: [Appium]   -U,--udid => --default-capabilities '{"udid":"36165441"}'
-2018-07-14 14:54:38:218 - warn: [Appium]   --no-reset => --default-capabilities '{"noReset":true}'
-2018-07-14 14:54:38:218 - info: [Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
-2018-07-14 14:54:38:219 - info: [Appium]   udid: 36165441
-2018-07-14 14:54:38:219 - info: [Appium]   noReset: true
-2018-07-14 14:54:38:272 - info: [Appium] Appium REST http interface listener started on 0.0.0.0:4700
-2018-07-14 14:55:00:492 - info: [HTTP] --> POST /wd/hub/session
-2018-07-14 14:55:00:492 - info: [HTTP] {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"platformName":"Android"}},"desiredCapabilities":{"platformName":"Android","deviceName":"36165441","app":"/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","noReset":"true","appPackage":"org.cnodejs.android.md"}}
-2018-07-14 14:55:00:494 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"platformName":"Android","deviceName":"36165441","app":"/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","noReset":"true","appPackage":"org.cnodejs.android.md"},null,{"firstMatch":[{}],"alwaysMatch":{"platformName":"Android"}}]
-2018-07-14 14:55:00:496 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1531580100495 (22:55:00 GMT+0800 (CST))
-2018-07-14 14:55:00:499 - warn: [BaseDriver] The capabilities ["udid","noReset"] are not standard capabilities and should have an extension prefix
-2018-07-14 14:55:00:503 - warn: [Appium] Could not parse W3C capabilities: 'deviceName' can't be blank. Falling back to JSONWP protocol.
-2018-07-14 14:55:00:503 - warn: [Appium] The following capabilities were provided in the JSONWP desired capabilities that are missing in W3C capabilities: ["udid","noReset","platformName","deviceName","app","appWaitActivity","appPackage"]. Falling back to JSONWP protocol.
-2018-07-14 14:55:00:505 - info: [Appium] Creating new AndroidDriver (v2.7.0) session
-2018-07-14 14:55:00:505 - info: [Appium] Capabilities:
-2018-07-14 14:55:00:505 - info: [Appium]   udid: 36165441
-2018-07-14 14:55:00:505 - info: [Appium]   noReset: true
-2018-07-14 14:55:00:505 - info: [Appium]   platformName: Android
-2018-07-14 14:55:00:505 - info: [Appium]   deviceName: 36165441
-2018-07-14 14:55:00:507 - info: [Appium]   app: /Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk
-2018-07-14 14:55:00:507 - info: [Appium]   appWaitActivity: org.cnodejs.android.md.ui.activity.LaunchActivity
-2018-07-14 14:55:00:507 - info: [Appium]   appPackage: org.cnodejs.android.md
-2018-07-14 14:55:00:512 - info: [debug] [BaseDriver] Creating session with MJSONWP desired capabilities: {"udid":"36165441","noReset...
-2018-07-14 14:55:00:513 - warn: [BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
-2018-07-14 14:55:00:517 - info: [BaseDriver] Session created with session id: aa8922d0-9391-49a9-a4d5-2b825788998e
-2018-07-14 14:55:00:518 - info: [debug] [AndroidDriver] Getting Java version
-2018-07-14 14:55:00:697 - info: [AndroidDriver] Java version is: 1.8.0_144
-2018-07-14 14:55:00:701 - info: [ADB] Checking whether adb is present
-2018-07-14 14:55:00:718 - info: [ADB] Found 4 'build-tools' folders under '/Users/work/android-sdk-macosx' (newest first):
-2018-07-14 14:55:00:718 - info: [ADB]     /Users/work/android-sdk-macosx/build-tools/26.0.1
-2018-07-14 14:55:00:719 - info: [ADB]     /Users/work/android-sdk-macosx/build-tools/25.0.3
-2018-07-14 14:55:00:719 - info: [ADB]     /Users/work/android-sdk-macosx/build-tools/25.0.0
-2018-07-14 14:55:00:719 - info: [ADB]     /Users/work/android-sdk-macosx/build-tools/23.0.1
-2018-07-14 14:55:00:720 - info: [ADB] Using adb from /Users/work/android-sdk-macosx/platform-tools/adb
-2018-07-14 14:55:00:721 - info: [AndroidDriver] Retrieving device list
-2018-07-14 14:55:00:723 - info: [debug] [ADB] Trying to find a connected android device
-2018-07-14 14:55:00:724 - info: [debug] [ADB] Getting connected devices...
-2018-07-14 14:55:00:747 - info: [debug] [ADB] 1 device(s) connected
-2018-07-14 14:55:00:748 - info: [AndroidDriver] Using device: 36165441
-2018-07-14 14:55:00:749 - info: [debug] [ADB] Setting device id to 36165441
-2018-07-14 14:55:00:751 - info: [BaseDriver] Using local app '/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk'
-2018-07-14 14:55:00:752 - info: [debug] [AndroidDriver] Checking whether app is actually present
-2018-07-14 14:55:00:753 - info: [AndroidDriver] Starting Android session
-2018-07-14 14:55:00:754 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 wait-for-device'
-2018-07-14 14:55:00:771 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell echo ping'
-2018-07-14 14:55:00:809 - info: [debug] [AndroidDriver] Pushing settings apk to device...
-2018-07-14 14:55:00:812 - info: [debug] [ADB] Getting install status for io.appium.settings
-2018-07-14 14:55:00:813 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell pm list packages io.appium.settings'
-2018-07-14 14:55:02:079 - info: [debug] [ADB] App is installed
-2018-07-14 14:55:02:080 - info: [debug] [ADB] Getting package info for 'io.appium.settings'
-2018-07-14 14:55:02:081 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys package io.appium.settings'
-2018-07-14 14:55:02:162 - info: [ADB] Checking whether aapt is present
-2018-07-14 14:55:02:168 - info: [ADB] Using aapt from /Users/work/android-sdk-macosx/build-tools/26.0.1/aapt
-2018-07-14 14:55:02:194 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
-2018-07-14 14:55:02:196 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell ps'
-2018-07-14 14:55:02:316 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell getprop ro.build.version.sdk'
-2018-07-14 14:55:02:357 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 19
-2018-07-14 14:55:02:358 - info: [debug] [ADB] Device API level: 19
-2018-07-14 14:55:02:361 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
-2018-07-14 14:55:03:487 - info: [debug] [ADB] Device API level: 19
-2018-07-14 14:55:03:487 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell settings put secure mock_location 1'
-2018-07-14 14:55:04:230 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
-2018-07-14 14:55:04:230 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
-2018-07-14 14:55:04:234 - info: [debug] [Logcat] Starting logcat capture
-2018-07-14 14:55:04:265 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
-2018-07-14 14:55:04:266 - info: [debug] [ADB] Getting install status for io.appium.unlock
-2018-07-14 14:55:04:267 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell pm list packages io.appium.unlock'
-2018-07-14 14:55:05:112 - info: [debug] [ADB] App is installed
-2018-07-14 14:55:05:112 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
-2018-07-14 14:55:05:113 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys package io.appium.unlock'
-2018-07-14 14:55:05:185 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
-2018-07-14 14:55:05:187 - info: [ADB] Getting device platform version
-2018-07-14 14:55:05:187 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell getprop ro.build.version.release'
-2018-07-14 14:55:05:224 - info: [debug] [ADB] Current device property 'ro.build.version.release': 4.4.4
-2018-07-14 14:55:05:226 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell wm size'
-2018-07-14 14:55:06:009 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell getprop ro.product.model'
-2018-07-14 14:55:06:054 - info: [debug] [ADB] Current device property 'ro.product.model': vivo Y27
-2018-07-14 14:55:06:055 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell getprop ro.product.manufacturer'
-2018-07-14 14:55:06:092 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': vivo
-2018-07-14 14:55:06:094 - info: [debug] [AndroidDriver] Parsing package and activity from app manifest
-2018-07-14 14:55:06:108 - info: [ADB] Using the alternative activity name detection method because of: Could not find apkanalyzer in /Users/work/android-sdk-macosx/platform-tools/apkanalyzer,/Users/work/android-sdk-macosx/emulator/apkanalyzer,/Users/work/android-sdk-macosx/tools/apkanalyzer,/Users/work/android-sdk-macosx/tools/bin/apkanalyzer,/Users/work/android-sdk-macosx/build-tools/26.0.1/apkanalyzer,/Users/work/android-sdk-macosx/build-tools/25.0.3/apkanalyzer,/Users/work/android-sdk-macosx/build-tools/25.0.0/apkanalyzer,/Users/work/android-sdk-macosx/build-tools/23.0.1/apkanalyzer. Do you have the Android SDK installed at '/Users/work/android-sdk-macosx'?
-2018-07-14 14:55:06:110 - info: [ADB] Extracting package and launch activity from manifest
-2018-07-14 14:55:06:143 - info: [ADB] Package name: 'org.cnodejs.android.md'
-2018-07-14 14:55:06:144 - info: [ADB] Main activity name: 'org.cnodejs.android.md.ui.activity.LaunchActivity'
-2018-07-14 14:55:06:144 - info: [debug] [AndroidDriver] Parsed package and activity are: org.cnodejs.android.md/org.cnodejs.android.md.ui.activity.LaunchActivity
-2018-07-14 14:55:06:146 - info: [debug] [ADB] Getting install status for org.cnodejs.android.md
-2018-07-14 14:55:06:146 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell pm list packages org.cnodejs.android.md'
-2018-07-14 14:55:06:935 - info: [debug] [ADB] App is installed
-2018-07-14 14:55:06:936 - info: [debug] [ADB] Getting package info for 'org.cnodejs.android.md'
-2018-07-14 14:55:06:937 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys package org.cnodejs.android.md'
-2018-07-14 14:55:07:021 - info: [debug] [ADB] The installed 'org.cnodejs.android.md' package does not require upgrade ('1.4.0' >= '1.4.0')
-2018-07-14 14:55:07:023 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell rm -rf /data/local/tmp/strings.json'
-2018-07-14 14:55:07:058 - info: [debug] [AndroidDriver] Extracting strings from apk
-2018-07-14 14:55:07:058 - info: [debug] [AndroidDriver] /Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk
-2018-07-14 14:55:07:059 - info: [debug] [AndroidDriver] null
-2018-07-14 14:55:07:059 - info: [debug] [AndroidDriver] /var/folders/yn/d3b7t07n7vl6f_qkplkl15500000gn/T/org.cnodejs.android.md
-2018-07-14 14:55:07:061 - info: [debug] [ADB] Extracting strings for language: default
-2018-07-14 14:55:07:276 - info: [ADB] Successfully extracted 179 strings from '/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk' resources for '(default)' configuration
-2018-07-14 14:55:07:283 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 push /var/folders/yn/d3b7t07n7vl6f_qkplkl15500000gn/T/org.cnodejs.android.md/strings.json /data/local/tmp'
-2018-07-14 14:55:07:310 - info: [debug] [AndroidBootstrap] Watching for bootstrap disconnect
-2018-07-14 14:55:07:311 - info: [debug] [ADB] Forwarding system: 4900 to device: 4724
-2018-07-14 14:55:07:312 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 forward tcp\:4900 tcp\:4724'
-2018-07-14 14:55:07:329 - info: [debug] [UiAutomator] Starting UiAutomator
-2018-07-14 14:55:07:329 - info: [debug] [UiAutomator] Moving to state 'starting'
-2018-07-14 14:55:07:330 - info: [debug] [UiAutomator] Parsing uiautomator jar
-2018-07-14 14:55:07:330 - info: [debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
-2018-07-14 14:55:07:330 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 push /usr/local/lib/node_modules/appium/node_modules/_appium-android-bootstrap\@2.11.0\@appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar /data/local/tmp/'
-2018-07-14 14:55:07:363 - info: [debug] [ADB] Attempting to kill all uiautomator processes
-2018-07-14 14:55:07:364 - info: [debug] [ADB] Getting all processes with uiautomator
-2018-07-14 14:55:07:364 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell ps'
-2018-07-14 14:55:07:475 - info: [ADB] No uiautomator process found to kill, continuing...
-2018-07-14 14:55:07:476 - info: [debug] [UiAutomator] Starting UIAutomator
-2018-07-14 14:55:07:476 - info: [debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","36165441","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","org.cnodejs.android.md","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
-2018-07-14 14:55:08:196 - info: [debug] [UiAutomator] Moving to state 'online'
-2018-07-14 14:55:08:205 - info: [AndroidBootstrap] Android bootstrap socket is now connected
-2018-07-14 14:55:08:207 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys window'
-2018-07-14 14:55:08:216 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
-2018-07-14 14:55:08:218 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
-2018-07-14 14:55:08:218 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
-2018-07-14 14:55:08:274 - info: [AndroidDriver] Screen already unlocked, doing nothing
-2018-07-14 14:55:08:276 - info: [debug] [ADB] Device API level: 19
-2018-07-14 14:55:08:276 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell am start -W -n org.cnodejs.android.md/org.cnodejs.android.md.ui.activity.LaunchActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
-2018-07-14 14:55:09:899 - info: [debug] [ADB] Waiting up to 20000ms for activity matching pkg: 'org.cnodejs.android.md' and activity: 'org.cnodejs.android.md.ui.activity.LaunchActivity' to be focused
-2018-07-14 14:55:09:900 - info: [debug] [ADB] Possible activities, to be checked: 'org.cnodejs.android.md.ui.activity.LaunchActivity', 'org.cnodejs.android.md.org.cnodejs.android.md.ui.activity.LaunchActivity'
-2018-07-14 14:55:09:905 - info: [debug] [ADB] Getting focused package and activity
-2018-07-14 14:55:09:906 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys window windows'
-2018-07-14 14:55:09:967 - info: [debug] [ADB] Found package: 'org.cnodejs.android.md' and fully qualified activity name : 'org.cnodejs.android.md.ui.activity.LaunchActivity'
-2018-07-14 14:55:09:971 - info: [Appium] New AndroidDriver session created successfully, session aa8922d0-9391-49a9-a4d5-2b825788998e added to master session list
-2018-07-14 14:55:09:972 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1531580109972 (22:55:09 GMT+0800 (CST))
-2018-07-14 14:55:09:974 - info: [debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"36165441","noReset":true,"platformName":"Android","deviceName":"36165441","app":"/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","appPackage":"org.cnodejs.android.md"},"udid":"36165441","noReset":true,"platformName":"Android","deviceName":"36165441","app":"/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","appPackage":"org.cnodejs.android.md","deviceUDID":"36165441","platformVersion":"4.4.4","deviceScreenSize":"720x1280","deviceModel":"vivo Y27","deviceManufacturer":"vivo","appWaitPackage":"org.cnodejs.android.md","appActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity"}
-2018-07-14 14:55:09:981 - info: [HTTP] <-- POST /wd/hub/session 200 9486 ms - 1048
-2018-07-14 14:55:09:981 - info: [HTTP] 
-2018-07-14 14:55:09:988 - info: [HTTP] --> POST /wd/hub/session
-2018-07-14 14:55:09:989 - info: [HTTP] {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"platformName":"Android"}},"desiredCapabilities":{"platformName":"Android","deviceName":"36165441","app":"/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","noReset":"true","appPackage":"org.cnodejs.android.md"}}
-2018-07-14 14:55:09:989 - info: [debug] [W3C] Calling AppiumDriver.createSession() with args: [{"platformName":"Android","deviceName":"36165441","app":"/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","noReset":"true","appPackage":"org.cnodejs.android.md"},null,{"firstMatch":[{}],"alwaysMatch":{"platformName":"Android"}}]
-2018-07-14 14:55:09:989 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1531580109989 (22:55:09 GMT+0800 (CST))
-2018-07-14 14:55:09:990 - warn: [BaseDriver] The capabilities ["udid","noReset"] are not standard capabilities and should have an extension prefix
-2018-07-14 14:55:09:993 - warn: [Appium] Could not parse W3C capabilities: 'deviceName' can't be blank. Falling back to JSONWP protocol.
-2018-07-14 14:55:09:994 - warn: [Appium] The following capabilities were provided in the JSONWP desired capabilities that are missing in W3C capabilities: ["udid","noReset","platformName","deviceName","app","appWaitActivity","appPackage"]. Falling back to JSONWP protocol.
-2018-07-14 14:55:09:994 - info: [Appium] Creating new AndroidDriver (v2.7.0) session
-2018-07-14 14:55:09:994 - info: [Appium] Capabilities:
-2018-07-14 14:55:09:994 - info: [Appium]   udid: 36165441
-2018-07-14 14:55:09:994 - info: [Appium]   noReset: true
-2018-07-14 14:55:09:994 - info: [Appium]   platformName: Android
-2018-07-14 14:55:09:995 - info: [Appium]   deviceName: 36165441
-2018-07-14 14:55:09:995 - info: [Appium]   app: /Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk
-2018-07-14 14:55:09:995 - info: [Appium]   appWaitActivity: org.cnodejs.android.md.ui.activity.LaunchActivity
-2018-07-14 14:55:09:995 - info: [Appium]   appPackage: org.cnodejs.android.md
-2018-07-14 14:55:09:995 - info: [Appium] Session override is on. Deleting other 1 active session.
-2018-07-14 14:55:09:997 - info: [Appium] Removing session aa8922d0-9391-49a9-a4d5-2b825788998e from our master session list
-2018-07-14 14:55:09:998 - info: [debug] [AndroidDriver] Shutting down Android driver
-2018-07-14 14:55:09:999 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell am force-stop org.cnodejs.android.md'
-2018-07-14 14:55:10:814 - info: [debug] [ADB] Pressing the HOME button
-2018-07-14 14:55:10:815 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell input keyevent 3'
-2018-07-14 14:55:11:593 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
-2018-07-14 14:55:11:601 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
-2018-07-14 14:55:11:601 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
-2018-07-14 14:55:11:601 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"OK, shutting down","status":0}
-2018-07-14 14:55:11:602 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
-2018-07-14 14:55:11:602 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
-2018-07-14 14:55:11:602 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
-2018-07-14 14:55:11:603 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
-2018-07-14 14:55:11:603 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
-2018-07-14 14:55:11:603 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
-2018-07-14 14:55:11:603 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
-2018-07-14 14:55:11:604 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
-2018-07-14 14:55:11:604 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
-2018-07-14 14:55:11:604 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
-2018-07-14 14:55:11:604 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 3.523
-2018-07-14 14:55:11:605 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
-2018-07-14 14:55:11:605 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
-2018-07-14 14:55:11:606 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2018-07-14 14:55:11:608 - info: [debug] [UiAutomator] Shutting down UiAutomator
-2018-07-14 14:55:11:609 - info: [debug] [UiAutomator] Moving to state 'stopping'
-2018-07-14 14:55:11:613 - info: [debug] [UiAutomator] UiAutomator shut down normally
-2018-07-14 14:55:11:613 - info: [debug] [UiAutomator] Moving to state 'stopped'
-2018-07-14 14:55:11:614 - info: [debug] [ADB] Attempting to kill all uiautomator processes
-2018-07-14 14:55:11:614 - info: [debug] [ADB] Getting all processes with uiautomator
-2018-07-14 14:55:11:614 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell ps'
-2018-07-14 14:55:11:691 - info: [ADB] No uiautomator process found to kill, continuing...
-2018-07-14 14:55:11:691 - info: [debug] [UiAutomator] Moving to state 'stopped'
-2018-07-14 14:55:11:692 - info: [debug] [Logcat] Stopping logcat capture
-2018-07-14 14:55:11:694 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell am force-stop io.appium.unlock'
-2018-07-14 14:55:12:423 - info: [debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
-2018-07-14 14:55:12:427 - info: [debug] [BaseDriver] Creating session with MJSONWP desired capabilities: {"udid":"36165441","noReset...
-2018-07-14 14:55:12:428 - warn: [BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
-2018-07-14 14:55:12:431 - info: [BaseDriver] Session created with session id: eb58aa38-0eed-46ea-a74c-7d6904a67a4e
-2018-07-14 14:55:12:432 - info: [debug] [AndroidDriver] Getting Java version
-2018-07-14 14:55:12:537 - info: [AndroidDriver] Java version is: 1.8.0_144
-2018-07-14 14:55:12:538 - info: [AndroidDriver] Retrieving device list
-2018-07-14 14:55:12:538 - info: [debug] [ADB] Trying to find a connected android device
-2018-07-14 14:55:12:538 - info: [debug] [ADB] Getting connected devices...
-2018-07-14 14:55:12:554 - info: [debug] [ADB] 1 device(s) connected
-2018-07-14 14:55:12:555 - info: [AndroidDriver] Using device: 36165441
-2018-07-14 14:55:12:556 - info: [debug] [ADB] Setting device id to 36165441
-2018-07-14 14:55:12:556 - info: [BaseDriver] Using local app '/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk'
-2018-07-14 14:55:12:556 - info: [debug] [AndroidDriver] Checking whether app is actually present
-2018-07-14 14:55:12:557 - info: [AndroidDriver] Starting Android session
-2018-07-14 14:55:12:557 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 wait-for-device'
-2018-07-14 14:55:12:573 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell echo ping'
-2018-07-14 14:55:12:599 - info: [debug] [AndroidDriver] Pushing settings apk to device...
-2018-07-14 14:55:12:599 - info: [debug] [ADB] Getting install status for io.appium.settings
-2018-07-14 14:55:12:600 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell pm list packages io.appium.settings'
-2018-07-14 14:55:13:368 - info: [debug] [ADB] App is installed
-2018-07-14 14:55:13:369 - info: [debug] [ADB] Getting package info for 'io.appium.settings'
-2018-07-14 14:55:13:369 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys package io.appium.settings'
-2018-07-14 14:55:13:435 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
-2018-07-14 14:55:13:435 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell ps'
-2018-07-14 14:55:13:553 - info: [debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
-2018-07-14 14:55:13:554 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell getprop ro.build.version.sdk'
-2018-07-14 14:55:13:581 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 19
-2018-07-14 14:55:13:581 - info: [debug] [ADB] Device API level: 19
-2018-07-14 14:55:13:582 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell settings put secure mock_location 1'
-2018-07-14 14:55:14:336 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
-2018-07-14 14:55:14:336 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
-2018-07-14 14:55:14:337 - info: [debug] [Logcat] Starting logcat capture
-2018-07-14 14:55:14:370 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
-2018-07-14 14:55:14:372 - info: [debug] [ADB] Getting install status for io.appium.unlock
-2018-07-14 14:55:14:373 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell pm list packages io.appium.unlock'
-2018-07-14 14:55:15:284 - info: [debug] [ADB] App is installed
-2018-07-14 14:55:15:284 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
-2018-07-14 14:55:15:285 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys package io.appium.unlock'
-2018-07-14 14:55:15:356 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
-2018-07-14 14:55:15:356 - info: [ADB] Getting device platform version
-2018-07-14 14:55:15:357 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell getprop ro.build.version.release'
-2018-07-14 14:55:15:388 - info: [debug] [ADB] Current device property 'ro.build.version.release': 4.4.4
-2018-07-14 14:55:15:388 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell wm size'
-2018-07-14 14:55:16:156 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell getprop ro.product.model'
-2018-07-14 14:55:16:194 - info: [debug] [ADB] Current device property 'ro.product.model': vivo Y27
-2018-07-14 14:55:16:195 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell getprop ro.product.manufacturer'
-2018-07-14 14:55:16:232 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': vivo
-2018-07-14 14:55:16:232 - info: [debug] [AndroidDriver] Parsing package and activity from app manifest
-2018-07-14 14:55:16:234 - info: [ADB] Using the alternative activity name detection method because of: Could not find apkanalyzer in /Users/work/android-sdk-macosx/platform-tools/apkanalyzer,/Users/work/android-sdk-macosx/emulator/apkanalyzer,/Users/work/android-sdk-macosx/tools/apkanalyzer,/Users/work/android-sdk-macosx/tools/bin/apkanalyzer,/Users/work/android-sdk-macosx/build-tools/26.0.1/apkanalyzer,/Users/work/android-sdk-macosx/build-tools/25.0.3/apkanalyzer,/Users/work/android-sdk-macosx/build-tools/25.0.0/apkanalyzer,/Users/work/android-sdk-macosx/build-tools/23.0.1/apkanalyzer. Do you have the Android SDK installed at '/Users/work/android-sdk-macosx'?
-2018-07-14 14:55:16:234 - info: [ADB] Extracting package and launch activity from manifest
-2018-07-14 14:55:16:248 - info: [ADB] Package name: 'org.cnodejs.android.md'
-2018-07-14 14:55:16:249 - info: [ADB] Main activity name: 'org.cnodejs.android.md.ui.activity.LaunchActivity'
-2018-07-14 14:55:16:249 - info: [debug] [AndroidDriver] Parsed package and activity are: org.cnodejs.android.md/org.cnodejs.android.md.ui.activity.LaunchActivity
-2018-07-14 14:55:16:249 - info: [debug] [ADB] Getting install status for org.cnodejs.android.md
-2018-07-14 14:55:16:249 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell pm list packages org.cnodejs.android.md'
-2018-07-14 14:55:17:023 - info: [debug] [ADB] App is installed
-2018-07-14 14:55:17:024 - info: [debug] [ADB] Getting package info for 'org.cnodejs.android.md'
-2018-07-14 14:55:17:024 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys package org.cnodejs.android.md'
-2018-07-14 14:55:17:100 - info: [debug] [ADB] The installed 'org.cnodejs.android.md' package does not require upgrade ('1.4.0' >= '1.4.0')
-2018-07-14 14:55:17:100 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell rm -rf /data/local/tmp/strings.json'
-2018-07-14 14:55:17:136 - info: [debug] [AndroidDriver] Extracting strings from apk
-2018-07-14 14:55:17:137 - info: [debug] [AndroidDriver] /Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk
-2018-07-14 14:55:17:137 - info: [debug] [AndroidDriver] null
-2018-07-14 14:55:17:137 - info: [debug] [AndroidDriver] /var/folders/yn/d3b7t07n7vl6f_qkplkl15500000gn/T/org.cnodejs.android.md
-2018-07-14 14:55:17:138 - info: [debug] [ADB] Extracting strings for language: default
-2018-07-14 14:55:17:307 - info: [ADB] Successfully extracted 179 strings from '/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk' resources for '(default)' configuration
-2018-07-14 14:55:17:308 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 push /var/folders/yn/d3b7t07n7vl6f_qkplkl15500000gn/T/org.cnodejs.android.md/strings.json /data/local/tmp'
-2018-07-14 14:55:17:341 - info: [debug] [AndroidBootstrap] Watching for bootstrap disconnect
-2018-07-14 14:55:17:341 - info: [debug] [ADB] Forwarding system: 4900 to device: 4724
-2018-07-14 14:55:17:341 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 forward tcp\:4900 tcp\:4724'
-2018-07-14 14:55:17:359 - info: [debug] [UiAutomator] Starting UiAutomator
-2018-07-14 14:55:17:360 - info: [debug] [UiAutomator] Moving to state 'starting'
-2018-07-14 14:55:17:360 - info: [debug] [UiAutomator] Parsing uiautomator jar
-2018-07-14 14:55:17:360 - info: [debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
-2018-07-14 14:55:17:360 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 push /usr/local/lib/node_modules/appium/node_modules/_appium-android-bootstrap\@2.11.0\@appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar /data/local/tmp/'
-2018-07-14 14:55:17:390 - info: [debug] [ADB] Attempting to kill all uiautomator processes
-2018-07-14 14:55:17:390 - info: [debug] [ADB] Getting all processes with uiautomator
-2018-07-14 14:55:17:390 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell ps'
-2018-07-14 14:55:17:498 - info: [ADB] No uiautomator process found to kill, continuing...
-2018-07-14 14:55:17:498 - info: [debug] [UiAutomator] Starting UIAutomator
-2018-07-14 14:55:17:498 - info: [debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","36165441","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","org.cnodejs.android.md","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
-2018-07-14 14:55:18:093 - info: [debug] [UiAutomator] Moving to state 'online'
-2018-07-14 14:55:18:096 - info: [AndroidBootstrap] Android bootstrap socket is now connected
-2018-07-14 14:55:18:097 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys window'
-2018-07-14 14:55:18:104 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
-2018-07-14 14:55:18:105 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
-2018-07-14 14:55:18:105 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
-2018-07-14 14:55:18:147 - info: [AndroidDriver] Screen already unlocked, doing nothing
-2018-07-14 14:55:18:148 - info: [debug] [ADB] Device API level: 19
-2018-07-14 14:55:18:149 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell am start -W -n org.cnodejs.android.md/org.cnodejs.android.md.ui.activity.LaunchActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
-2018-07-14 14:55:19:531 - info: [debug] [ADB] Waiting up to 20000ms for activity matching pkg: 'org.cnodejs.android.md' and activity: 'org.cnodejs.android.md.ui.activity.LaunchActivity' to be focused
-2018-07-14 14:55:19:532 - info: [debug] [ADB] Possible activities, to be checked: 'org.cnodejs.android.md.ui.activity.LaunchActivity', 'org.cnodejs.android.md.org.cnodejs.android.md.ui.activity.LaunchActivity'
-2018-07-14 14:55:19:532 - info: [debug] [ADB] Getting focused package and activity
-2018-07-14 14:55:19:534 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys window windows'
-2018-07-14 14:55:19:609 - info: [debug] [ADB] Found package: 'org.cnodejs.android.md' and fully qualified activity name : 'org.cnodejs.android.md.ui.activity.LaunchActivity'
-2018-07-14 14:55:19:610 - info: [Appium] New AndroidDriver session created successfully, session eb58aa38-0eed-46ea-a74c-7d6904a67a4e added to master session list
-2018-07-14 14:55:19:611 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1531580119611 (22:55:19 GMT+0800 (CST))
-2018-07-14 14:55:19:612 - info: [debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"36165441","noReset":true,"platformName":"Android","deviceName":"36165441","app":"/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","appPackage":"org.cnodejs.android.md"},"udid":"36165441","noReset":true,"platformName":"Android","deviceName":"36165441","app":"/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","appPackage":"org.cnodejs.android.md","deviceUDID":"36165441","platformVersion":"4.4.4","deviceScreenSize":"720x1280","deviceModel":"vivo Y27","deviceManufacturer":"vivo","appWaitPackage":"org.cnodejs.android.md","appActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity"}
-2018-07-14 14:55:19:615 - info: [HTTP] <-- POST /wd/hub/session 200 9625 ms - 1048
-2018-07-14 14:55:19:615 - info: [HTTP] 
-2018-07-14 14:55:24:631 - info: [HTTP] --> POST /wd/hub/session/eb58aa38-0eed-46ea-a74c-7d6904a67a4e/element
-2018-07-14 14:55:24:632 - info: [HTTP] {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.ImageButton\")","sessionId":"eb58aa38-0eed-46ea-a74c-7d6904a67a4e"}
-2018-07-14 14:55:24:635 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.ImageButton\")","eb58aa38-0eed-46ea-a74c-7d6904a67a4e"]
-2018-07-14 14:55:24:638 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2018-07-14 14:55:24:639 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
-2018-07-14 14:55:24:641 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.ImageButton\")","context":"","multiple":false}}
-2018-07-14 14:55:24:645 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.ImageButton\")","context":"","multiple":false}}
-2018-07-14 14:55:24:646 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2018-07-14 14:55:24:647 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2018-07-14 14:55:24:648 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className("android.widget.ImageButton")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
-2018-07-14 14:55:24:648 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.ImageButton")
-2018-07-14 14:55:24:651 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.ImageButton"
-2018-07-14 14:55:24:652 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.ImageButton"
-2018-07-14 14:55:24:652 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.ImageButton]
-2018-07-14 14:55:24:689 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"1"},"status":0}
-2018-07-14 14:55:24:690 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2018-07-14 14:55:24:692 - info: [debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"1"}
-2018-07-14 14:55:24:694 - info: [HTTP] <-- POST /wd/hub/session/eb58aa38-0eed-46ea-a74c-7d6904a67a4e/element 200 61 ms - 87
-2018-07-14 14:55:24:694 - info: [HTTP] 
-2018-07-14 14:55:24:702 - info: [HTTP] --> POST /wd/hub/session/eb58aa38-0eed-46ea-a74c-7d6904a67a4e/element/1/click
-2018-07-14 14:55:24:702 - info: [HTTP] {"id":"1","sessionId":"eb58aa38-0eed-46ea-a74c-7d6904a67a4e"}
-2018-07-14 14:55:24:704 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["1","eb58aa38-0eed-46ea-a74c-7d6904a67a4e"]
-2018-07-14 14:55:24:705 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
-2018-07-14 14:55:24:708 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
-2018-07-14 14:55:24:709 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2018-07-14 14:55:24:709 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
-2018-07-14 14:55:24:912 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
-2018-07-14 14:55:24:913 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2018-07-14 14:55:24:915 - info: [debug] [MJSONWP] Responding to client with driver.click() result: true
-2018-07-14 14:55:24:917 - info: [HTTP] <-- POST /wd/hub/session/eb58aa38-0eed-46ea-a74c-7d6904a67a4e/element/1/click 200 213 ms - 76
-2018-07-14 14:55:24:918 - info: [HTTP] 
-2018-07-14 14:55:24:927 - info: [HTTP] --> POST /wd/hub/session/eb58aa38-0eed-46ea-a74c-7d6904a67a4e/element
-2018-07-14 14:55:24:928 - info: [HTTP] {"using":"id","value":"org.cnodejs.android.md:id/tv_login_name","sessionId":"eb58aa38-0eed-46ea-a74c-7d6904a67a4e"}
-2018-07-14 14:55:24:929 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["id","org.cnodejs.android.md:id/tv_login_name","eb58aa38-0eed-46ea-a74c-7d6904a67a4e"]
-2018-07-14 14:55:24:930 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
-2018-07-14 14:55:24:930 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
-2018-07-14 14:55:24:931 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"org.cnodejs.android.md:id/tv_login_name","context":"","multiple":false}}
-2018-07-14 14:55:24:933 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"org.cnodejs.android.md:id/tv_login_name","context":"","multiple":false}}
-2018-07-14 14:55:24:935 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2018-07-14 14:55:24:936 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
-2018-07-14 14:55:24:937 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'org.cnodejs.android.md:id/tv_login_name' using 'ID' with the contextId: '' multiple: false
-2018-07-14 14:55:24:937 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=org.cnodejs.android.md:id/tv_login_name]
-2018-07-14 14:55:26:063 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"2"},"status":0}
-2018-07-14 14:55:26:064 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2018-07-14 14:55:26:066 - info: [debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"2"}
-2018-07-14 14:55:26:068 - info: [HTTP] <-- POST /wd/hub/session/eb58aa38-0eed-46ea-a74c-7d6904a67a4e/element 200 1139 ms - 87
-2018-07-14 14:55:26:068 - info: [HTTP] 
-2018-07-14 14:55:26:077 - info: [HTTP] --> POST /wd/hub/session/eb58aa38-0eed-46ea-a74c-7d6904a67a4e/element/2/click
-2018-07-14 14:55:26:077 - info: [HTTP] {"id":"2","sessionId":"eb58aa38-0eed-46ea-a74c-7d6904a67a4e"}
-2018-07-14 14:55:26:078 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["2","eb58aa38-0eed-46ea-a74c-7d6904a67a4e"]
-2018-07-14 14:55:26:079 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
-2018-07-14 14:55:26:082 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
-2018-07-14 14:55:26:082 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
-2018-07-14 14:55:26:082 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
-2018-07-14 14:55:27:001 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
-2018-07-14 14:55:27:002 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
-2018-07-14 14:55:27:003 - info: [debug] [MJSONWP] Responding to client with driver.click() result: true
-2018-07-14 14:55:27:006 - info: [HTTP] <-- POST /wd/hub/session/eb58aa38-0eed-46ea-a74c-7d6904a67a4e/element/2/click 200 928 ms - 76
-2018-07-14 14:55:27:007 - info: [HTTP] 
-2018-07-14 14:55:32:018 - info: [HTTP] --> POST /wd/hub/session/aa8922d0-9391-49a9-a4d5-2b825788998e/element
-2018-07-14 14:55:32:018 - info: [HTTP] {"using":"id","value":"org.cnodejs.android.md:id/edt_access_token","sessionId":"aa8922d0-9391-49a9-a4d5-2b825788998e"}
-2018-07-14 14:55:32:035 - info: [HTTP] <-- POST /wd/hub/session/aa8922d0-9391-49a9-a4d5-2b825788998e/element 404 17 ms - 4364
-2018-07-14 14:55:32:035 - info: [HTTP] 
-2018-07-14 14:55:32:040 - info: [HTTP] --> POST /wd/hub/session/aa8922d0-9391-49a9-a4d5-2b825788998e/element
-2018-07-14 14:55:32:040 - info: [HTTP] {"using":"id","value":"org.cnodejs.android.md:id/btn_login","sessionId":"aa8922d0-9391-49a9-a4d5-2b825788998e"}
-2018-07-14 14:55:32:044 - info: [HTTP] <-- POST /wd/hub/session/aa8922d0-9391-49a9-a4d5-2b825788998e/element 404 3 ms - 4364
-2018-07-14 14:55:32:044 - info: [HTTP] 
-2018-07-14 14:56:00:343 - error: [Logcat] Logcat terminated with code null, signal SIGINT
-2018-07-14 14:56:00:343 - error: [UiAutomator] UiAutomator exited unexpectedly with code null, signal SIGINT
-2018-07-14 14:56:00:344 - info: [debug] [UiAutomator] Moving to state 'stopped'
-2018-07-14 14:56:00:345 - info: [Appium] Received SIGINT - shutting down
-2018-07-14 14:56:00:381 - info: [debug] [AndroidDriver] Shutting down Android driver
-2018-07-14 14:56:00:382 - warn: [Appium] Closing session, cause was 'UiAUtomator shut down unexpectedly'
-2018-07-14 14:56:00:382 - info: [Appium] Removing session eb58aa38-0eed-46ea-a74c-7d6904a67a4e from our master session list
-2018-07-14 14:56:00:386 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell am force-stop org.cnodejs.android.md'
-2018-07-14 14:56:01:187 - info: [debug] [ADB] Pressing the HOME button
-2018-07-14 14:56:01:188 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell input keyevent 3'
-2018-07-14 14:56:01:203 - error: uncaughtException: write EPIPE date=Sat Jul 14 2018 22:56:01 GMT+0800 (CST), pid=66844, uid=501, gid=20, cwd=/Users/cloudin/Desktop/project/AMTest/AppiumPython/test_main, execPath=/usr/local/Cellar/node/9.4.0/bin/node, version=v9.4.0, argv=[/usr/local/Cellar/node/9.4.0/bin/node, /usr/local/bin/appium, -p, 4700, -bp, 4900, -U36165441, --no-reset, --session-override, --log, /Users/cloudin/Desktop/project/AMTest/AppiumPython/log/test00.log], rss=101355520, heapTotal=69423104, heapUsed=63376080, external=111660, loadavg=[3.798828125, 2.982421875, 2.90576171875], uptime=96031, trace=[column=13, file=util.js, function=_errnoException, line=1003, method=null, native=false, column=14, file=net.js, function=WriteWrap.afterWrite, line=863, method=afterWrite, native=false], stack=[Error: write EPIPE,     at _errnoException (util.js:1003:13),     at WriteWrap.afterWrite (net.js:863:14)]
-2018-07-14 14:56:01:205 - error: uncaughtException: write EPIPE date=Sat Jul 14 2018 22:56:01 GMT+0800 (CST), pid=66844, uid=501, gid=20, cwd=/Users/cloudin/Desktop/project/AMTest/AppiumPython/test_main, execPath=/usr/local/Cellar/node/9.4.0/bin/node, version=v9.4.0, argv=[/usr/local/Cellar/node/9.4.0/bin/node, /usr/local/bin/appium, -p, 4700, -bp, 4900, -U36165441, --no-reset, --session-override, --log, /Users/cloudin/Desktop/project/AMTest/AppiumPython/log/test00.log], rss=101498880, heapTotal=69423104, heapUsed=63544328, external=111684, loadavg=[3.798828125, 2.982421875, 2.90576171875], uptime=96031, trace=[column=13, file=util.js, function=_errnoException, line=1003, method=null, native=false, column=14, file=net.js, function=WriteWrap.afterWrite, line=863, method=afterWrite, native=false], stack=[Error: write EPIPE,     at _errnoException (util.js:1003:13),     at WriteWrap.afterWrite (net.js:863:14)]
+2018-07-15 08:01:49:372 - info: [Appium] Welcome to Appium v1.8.0
+2018-07-15 08:01:49:374 - info: [Appium] Non-default server args:
+2018-07-15 08:01:49:374 - info: [Appium]   port: 4700
+2018-07-15 08:01:49:375 - info: [Appium]   bootstrapPort: 4900
+2018-07-15 08:01:49:375 - info: [Appium]   sessionOverride: true
+2018-07-15 08:01:49:375 - info: [Appium]   log: /Users/cloudin/Desktop/project/AMTest/AppiumPython/log/test00.log
+2018-07-15 08:01:49:375 - info: [Appium]   udid: 36165441
+2018-07-15 08:01:49:375 - info: [Appium]   noReset: true
+2018-07-15 08:01:49:376 - warn: [Appium] Deprecated server args:
+2018-07-15 08:01:49:376 - warn: [Appium]   -U,--udid => --default-capabilities '{"udid":"36165441"}'
+2018-07-15 08:01:49:376 - warn: [Appium]   --no-reset => --default-capabilities '{"noReset":true}'
+2018-07-15 08:01:49:376 - info: [Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+2018-07-15 08:01:49:376 - info: [Appium]   udid: 36165441
+2018-07-15 08:01:49:377 - info: [Appium]   noReset: true
+2018-07-15 08:01:49:408 - info: [Appium] Appium REST http interface listener started on 0.0.0.0:4700
+2018-07-15 08:02:15:729 - info: [HTTP] --> POST /wd/hub/session
+2018-07-15 08:02:15:729 - info: [HTTP] {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"platformName":"Android"}},"desiredCapabilities":{"platformName":"Android","deviceName":"36165441","app":"/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","noReset":"true","appPackage":"org.cnodejs.android.md"}}
+2018-07-15 08:02:15:731 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"platformName":"Android","deviceName":"36165441","app":"/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","noReset":"true","appPackage":"org.cnodejs.android.md"},null,{"firstMatch":[{}],"alwaysMatch":{"platformName":"Android"}}]
+2018-07-15 08:02:15:733 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1531641735732 (16:02:15 GMT+0800 (CST))
+2018-07-15 08:02:15:736 - warn: [BaseDriver] The capabilities ["udid","noReset"] are not standard capabilities and should have an extension prefix
+2018-07-15 08:02:15:740 - warn: [Appium] Could not parse W3C capabilities: 'deviceName' can't be blank. Falling back to JSONWP protocol.
+2018-07-15 08:02:15:740 - warn: [Appium] The following capabilities were provided in the JSONWP desired capabilities that are missing in W3C capabilities: ["udid","noReset","platformName","deviceName","app","appWaitActivity","appPackage"]. Falling back to JSONWP protocol.
+2018-07-15 08:02:15:741 - info: [Appium] Creating new AndroidDriver (v2.7.0) session
+2018-07-15 08:02:15:741 - info: [Appium] Capabilities:
+2018-07-15 08:02:15:741 - info: [Appium]   udid: 36165441
+2018-07-15 08:02:15:742 - info: [Appium]   noReset: true
+2018-07-15 08:02:15:742 - info: [Appium]   platformName: Android
+2018-07-15 08:02:15:742 - info: [Appium]   deviceName: 36165441
+2018-07-15 08:02:15:743 - info: [Appium]   app: /Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk
+2018-07-15 08:02:15:743 - info: [Appium]   appWaitActivity: org.cnodejs.android.md.ui.activity.LaunchActivity
+2018-07-15 08:02:15:744 - info: [Appium]   appPackage: org.cnodejs.android.md
+2018-07-15 08:02:15:749 - info: [debug] [BaseDriver] Creating session with MJSONWP desired capabilities: {"udid":"36165441","noReset...
+2018-07-15 08:02:15:749 - warn: [BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+2018-07-15 08:02:15:754 - info: [BaseDriver] Session created with session id: bb834f7a-5547-490d-99ab-ad98aa6a1c0f
+2018-07-15 08:02:15:754 - info: [debug] [AndroidDriver] Getting Java version
+2018-07-15 08:02:15:896 - info: [AndroidDriver] Java version is: 1.8.0_144
+2018-07-15 08:02:15:900 - info: [ADB] Checking whether adb is present
+2018-07-15 08:02:15:916 - info: [ADB] Found 4 'build-tools' folders under '/Users/work/android-sdk-macosx' (newest first):
+2018-07-15 08:02:15:916 - info: [ADB]     /Users/work/android-sdk-macosx/build-tools/26.0.1
+2018-07-15 08:02:15:916 - info: [ADB]     /Users/work/android-sdk-macosx/build-tools/25.0.3
+2018-07-15 08:02:15:916 - info: [ADB]     /Users/work/android-sdk-macosx/build-tools/25.0.0
+2018-07-15 08:02:15:917 - info: [ADB]     /Users/work/android-sdk-macosx/build-tools/23.0.1
+2018-07-15 08:02:15:917 - info: [ADB] Using adb from /Users/work/android-sdk-macosx/platform-tools/adb
+2018-07-15 08:02:15:918 - info: [AndroidDriver] Retrieving device list
+2018-07-15 08:02:15:920 - info: [debug] [ADB] Trying to find a connected android device
+2018-07-15 08:02:15:923 - info: [debug] [ADB] Getting connected devices...
+2018-07-15 08:02:15:947 - info: [debug] [ADB] 1 device(s) connected
+2018-07-15 08:02:15:948 - info: [AndroidDriver] Using device: 36165441
+2018-07-15 08:02:15:950 - info: [debug] [ADB] Setting device id to 36165441
+2018-07-15 08:02:15:954 - info: [BaseDriver] Using local app '/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk'
+2018-07-15 08:02:15:955 - info: [debug] [AndroidDriver] Checking whether app is actually present
+2018-07-15 08:02:15:956 - info: [AndroidDriver] Starting Android session
+2018-07-15 08:02:15:959 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 wait-for-device'
+2018-07-15 08:02:15:987 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell echo ping'
+2018-07-15 08:02:16:018 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2018-07-15 08:02:16:021 - info: [debug] [ADB] Getting install status for io.appium.settings
+2018-07-15 08:02:16:021 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell pm list packages io.appium.settings'
+2018-07-15 08:02:16:788 - info: [debug] [ADB] App is installed
+2018-07-15 08:02:16:790 - info: [debug] [ADB] Getting package info for 'io.appium.settings'
+2018-07-15 08:02:16:791 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys package io.appium.settings'
+2018-07-15 08:02:16:852 - info: [ADB] Checking whether aapt is present
+2018-07-15 08:02:16:856 - info: [ADB] Using aapt from /Users/work/android-sdk-macosx/build-tools/26.0.1/aapt
+2018-07-15 08:02:16:871 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+2018-07-15 08:02:16:872 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell ps'
+2018-07-15 08:02:16:974 - info: [debug] [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2018-07-15 08:02:16:976 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell getprop ro.build.version.sdk'
+2018-07-15 08:02:17:000 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 19
+2018-07-15 08:02:17:001 - info: [debug] [ADB] Device API level: 19
+2018-07-15 08:02:17:001 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell settings put secure mock_location 1'
+2018-07-15 08:02:17:753 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
+2018-07-15 08:02:17:753 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
+2018-07-15 08:02:17:758 - info: [debug] [Logcat] Starting logcat capture
+2018-07-15 08:02:17:797 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2018-07-15 08:02:17:799 - info: [debug] [ADB] Getting install status for io.appium.unlock
+2018-07-15 08:02:17:800 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell pm list packages io.appium.unlock'
+2018-07-15 08:02:18:652 - info: [debug] [ADB] App is installed
+2018-07-15 08:02:18:652 - info: [debug] [ADB] Getting package info for 'io.appium.unlock'
+2018-07-15 08:02:18:653 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys package io.appium.unlock'
+2018-07-15 08:02:18:726 - info: [debug] [ADB] The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+2018-07-15 08:02:18:727 - info: [ADB] Getting device platform version
+2018-07-15 08:02:18:727 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell getprop ro.build.version.release'
+2018-07-15 08:02:18:756 - info: [debug] [ADB] Current device property 'ro.build.version.release': 4.4.4
+2018-07-15 08:02:18:758 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell wm size'
+2018-07-15 08:02:19:515 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell getprop ro.product.model'
+2018-07-15 08:02:19:556 - info: [debug] [ADB] Current device property 'ro.product.model': vivo Y27
+2018-07-15 08:02:19:557 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell getprop ro.product.manufacturer'
+2018-07-15 08:02:19:595 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': vivo
+2018-07-15 08:02:19:598 - info: [debug] [AndroidDriver] Parsing package and activity from app manifest
+2018-07-15 08:02:19:604 - info: [ADB] Using the alternative activity name detection method because of: Could not find apkanalyzer in /Users/work/android-sdk-macosx/platform-tools/apkanalyzer,/Users/work/android-sdk-macosx/emulator/apkanalyzer,/Users/work/android-sdk-macosx/tools/apkanalyzer,/Users/work/android-sdk-macosx/tools/bin/apkanalyzer,/Users/work/android-sdk-macosx/build-tools/26.0.1/apkanalyzer,/Users/work/android-sdk-macosx/build-tools/25.0.3/apkanalyzer,/Users/work/android-sdk-macosx/build-tools/25.0.0/apkanalyzer,/Users/work/android-sdk-macosx/build-tools/23.0.1/apkanalyzer. Do you have the Android SDK installed at '/Users/work/android-sdk-macosx'?
+2018-07-15 08:02:19:605 - info: [ADB] Extracting package and launch activity from manifest
+2018-07-15 08:02:19:619 - info: [ADB] Package name: 'org.cnodejs.android.md'
+2018-07-15 08:02:19:619 - info: [ADB] Main activity name: 'org.cnodejs.android.md.ui.activity.LaunchActivity'
+2018-07-15 08:02:19:619 - info: [debug] [AndroidDriver] Parsed package and activity are: org.cnodejs.android.md/org.cnodejs.android.md.ui.activity.LaunchActivity
+2018-07-15 08:02:19:620 - info: [debug] [ADB] Getting install status for org.cnodejs.android.md
+2018-07-15 08:02:19:620 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell pm list packages org.cnodejs.android.md'
+2018-07-15 08:02:20:386 - info: [debug] [ADB] App is installed
+2018-07-15 08:02:20:387 - info: [debug] [ADB] Getting package info for 'org.cnodejs.android.md'
+2018-07-15 08:02:20:388 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys package org.cnodejs.android.md'
+2018-07-15 08:02:20:474 - info: [debug] [ADB] The installed 'org.cnodejs.android.md' package does not require upgrade ('1.4.0' >= '1.4.0')
+2018-07-15 08:02:20:476 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell rm -rf /data/local/tmp/strings.json'
+2018-07-15 08:02:20:506 - info: [debug] [AndroidDriver] Extracting strings from apk
+2018-07-15 08:02:20:506 - info: [debug] [AndroidDriver] /Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk
+2018-07-15 08:02:20:507 - info: [debug] [AndroidDriver] null
+2018-07-15 08:02:20:507 - info: [debug] [AndroidDriver] /var/folders/yn/d3b7t07n7vl6f_qkplkl15500000gn/T/org.cnodejs.android.md
+2018-07-15 08:02:20:508 - info: [debug] [ADB] Extracting strings for language: default
+2018-07-15 08:02:20:627 - info: [ADB] Successfully extracted 179 strings from '/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk' resources for '(default)' configuration
+2018-07-15 08:02:20:704 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 push /var/folders/yn/d3b7t07n7vl6f_qkplkl15500000gn/T/org.cnodejs.android.md/strings.json /data/local/tmp'
+2018-07-15 08:02:20:743 - info: [debug] [AndroidBootstrap] Watching for bootstrap disconnect
+2018-07-15 08:02:20:744 - info: [debug] [ADB] Forwarding system: 4900 to device: 4724
+2018-07-15 08:02:20:744 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 forward tcp\:4900 tcp\:4724'
+2018-07-15 08:02:20:763 - info: [debug] [UiAutomator] Starting UiAutomator
+2018-07-15 08:02:20:764 - info: [debug] [UiAutomator] Moving to state 'starting'
+2018-07-15 08:02:20:764 - info: [debug] [UiAutomator] Parsing uiautomator jar
+2018-07-15 08:02:20:764 - info: [debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+2018-07-15 08:02:20:764 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 push /usr/local/lib/node_modules/appium/node_modules/_appium-android-bootstrap\@2.11.0\@appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar /data/local/tmp/'
+2018-07-15 08:02:20:795 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2018-07-15 08:02:20:797 - info: [debug] [ADB] Getting all processes with uiautomator
+2018-07-15 08:02:20:798 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell ps'
+2018-07-15 08:02:20:897 - info: [ADB] No uiautomator process found to kill, continuing...
+2018-07-15 08:02:20:897 - info: [debug] [UiAutomator] Starting UIAutomator
+2018-07-15 08:02:20:897 - info: [debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","36165441","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","org.cnodejs.android.md","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+2018-07-15 08:02:21:515 - info: [debug] [UiAutomator] Moving to state 'online'
+2018-07-15 08:02:21:523 - info: [AndroidBootstrap] Android bootstrap socket is now connected
+2018-07-15 08:02:21:525 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys window'
+2018-07-15 08:02:21:533 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+2018-07-15 08:02:21:534 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+2018-07-15 08:02:21:534 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+2018-07-15 08:02:21:587 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2018-07-15 08:02:21:589 - info: [debug] [ADB] Device API level: 19
+2018-07-15 08:02:21:590 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell am start -W -n org.cnodejs.android.md/org.cnodejs.android.md.ui.activity.LaunchActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2018-07-15 08:02:23:001 - info: [debug] [ADB] Waiting up to 20000ms for activity matching pkg: 'org.cnodejs.android.md' and activity: 'org.cnodejs.android.md.ui.activity.LaunchActivity' to be focused
+2018-07-15 08:02:23:002 - info: [debug] [ADB] Possible activities, to be checked: 'org.cnodejs.android.md.ui.activity.LaunchActivity', 'org.cnodejs.android.md.org.cnodejs.android.md.ui.activity.LaunchActivity'
+2018-07-15 08:02:23:004 - info: [debug] [ADB] Getting focused package and activity
+2018-07-15 08:02:23:005 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell dumpsys window windows'
+2018-07-15 08:02:23:062 - info: [debug] [ADB] Found package: 'org.cnodejs.android.md' and fully qualified activity name : 'org.cnodejs.android.md.ui.activity.LaunchActivity'
+2018-07-15 08:02:23:066 - info: [Appium] New AndroidDriver session created successfully, session bb834f7a-5547-490d-99ab-ad98aa6a1c0f added to master session list
+2018-07-15 08:02:23:067 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1531641743067 (16:02:23 GMT+0800 (CST))
+2018-07-15 08:02:23:070 - info: [debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"udid":"36165441","noReset":true,"platformName":"Android","deviceName":"36165441","app":"/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","appPackage":"org.cnodejs.android.md"},"udid":"36165441","noReset":true,"platformName":"Android","deviceName":"36165441","app":"/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk","appWaitActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity","appPackage":"org.cnodejs.android.md","deviceUDID":"36165441","platformVersion":"4.4.4","deviceScreenSize":"720x1280","deviceModel":"vivo Y27","deviceManufacturer":"vivo","appWaitPackage":"org.cnodejs.android.md","appActivity":"org.cnodejs.android.md.ui.activity.LaunchActivity"}
+2018-07-15 08:02:23:080 - info: [HTTP] <-- POST /wd/hub/session 200 7346 ms - 1048
+2018-07-15 08:02:23:080 - info: [HTTP] 
+2018-07-15 08:02:28:096 - info: [HTTP] --> POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element
+2018-07-15 08:02:28:097 - info: [HTTP] {"using":"-android uiautomator","value":"new UiSelector().className(\"android.widget.ImageButton\")","sessionId":"bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+2018-07-15 08:02:28:100 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().className(\"android.widget.ImageButton\")","bb834f7a-5547-490d-99ab-ad98aa6a1c0f"]
+2018-07-15 08:02:28:102 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-07-15 08:02:28:103 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-07-15 08:02:28:105 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.ImageButton\")","context":"","multiple":false}}
+2018-07-15 08:02:28:114 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"-android uiautomator","selector":"new UiSelector().className(\"android.widget.ImageButton\")","context":"","multiple":false}}
+2018-07-15 08:02:28:114 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-07-15 08:02:28:114 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-07-15 08:02:28:114 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'new UiSelector().className("android.widget.ImageButton")' using 'ANDROID_UIAUTOMATOR' with the contextId: '' multiple: false
+2018-07-15 08:02:28:114 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Parsing selector: new UiSelector().className("android.widget.ImageButton")
+2018-07-15 08:02:28:114 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: java.lang.Class<T> arg: "android.widget.ImageButton"
+2018-07-15 08:02:28:115 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] UiSelector coerce type: class java.lang.String arg: "android.widget.ImageButton"
+2018-07-15 08:02:28:115 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[CLASS=android.widget.ImageButton]
+2018-07-15 08:02:28:199 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"1"},"status":0}
+2018-07-15 08:02:28:200 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-07-15 08:02:28:203 - info: [debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"1"}
+2018-07-15 08:02:28:205 - info: [HTTP] <-- POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element 200 108 ms - 87
+2018-07-15 08:02:28:205 - info: [HTTP] 
+2018-07-15 08:02:28:213 - info: [HTTP] --> POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element/1/click
+2018-07-15 08:02:28:213 - info: [HTTP] {"id":"1","sessionId":"bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+2018-07-15 08:02:28:214 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["1","bb834f7a-5547-490d-99ab-ad98aa6a1c0f"]
+2018-07-15 08:02:28:216 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+2018-07-15 08:02:28:219 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"1"}}
+2018-07-15 08:02:28:220 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-07-15 08:02:28:221 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2018-07-15 08:02:28:531 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+2018-07-15 08:02:28:531 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-07-15 08:02:28:532 - info: [debug] [MJSONWP] Responding to client with driver.click() result: true
+2018-07-15 08:02:28:534 - info: [HTTP] <-- POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element/1/click 200 320 ms - 76
+2018-07-15 08:02:28:534 - info: [HTTP] 
+2018-07-15 08:02:28:542 - info: [HTTP] --> POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element
+2018-07-15 08:02:28:543 - info: [HTTP] {"using":"id","value":"org.cnodejs.android.md:id/tv_login_name","sessionId":"bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+2018-07-15 08:02:28:543 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["id","org.cnodejs.android.md:id/tv_login_name","bb834f7a-5547-490d-99ab-ad98aa6a1c0f"]
+2018-07-15 08:02:28:544 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-07-15 08:02:28:545 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-07-15 08:02:28:545 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"org.cnodejs.android.md:id/tv_login_name","context":"","multiple":false}}
+2018-07-15 08:02:28:549 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"org.cnodejs.android.md:id/tv_login_name","context":"","multiple":false}}
+2018-07-15 08:02:28:549 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-07-15 08:02:28:549 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-07-15 08:02:28:550 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'org.cnodejs.android.md:id/tv_login_name' using 'ID' with the contextId: '' multiple: false
+2018-07-15 08:02:28:550 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=org.cnodejs.android.md:id/tv_login_name]
+2018-07-15 08:02:29:747 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"2"},"status":0}
+2018-07-15 08:02:29:747 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-07-15 08:02:29:749 - info: [debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"2"}
+2018-07-15 08:02:29:750 - info: [HTTP] <-- POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element 200 1207 ms - 87
+2018-07-15 08:02:29:751 - info: [HTTP] 
+2018-07-15 08:02:29:758 - info: [HTTP] --> POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element/2/click
+2018-07-15 08:02:29:758 - info: [HTTP] {"id":"2","sessionId":"bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+2018-07-15 08:02:29:759 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["2","bb834f7a-5547-490d-99ab-ad98aa6a1c0f"]
+2018-07-15 08:02:29:765 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
+2018-07-15 08:02:29:768 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"2"}}
+2018-07-15 08:02:29:768 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-07-15 08:02:29:768 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2018-07-15 08:02:30:418 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+2018-07-15 08:02:30:419 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-07-15 08:02:30:419 - info: [debug] [MJSONWP] Responding to client with driver.click() result: true
+2018-07-15 08:02:30:420 - info: [HTTP] <-- POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element/2/click 200 662 ms - 76
+2018-07-15 08:02:30:421 - info: [HTTP] 
+2018-07-15 08:02:35:429 - info: [HTTP] --> POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element
+2018-07-15 08:02:35:429 - info: [HTTP] {"using":"id","value":"org.cnodejs.android.md:id/edt_access_token","sessionId":"bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+2018-07-15 08:02:35:430 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["id","org.cnodejs.android.md:id/edt_access_token","bb834f7a-5547-490d-99ab-ad98aa6a1c0f"]
+2018-07-15 08:02:35:431 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-07-15 08:02:35:431 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-07-15 08:02:35:432 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"org.cnodejs.android.md:id/edt_access_token","context":"","multiple":false}}
+2018-07-15 08:02:35:435 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"org.cnodejs.android.md:id/edt_access_token","context":"","multiple":false}}
+2018-07-15 08:02:35:435 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-07-15 08:02:35:436 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-07-15 08:02:35:436 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'org.cnodejs.android.md:id/edt_access_token' using 'ID' with the contextId: '' multiple: false
+2018-07-15 08:02:35:437 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=org.cnodejs.android.md:id/edt_access_token]
+2018-07-15 08:02:35:541 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"3"},"status":0}
+2018-07-15 08:02:35:543 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-07-15 08:02:35:548 - info: [debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"3"}
+2018-07-15 08:02:35:549 - info: [HTTP] <-- POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element 200 120 ms - 87
+2018-07-15 08:02:35:550 - info: [HTTP] 
+2018-07-15 08:02:35:557 - info: [HTTP] --> POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element/3/value
+2018-07-15 08:02:35:557 - info: [HTTP] {"text":"rgerwhgewrhew","value":["r","g","e","r","w","h","g","e","w","r","h","e","w"],"id":"3","sessionId":"bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+2018-07-15 08:02:35:559 - info: [debug] [W3C] Calling AppiumDriver.setValue() with args: [["r","g","e","r","w","h","g","e","w","r","h","e","w"],"3","bb834f7a-5547-490d-99ab-ad98aa6a1c0f"]
+2018-07-15 08:02:35:560 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:setText","params":{"elementId":"3","text":"rgerwhgewrhew","replace":false}}
+2018-07-15 08:02:35:565 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:setText","params":{"elementId":"3","text":"rgerwhgewrhew","replace":false}}
+2018-07-15 08:02:35:566 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-07-15 08:02:35:566 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: setText
+2018-07-15 08:02:35:567 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using element passed in: 3
+2018-07-15 08:02:35:573 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Attempting to clear using UiObject.clearText().
+2018-07-15 08:02:39:224 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text remains after clearing, but it appears to be hint text.
+2018-07-15 08:02:39:240 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Text not cleared. Assuming remainder is hint text.
+2018-07-15 08:02:39:241 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Sending plain text to element: rgerwhgewrhew
+2018-07-15 08:02:41:860 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+2018-07-15 08:02:41:861 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-07-15 08:02:41:862 - info: [debug] [MJSONWP] Responding to client with driver.setValue() result: true
+2018-07-15 08:02:41:863 - info: [HTTP] <-- POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element/3/value 200 6305 ms - 76
+2018-07-15 08:02:41:864 - info: [HTTP] 
+2018-07-15 08:02:41:871 - info: [HTTP] --> POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element
+2018-07-15 08:02:41:872 - info: [HTTP] {"using":"id","value":"org.cnodejs.android.md:id/btn_login","sessionId":"bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+2018-07-15 08:02:41:872 - info: [debug] [W3C] Calling AppiumDriver.findElement() with args: ["id","org.cnodejs.android.md:id/btn_login","bb834f7a-5547-490d-99ab-ad98aa6a1c0f"]
+2018-07-15 08:02:41:873 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-07-15 08:02:41:873 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-07-15 08:02:41:874 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"org.cnodejs.android.md:id/btn_login","context":"","multiple":false}}
+2018-07-15 08:02:41:879 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"org.cnodejs.android.md:id/btn_login","context":"","multiple":false}}
+2018-07-15 08:02:41:879 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-07-15 08:02:41:880 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-07-15 08:02:41:880 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'org.cnodejs.android.md:id/btn_login' using 'ID' with the contextId: '' multiple: false
+2018-07-15 08:02:41:880 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=org.cnodejs.android.md:id/btn_login]
+2018-07-15 08:02:42:385 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":{"ELEMENT":"4"},"status":0}
+2018-07-15 08:02:42:386 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-07-15 08:02:42:387 - info: [debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"4"}
+2018-07-15 08:02:42:388 - info: [HTTP] <-- POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element 200 516 ms - 87
+2018-07-15 08:02:42:388 - info: [HTTP] 
+2018-07-15 08:02:42:395 - info: [HTTP] --> POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element/4/click
+2018-07-15 08:02:42:396 - info: [HTTP] {"id":"4","sessionId":"bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+2018-07-15 08:02:42:396 - info: [debug] [W3C] Calling AppiumDriver.click() with args: ["4","bb834f7a-5547-490d-99ab-ad98aa6a1c0f"]
+2018-07-15 08:02:42:397 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"4"}}
+2018-07-15 08:02:42:401 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"4"}}
+2018-07-15 08:02:42:403 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-07-15 08:02:42:403 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+2018-07-15 08:02:42:929 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":true,"status":0}
+2018-07-15 08:02:42:930 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-07-15 08:02:42:930 - info: [debug] [MJSONWP] Responding to client with driver.click() result: true
+2018-07-15 08:02:42:932 - info: [HTTP] <-- POST /wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element/4/click 200 536 ms - 76
+2018-07-15 08:02:42:933 - info: [HTTP] 
+2018-07-15 08:02:50:068 - info: [Appium] Received SIGINT - shutting down
+2018-07-15 08:02:50:073 - error: [Logcat] Logcat terminated with code null, signal SIGINT
+2018-07-15 08:02:50:076 - error: [UiAutomator] UiAutomator exited unexpectedly with code null, signal SIGINT
+2018-07-15 08:02:50:077 - info: [debug] [UiAutomator] Moving to state 'stopped'
+2018-07-15 08:02:50:103 - info: [debug] [AndroidDriver] Shutting down Android driver
+2018-07-15 08:02:50:104 - warn: [Appium] Closing session, cause was 'UiAUtomator shut down unexpectedly'
+2018-07-15 08:02:50:104 - info: [Appium] Removing session bb834f7a-5547-490d-99ab-ad98aa6a1c0f from our master session list
+2018-07-15 08:02:50:106 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell am force-stop org.cnodejs.android.md'
+2018-07-15 08:02:50:876 - info: [debug] [ADB] Pressing the HOME button
+2018-07-15 08:02:50:876 - info: [debug] [ADB] Running '/Users/work/android-sdk-macosx/platform-tools/adb -P 5037 -s 36165441 shell input keyevent 3'
+2018-07-15 08:02:50:888 - error: uncaughtException: write EPIPE date=Sun Jul 15 2018 16:02:50 GMT+0800 (CST), pid=24074, uid=501, gid=20, cwd=/Users/cloudin/Desktop/project/AMTest/AppiumPython/test_main, execPath=/usr/local/Cellar/node/9.4.0/bin/node, version=v9.4.0, argv=[/usr/local/Cellar/node/9.4.0/bin/node, /usr/local/bin/appium, -p, 4700, -bp, 4900, -U36165441, --no-reset, --session-override, --log, /Users/cloudin/Desktop/project/AMTest/AppiumPython/log/test00.log], rss=110485504, heapTotal=71520256, heapUsed=63614896, external=1678345, loadavg=[1.94677734375, 2.0654296875, 2.05224609375], uptime=21847, trace=[column=13, file=util.js, function=_errnoException, line=1003, method=null, native=false, column=14, file=net.js, function=WriteWrap.afterWrite, line=863, method=afterWrite, native=false], stack=[Error: write EPIPE,     at _errnoException (util.js:1003:13),     at WriteWrap.afterWrite (net.js:863:14)]
+2018-07-15 08:02:50:893 - error: uncaughtException: write EPIPE date=Sun Jul 15 2018 16:02:50 GMT+0800 (CST), pid=24074, uid=501, gid=20, cwd=/Users/cloudin/Desktop/project/AMTest/AppiumPython/test_main, execPath=/usr/local/Cellar/node/9.4.0/bin/node, version=v9.4.0, argv=[/usr/local/Cellar/node/9.4.0/bin/node, /usr/local/bin/appium, -p, 4700, -bp, 4900, -U36165441, --no-reset, --session-override, --log, /Users/cloudin/Desktop/project/AMTest/AppiumPython/log/test00.log], rss=111173632, heapTotal=72568832, heapUsed=63239296, external=1678369, loadavg=[1.94677734375, 2.0654296875, 2.05224609375], uptime=21847, trace=[column=13, file=util.js, function=_errnoException, line=1003, method=null, native=false, column=14, file=net.js, function=WriteWrap.afterWrite, line=863, method=afterWrite, native=false], stack=[Error: write EPIPE,     at _errnoException (util.js:1003:13),     at WriteWrap.afterWrite (net.js:863:14)]

@@ -1,0 +1,43 @@
+[   INFO] [2018-07-15 15:49:59,571] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2018-07-15 15:51:22,644] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2018-07-15 15:54:16,709] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2018-07-15 15:55:34,358] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-15 15:55:34,394] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-15 15:55:43,784] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-15 15:58:41,245] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-15 15:58:41,267] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-15 15:58:48,650] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-15 16:02:15,678] [4321387392] [HTMLReport.py(101)] - 预计并发线程数：1
+[  DEBUG] [2018-07-15 16:02:15,696] [4321387392] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android"}}, "desiredCapabilities": {"platformName": "Android", "deviceName": "36165441", "app": "/Users/cloudin/Desktop/project/AMTest/AppiumPython/apks/cnode.apk", "appWaitActivity": "org.cnodejs.android.md.ui.activity.LaunchActivity", "noReset": "true", "appPackage": "org.cnodejs.android.md"}}
+[  DEBUG] [2018-07-15 16:02:23,079] [4321387392] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-15 16:02:23,081] [123145400598528] [Result.py(48)] - 开始测试： test_01 (case.test_case1.CaseTest)
+[  DEBUG] [2018-07-15 16:02:28,088] [123145400598528] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element {"using": "-android uiautomator", "value": "new UiSelector().className(\"android.widget.ImageButton\")", "sessionId": "bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+[  DEBUG] [2018-07-15 16:02:28,205] [123145400598528] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-15 16:02:28,206] [123145400598528] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element/1/click {"id": "1", "sessionId": "bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+[  DEBUG] [2018-07-15 16:02:28,534] [123145400598528] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-15 16:02:28,537] [123145400598528] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element {"using": "id", "value": "org.cnodejs.android.md:id/tv_login_name", "sessionId": "bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+[  DEBUG] [2018-07-15 16:02:29,751] [123145400598528] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-15 16:02:29,752] [123145400598528] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element/2/click {"id": "2", "sessionId": "bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+[  DEBUG] [2018-07-15 16:02:30,421] [123145400598528] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-15 16:02:35,424] [123145400598528] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element {"using": "id", "value": "org.cnodejs.android.md:id/edt_access_token", "sessionId": "bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+[  DEBUG] [2018-07-15 16:02:35,550] [123145400598528] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-15 16:02:35,552] [123145400598528] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element/3/value {"text": "rgerwhgewrhew", "value": ["r", "g", "e", "r", "w", "h", "g", "e", "w", "r", "h", "e", "w"], "id": "3", "sessionId": "bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+[  DEBUG] [2018-07-15 16:02:41,864] [123145400598528] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-15 16:02:41,866] [123145400598528] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element {"using": "id", "value": "org.cnodejs.android.md:id/btn_login", "sessionId": "bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+[  DEBUG] [2018-07-15 16:02:42,388] [123145400598528] [remote_connection.py(573)] - Finished Request
+[  DEBUG] [2018-07-15 16:02:42,390] [123145400598528] [remote_connection.py(486)] - POST http://127.0.0.1:4700/wd/hub/session/bb834f7a-5547-490d-99ab-ad98aa6a1c0f/element/4/click {"id": "4", "sessionId": "bb834f7a-5547-490d-99ab-ad98aa6a1c0f"}
+[  DEBUG] [2018-07-15 16:02:42,933] [123145400598528] [remote_connection.py(573)] - Finished Request
+[   INFO] [2018-07-15 16:02:43,938] [123145400598528] [Result.py(107)] - 测试执行通过： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-15 16:02:43,940] [123145400598528] [Result.py(59)] - 测试结束： test_01 (case.test_case1.CaseTest)
+[   INFO] [2018-07-15 16:02:43,941] [123145400598528] [Result.py(61)] - 耗时： 0.057980000000000004
+[   INFO] [2018-07-15 16:02:44,945] [4321387392] [HTMLReport.py(130)] - 
+Pass	test_01 (case.test_case1.CaseTest)
+
+[   INFO] [2018-07-15 16:02:44,947] [4321387392] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:29.266495
+共计执行用例数量：1
+执行成功用例数量：1
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：0
