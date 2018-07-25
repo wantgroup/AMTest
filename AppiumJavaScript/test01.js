@@ -13,6 +13,7 @@ async function run(){
     app: path.resolve('/Users/cloudin/Library/Developer/Xcode/DerivedData/订餐-dcxvdcqhqbbrdmgauarbdoihzkgj/Build/Products/Debug-iphonesimulator/订餐.app')
     };
     driver.init(desiredCaps);
+    driver.launchApp();
 }
 run()
   
